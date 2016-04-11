@@ -1,0 +1,44 @@
+---
+layout: page
+title: Team
+---
+<div class="cards">
+{% for page in site.pages%}
+      {% if page.categories contains "staff" %}
+<a href="{{site.baseurl}}/team/{{page.locator}}" class="card">
+   <div class="card-image">
+     <img style="max-width:216px" src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
+   </div>
+   <div class="card-copy">
+     <h4>{{page.title}}</h4>
+     <p class="small">{{page.role}}</p>
+   </div>
+ </a>
+ {% endif %}
+{% endfor %}
+</div>
+
+<h2>Careers</h2>
+{% for page in site.pages%}
+  {% if page.categories contains "jobs" %}
+  <h3><a class="post-link" style="background:none" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+  {% endif %}
+{% endfor %}
+
+<p>Don't see the job you want? Send us a CV and a letter telling us why we desperately need you to <a href="mailto:jobs@simlab.org">jobs@simlab.org</a></p>
+
+ <!--
+  {% for page in site.pages%}
+        {% if page.categories contains "staff" %}
+  <div class="hover-tile-outer" style="background-image: url({{site.baseurl}}/images/{{page.locator}}.jpg)">
+  <div class="hover-tile-container">
+    <div class="hover-tile hover-tile-visible"></div>
+    <div class="hover-tile hover-tile-hidden">
+      <h4>{{page.title}}</h4>
+      <p>{{page.role}}</p>
+    </div>
+  </div>
+</div>
+  {% endif %}
+ {% endfor %}
+ -->

@@ -1,0 +1,24 @@
+---
+---
+
+{ "pages": [{% for page in site.pages %} {% if page.title %}
+    { 
+        "id": {{ forloop.index }},
+        "title": "{{ page.title }}",
+        "categories": "{{page.categories | join: " "}}",
+        "tags": "{{page.tags | join: " "}}",
+        "url": "{{page.url}}"
+    } {% else %} {
+        "id": "NaN",
+        "title": "",
+        "categories": "",
+        "tags": "",
+        "url": ""
+    }{% endif %}{% if forloop.index < site.pages.size %},{% endif %}
+  {% endfor %}],
+  "posts": [{% for post in site.posts %}
+    { "id": {{ forloop.index | plus: site.pages.size }},
+        "title": "{{ post.title }}",
+        "categories": "{{post.categories | join: " "}}",
+        "tags": "{{post.tags | join: " "}}", 
+        "url": "{{post.url}}" }{% if forloop.index < site.posts.size %},{% endif %}{% endfor %}]}

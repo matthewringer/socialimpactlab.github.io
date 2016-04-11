@@ -1,11 +1,13 @@
+---
+---
 require([
-  '/js/jquery.js',
-  '/js/mustache.js',
-  '/js/lunr.js',
-  'text!/content/result-view.mustache',
-  'text!/content/result-list.mustache',
-  'text!/content/search-docs.json',
-  'text!/content/search-index.json'
+  '{{site.baseurl}}/js/jquery.js',
+  '{{site.baseurl}}/js/mustache.js',
+  '{{site.baseurl}}/js/lunr.js',
+  'text!{{site.baseurl}}/content/result-view.mustache',
+  'text!{{site.baseurl}}/content/result-list.mustache',
+  'text!{{site.baseurl}}/content/search-docs.json',
+  'text!{{site.baseurl}}/content/search-index.json'
 ], function (_, Mustache, lunr, questionView, questionList, data, indexDump) {
 
   var index = lunr(function () {

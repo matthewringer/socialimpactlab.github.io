@@ -2,8 +2,8 @@
 title:       SIMLab
 email:       hello@simlab.org
 description: "We help make technology work for everyone."
-baseurl:     #"http://simlab.org"
-url:         "http://simlab.org"
+baseurl:     "http://matthewringer.github.io/socialimpactlab.github.io" #"http://simlab.org"
+url:         "http://matthewringer.github.io/socialimpactlab.github.io" #"http://simlab.org"
 date_format: "%b %-d, %Y"
 
 # Plugins

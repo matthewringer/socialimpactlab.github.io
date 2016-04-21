@@ -2,7 +2,7 @@
 title:       SIMLab
 email:       hello@simlab.org
 description: "We help make technology work for everyone."
-baseurl:     #"/staging"
+baseurl:    "socialimpactlab.github.io" 
 url:         "http://simlab.org"
 date_format: "%b %-d, %Y"
 

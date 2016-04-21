@@ -1,0 +1,20 @@
+title: Social Impact Lab
+author: Change later
+date: April 2016
+
+epub-filename: './content/epub/out.epub'
+epub-dir: '/Users/matthewringer/dev/repos/matthewringer/socialimpactlab.github.io/' # paths are relitive to this...
+epub-cover-image: './images/do.jpg'
+epub-stylesheet: './_site/css/pixyll.css'
+epub-metadata: './metadata.xml'
+
+
+header-items:
+- title
+- author
+
+content-dir: '_posts/'
+contents: 
+  - section-title: Articles
+    files:
+    - 2014-09-02-welcome-to-SIMLab.markdown

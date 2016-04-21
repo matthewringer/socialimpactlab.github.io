@@ -7,7 +7,7 @@
         "title": "{{ page.title }}",
         "categories": "{{page.categories | join: " "}}",
         "tags": "{{page.tags | join: " "}}",
-        "url": "{{site.baseurl}}/{{page.url}}"
+        "url": "{{site.baseurl}}{{page.url}}"
     } {% else %} {
         "id": "NaN",
         "title": "",
@@ -21,4 +21,4 @@
         "title": "{{ post.title }}",
         "categories": "{{post.categories | join: " "}}",
         "tags": "{{post.tags | join: " "}}", 
-        "url": "{{site.baseurl}}/{{post.url}}" }{% if forloop.index < site.posts.size %},{% endif %}{% endfor %}]}
+        "url": "{{site.baseurl}}{{post.url}}" }{% if forloop.index < site.posts.size %},{% endif %}{% endfor %}]}

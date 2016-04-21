@@ -1,0 +1,17 @@
+#Global Data
+nav_items: 
+  - path: "services"
+  - { path: "blog" , text: "learning" }
+  - path: "resources"
+  - path: "stories"
+  - path: "team"
+  
+services:
+ - { link: "Prototyping", icon: "glyphicon-btc", first: "Idea and Concept", second: "Prototyping" }
+ - { link: "Management", icon: "glyphicon-btc", first: "Technology Adoption", second: "Management" }
+ - { link: "Analysis", icon: "glyphicon-btc", first: "Monitoring", second: "Evaluation" }
+ - { link: "Prototyping", icon: "glyphicon-btc", first: "Policy & System", second: "Analysis" }
+ - { link: "Subscription", icon: "glyphicon-btc", first: "Technology Coordination", second: "Subscription" }
+ 
+ 
+ 

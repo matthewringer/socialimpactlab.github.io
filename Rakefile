@@ -1,5 +1,9 @@
+require 'pandoc-ruby'
+require 'pdfkit'
+
 drafts_dir = '_drafts'
 posts_dir  = '_posts'
+epub_dir = './content/epub'
 
 # rake post['my new post']
 desc 'create a new post with "rake post[\'post title\']"'
@@ -66,4 +70,36 @@ desc 'list tasks'
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+desc 'epub tasks'
+task :epub do
+  @converter = PandocRuby.new('# Markdown Title', :from => :markdown, :to => :rst)
+  File.open("test.epub", "w") do |f|
+    while line = @converter.convert.gets
+        f.puts line.length
+    end
+  end
+end
+
+task :update do 
+  # clears the epub output directory for now TODO: watch the files for changes
+  FileUtils.rm Dir["#{epub_dir}/*"]
+  # update ./_site/epub.yml 
+  sh 'jekyll build'
+  # to be replaced with gem executable once it's been deployed.
+  sh 'ruby -Ilib ../../matthewringer/jekyll-ebook/bin/jekyll-ebook ./_site/epub.yml'
+end
+
+task :update_pdf do 
+  begin
+    system 'jekyll serve -B > /dev/null'
+    kit = PDFKit.new('http://localhost:4000/resources/mandeoftech/')
+    kit.to_file('./test.pdf')
+  rescue
+    
+  ensure
+    system 'pkill -f jekyll > /dev/null'
+  end
+  
 end

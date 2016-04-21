@@ -3,6 +3,7 @@ layout: page
 title: How to send and receive messages in FrontlineSMS and FrontlineCloud
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLmessages/
 ---
 Watch or Listen: the demo on how to send and receive messages
 

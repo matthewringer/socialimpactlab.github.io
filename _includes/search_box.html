@@ -1,3 +1,12 @@
-<div class="input-group">
-  <input id="search-box" type="text" placeholder="search">
-</div>
+<form  role="search" autocomplete="off" action="search" method="get"> 
+    <div class="input-group no-border">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default no-border">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </span>
+        <input id="search-box" name="q" type="text" class="form-control no-border" placeholder="Search">
+        <ul class="dropdown-menu scrollable-menu" id="results-dropdown-container">
+        </ul>
+    </div>
+</form>

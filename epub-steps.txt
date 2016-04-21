@@ -1,0 +1,13 @@
+brew install pandoc
+gem install pandoc-ruby
+gem install jekyll-ebook
+
+
+#TODO
+
+ruby -Ilib ../../matthewringer/jekyll-ebook/bin/jekyll-ebook ./_site/epub.yml
+
+How do I want to create epub/pdf files?
+
+for epub a convention to create a epub from a single post or directory, set it's name and set it's output location. Location and name should be convention based with sensible defaults. 
+

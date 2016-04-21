@@ -1,0 +1,325 @@
+---
+---
+@import '../_sass/bootstrap';
+@import '../_sass/syntax-highlighting';
+
+
+$simlab-primary-magenta: #A7166A;
+$simlab-primary-black: #231f20;
+$simlab-primary-grey: #E9E9E9;
+
+$simlab-secondary-slate: #004650;
+$simlab-secondary-blue: #00AECE;
+$simlab-secondary-yellow: #C6DB00;
+$simlab-secondary-green: #55BE47;
+
+%opensans { font-family: 'Open Sans', sans-serif; }
+
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+body {
+    @extend %opensans;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-inline {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.extra-bold {
+    font-weight: 900;
+    font-stretch: ultra-condensed;
+}
+
+.magenta {
+        color: $simlab-primary-magenta;
+}
+
+.angled-header{
+    background-size:cover;
+    position:relative;
+    background: $simlab-primary-magenta no-repeat -100px -110px;
+    height:350px;
+    width:100%;
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: hidden;
+
+    > div > h1 {
+        padding-left: 15px;
+        > span {
+            font-weight: bold;
+        }
+    }
+}
+
+#backshape .wrapper {
+    @include desktop {
+        margin:50px auto;
+    }
+    @include tablet {
+        margin:25px auto;
+    }
+    @include phone {
+        margin:25px auto;
+    }
+    display:block;
+    float:left;
+    width:100%;
+    padding:0 5%;
+    transform:skew(0deg,-2.5deg);
+    -ms-transform:skew(0deg,-5deg);
+    -webkit-transform:skew(0deg,-2.5deg); 
+}
+
+#backshape {
+ @include desktop {
+    margin-top:-50px;
+ }
+ @include tablet {
+    margin-top:-25px;
+ }   
+ @include phone {
+    margin-top:-25px;
+ }
+  border-top: 0.5px fffff solid;
+  z-index:-1;
+  display:block;
+  float:left;
+  width:100%;
+  background:white;
+  transform:skew(0deg,5deg);
+-ms-transform:skew(0deg,5deg); /* IE 9 */
+-webkit-transform:skew(0deg,2.5deg); /* Safari and Chrome */
+}
+
+.logo > svg {
+    height: 67.15px;
+    width: 42.5px;
+}
+
+.navbar-default {
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav { 
+    > li > a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    }
+}
+
+.custom-navbar .nav.navbar-nav.navbar-right li > a {
+	    text-align: right;
+}
+
+// hr lines over and under search box
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-style: solid none;
+  border-width: 0;
+  margin: 0;
+    &.bold {  
+        border-color: $simlab-primary-black -moz-use-text-color $simlab-primary-black;
+        border-top: 3px solid $simlab-primary-black;
+    }
+    &.light {
+        border-color: $simlab-primary-grey -moz-use-text-color $simlab-primary-grey;
+        border-top: 2px solid $simlab-primary-grey;
+    }
+}
+
+
+@mixin setPlaceHolderColor { 
+    &::-webkit-input-placeholder, &:-moz-placeholder , &::-moz-placeholder, &:-ms-input-placeholder {
+        @content
+    }
+}
+#search-header {
+    height:310px;
+}
+.search-header{
+    > hr.bold{
+        border-color: $simlab-primary-grey -moz-use-text-color $simlab-primary-grey;
+        border-top: 3px solid $simlab-primary-grey;
+    }
+    > form > div {
+        background-color: transparent;
+        > span > button.btn-default {
+            color: #FFFFFF;
+            background-color: transparent;
+        }
+        > input.form-control {
+            background-color: transparent;
+            color: #FFFFFF;
+            font-weight: bold;
+            @include setPlaceHolderColor {
+                color: #FFFFFF;
+            }   
+        }
+    }
+}
+
+//for search button
+.btn-default {
+    color: $simlab-primary-magenta;
+}
+
+.jumbotron{
+    background-color: #FFFFFF;
+}
+
+.services {
+    @include desktop {
+        border-left: 1px solid $simlab-primary-grey;
+        margin: 10px;
+        padding: 10px 0 10px 30px;
+    }
+    // Heading 
+    > p {
+        @include desktop {
+            margin-top: 17px;
+        }
+        padding-left: 4px;
+        font-size: 0.9em;
+        margin-bottom: 40px;
+        > i {
+            padding-left: 15px;
+            
+            color: $simlab-primary-magenta;
+        }
+    }
+    // Icon style
+    > ul > li > a > span {
+        font-size: 2em;
+        color: $simlab-primary-magenta;
+    }
+    // Text line 1 and 2
+    > ul > li > a > div {
+        color: $simlab-primary-black;
+        margin-left: 46px;
+        font-size: 10pt;
+        > p > span {
+            color: $simlab-primary-magenta;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin setFormFxAll { 
+    &:focus, &:hover, &:active {
+        @content
+    }
+}
+
+.no-border {
+    border: 0;
+    outline:0px !important;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @include setFormFxAll {
+        outline:0px !important;
+        -webkit-appearance: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: $simlab-primary-grey;
+}
+
+.footer-top {
+    min-height: 120px;
+    padding-bottom: 30px;
+    > div {        
+      > div  { 
+        min-height: 100px;
+        background-color: #FFFFFF;
+        border-top: solid 30px $simlab-primary-grey;
+        }
+        
+        .border-right {
+            @include desktop {
+                border-right: solid 15px $simlab-primary-grey;
+                border-left: solid 15px $simlab-primary-grey;   
+            }
+        }
+        .border-left {
+            @include desktop {
+                border-left: solid 15px $simlab-primary-grey;
+                border-right: solid 15px $simlab-primary-grey;
+            }
+        }
+        
+    }
+}
+
+.footer-bottom {
+    background-color: $simlab-primary-magenta;
+    min-height: 50px;
+    > div > p { 
+        margin-top: -20px;
+        color: #FFFFFF; 
+        padding-bottom: 20px; 
+    }
+    > div > a > svg {
+        margin-top: -5px;
+        height: 67.15px;
+        width: 42.5px;
+    }
+}

@@ -3,6 +3,7 @@ layout: page
 title: FrontlineSMS and modems
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLmodem/
 ---
 Watch or Listen: demo on how to connect FrontlineSMS and modems!
 

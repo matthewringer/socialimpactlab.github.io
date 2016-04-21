@@ -3,6 +3,7 @@ layout: page
 title: PEPL Case Study
 author: Jim Linton Williams & Alex Gilchrist
 category: resources
+permalink: /resources/PEPLCaseStudy/
 ---
 Read: Strengthening Participatory Organizations in Pakistan
 

@@ -7,7 +7,7 @@ permalink: /resources/lastmilemoney/
 pdf: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
 category: resources
 ---
-![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
+![desk](./images/dfidcase/Picture1.png)
 _SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.

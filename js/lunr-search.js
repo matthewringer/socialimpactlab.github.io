@@ -6,9 +6,10 @@ require([
   '{{site.baseurl}}/js/lunr.js',
   'text!{{site.baseurl}}/content/result-view.mustache',
   'text!{{site.baseurl}}/content/result-list.mustache',
+  'text!{{site.baseurl}}/content/result-dropdown.mustache',
   'text!{{site.baseurl}}/content/search-docs.json',
   'text!{{site.baseurl}}/content/search-index.json'
-], function (_, Mustache, lunr, questionView, questionList, data, indexDump) {
+], function (_, Mustache, lunr, questionView, questionList, quetionDropDown, data, indexDump) {
 
   var index = lunr(function () {
     this.field('title', {boost: 10})
@@ -19,9 +20,14 @@ require([
   });
 
   var renderQuestionList = function (qs) {
+    
     $("#results-list-container")
       .empty()
       .append(Mustache.to_html(questionList, {results: qs}))
+      
+    $("#results-dropdown-container")
+      .empty()
+      .append(Mustache.to_html(quetionDropDown, {results: qs}))
   }
 
   var renderQuestionView = function (question) {
@@ -82,7 +88,8 @@ require([
   renderQuestionList(questions)
   
   //renderQuestionView(questions[0])
-
+  
+  //TODO: this binding it too general....
   $('a.all').bind('click', function () {
     renderQuestionList(questions)
     $('input').val('')
@@ -101,9 +108,18 @@ require([
     }
   }
 
-  $('input').bind('keyup', debounce(function () {
-    if ($(this).val() < 2) return
+  $('#search-box').bind('keyup', debounce(function () {
+    
     var query = $(this).val()
+    //if ($(this).val() < 2) return
+    
+    if(query.length < 2){
+        $("#results-dropdown-container").hide();
+        return;
+      } else {
+        $("#results-dropdown-container").show();
+      }
+    
     var results = index.search(query)
     
      results = results.map(function (result) {
@@ -112,6 +128,29 @@ require([
 
     renderQuestionList(results)
   }))
+  
+  var hoverDropDown = false;
+  
+//   $('#search-box').keydown(debounce(function(e){
+//       if(e.which == 40){
+//         $("#results-dropdown-container").focus();
+//       }
+//   }))
+  
+//   $('#search-box').mouseleave(debounce(function(){
+//       if(!hoverDropDown){
+//         $("#results-dropdown-container").hide();
+//       }
+//   }))
+  
+//   $('#results-dropdown-container').mouseenter(function(){
+//       hoverDropDown = true;
+//   })
+  
+//   $('#results-dropdown-container').mouseleave(function(){
+//       hoverDropDown = false;
+//       $('#results-dropdown-container').hide();
+//   })
 
 //   $("#results-list-container").delegate('li', 'click', function () {
 //     var li = $(this)

@@ -3,6 +3,7 @@ layout: page
 title: How to choose a connection in Frontline
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLconnection/
 ---
 Watch or Listen: demo on how to choose a connection!
 

@@ -2,8 +2,8 @@
 title:       SIMLab
 email:       hello@simlab.org
 description: "We help make technology work for everyone."
-baseurl:     "/socialimpactlab.github.io" #"http://simlab.org"
-url:         "http://matthewringer.github.io" #"http://simlab.org"
+baseurl:     #"/staging"
+url:         "http://simlab.org"
 date_format: "%b %-d, %Y"
 
 # Plugins
@@ -58,6 +58,7 @@ share_stumbleupon: false
 share_hackernews: false
 
 # Build settings
+relative_permalinks: false
 include: ['_pages']
 markdown:     kramdown
 redcarpet:

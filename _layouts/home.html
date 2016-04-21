@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body >
+<header class="angled-header" style="background-image: url('{{baseurl}}{{page.headerimage}}')">
+    <div class="container">
+        {% include navigation.html %}
+        <h1>We help make <span class="extra-bold">technology</span> <br/>work for <span class="extra-bold">everyone<span></h1>
+    <div>
+</header>
+<div class="container" id="backshape" >
+    <div class="wrapper">
+    </div>
+</div>
+<div class="container">
+        <h3>We are <span class="extra-bold">SIMLab</span><span class="extra-bold magenta">.</span></h3>
+        <hr class="bold" />
+        {% include search_box.html %}
+        <hr class="light" />
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h4 class="extra-bold">About</h4>
+            <p> SIMLab is a nonprofie wiht a mission to realize a world where technology helps build societies that are equitable and inclusive. We help find the technology that will be inclusive, and accessable, for the people you want to talk to and the contexts you need to work in; from radio to social media, from SMS to Whatsapp, from mobile web to community noticeboards. We'll help you deliver services, share informaiton, and communicate with communities along the way.</p>
+            <p>It won't always be straightforward, and we'll help you uncover and share honest, difficult lessons. But we draw on social science, systems thinking, and human-centered design approaches, and our ten years of experience implementing technology projects in the world's most difficult contexts.</p>
+        </div>
+        <div class="col-md-4">
+            {% include services_menu.html %}
+        </div>
+    </div> <!--/row -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="" alt="..." class="img-rounded img-inline">
+        </div>
+        <div class="col-md-6">
+            <img src="" alt="..." class="img-rounded img-inline">
+        </div>
+    </div>
+</div> 
+  {% include footer.html %}
+</body>
+</html>

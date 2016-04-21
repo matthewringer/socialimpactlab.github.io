@@ -3,6 +3,7 @@ layout: page
 title: Readings on ICTs for M&E
 author: Linda Raftree and Michael Bamberger
 category: resources
+permalink: /resources/ICTsme/
 ---
 Read: about using ICTs for monitoring and evaluation
 

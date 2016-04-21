@@ -3,6 +3,7 @@ layout: page
 title: Evidence of impact
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/evidenceofimpact/
 ---
 Read: a short blog post on how technologies can demonstrate evidence of impact
 

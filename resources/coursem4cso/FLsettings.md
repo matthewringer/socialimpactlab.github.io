@@ -3,6 +3,7 @@ layout: page
 title: Getting help and managing settings in Frontline
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLsettings/
 ---
 Watch or Listen: getting help and managing settings!
 

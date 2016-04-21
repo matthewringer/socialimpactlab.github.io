@@ -1,13 +1,25 @@
-<footer class="center">
-  <div class="measure">
-    <small>
+<footer>
+  <div class="container footer-top">
+    <div class="row">
+      <div class="col-md-6 border-right">
+        Subscribt and Connect...
+      </div>
+      <div class="col-md-6 border-left">
       {% if site.show_social_icons %}
         {% include social_links.html %}
       {% endif %}
-      Washington | New York | London | Nairobi
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+      <div class="text-center"> <a href="{{ site.baseurl }}/"> {% include logo.html %} </a> </div>
+      <div class="text-center"><p>Washington | New York | London | Nairobi</p></div>
+  </div>
+  
+<!--  
+    <small>
       <br>
       All SIMLab-owned content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.
-    </small>
-
-  </div>
+    </small>-->
 </footer>

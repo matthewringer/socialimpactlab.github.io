@@ -3,6 +3,7 @@ layout: page
 title: SIMLab's context assessment tool
 author: SIMLab
 category: resources
+permalink: /resources/contextchecklists/
 ---
 Experiment: check out SIMLab's context assessment tool.
 Context is king. The best technology is the one that’s right for the community and organization you’re working within, not necessarily the easiest or the newest. Customs and systems that affect the take-up of technologies and innovation are unique to each context. ICT methodologies should capitalize on and integrate with existing tools and familiar communications channels, wherever possible.

@@ -3,6 +3,7 @@ layout: page
 title: Nextdrop Case Study
 author: Finn Richardson, M4D Impact
 category: resources
+permalink: /resources/NextDropCaseStudy/
 ---
 Read: monitoring water service delivery in India
 

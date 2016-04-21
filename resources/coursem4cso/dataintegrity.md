@@ -3,6 +3,7 @@ layout: page
 title: Data Integrity Guide
 author: SIMLab
 category: resources
+permalink: /resources/dataintegrity/
 ---
 Read: selections from SIMLab's Data Integrity Guide
 

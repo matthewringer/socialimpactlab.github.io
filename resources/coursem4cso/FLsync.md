@@ -3,6 +3,7 @@ layout: page
 title: FrontlineCloud with FrontlineSync
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLsync/
 ---
 Watch or Listen: demo on how to connect FrontlineCloud with FrontlineSync!
 

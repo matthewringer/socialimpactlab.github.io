@@ -3,6 +3,7 @@ layout: page
 title: FrontlineCloud with Aggregator
 author: Laura Walker McDonald, SIMLab
 category: resources
+permalink: /resources/FLaggregator/
 ---
 Watch or Listen: demo on how to connect FrontlineCloud with an aggregator!
 

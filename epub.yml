@@ -1,0 +1,35 @@
+---
+---
+books:{% for post in site.posts %}{% if post.categories contains 'resources' %}
+- title: "{{post.title | smartify}}"
+  author: '{{post.author}}'
+  date: '{{post.date | date: site.date_format}}'
+
+  epub-filename: '{{post.id | slugify }}'
+  output-dir: './content/epub/'
+  epub-cover-image: './images/do.jpg'
+  epub-stylesheet: './_site/css/pixyll.css'
+  epub-metadata: './metadata.xml'
+
+  header-items:
+  - title
+  - author
+
+  content-dir: './'
+  contents: 
+  - section-title: "{{post.title | smartify}}"
+    files:
+    - {{post.path}} {% endif %}{% endfor %}
+
+- epub-filename: 'changemanagement'
+  output-dir: './content/epub/'
+  
+  header-items:
+  - title
+  - author
+
+  content-dir: './resources/coursem4cso/'
+  contents: 
+  - files:
+    - changemanagement.md
+  

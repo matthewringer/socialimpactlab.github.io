@@ -3,6 +3,7 @@ layout: page
 title: UNHCR Case Study
 author: Ben Rudolph, UNHCR Innovation
 category: resources
+permalink: /resources/UNHCRCaseStudy/
 ---
 Read: a case study on using FrontlineSMS to reach refugees in Costa Rica.
 

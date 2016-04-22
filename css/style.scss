@@ -109,6 +109,7 @@ img {
     transform:skew(0deg,-2.5deg);
     -ms-transform:skew(0deg,-5deg);
     -webkit-transform:skew(0deg,-2.5deg); 
+    -webkit-backface-visibility: hidden;
 }
 
 #backshape {
@@ -128,8 +129,9 @@ img {
   width:100%;
   background:white;
   transform:skew(0deg,5deg);
--ms-transform:skew(0deg,5deg); /* IE 9 */
--webkit-transform:skew(0deg,2.5deg); /* Safari and Chrome */
+  -ms-transform:skew(0deg,5deg); /* IE 9 */
+  -webkit-transform:skew(0deg,2.5deg); /* Safari and Chrome */
+  -webkit-backface-visibility: hidden;
 }
 
 .logo > svg {

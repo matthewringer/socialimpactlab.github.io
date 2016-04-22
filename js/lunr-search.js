@@ -137,20 +137,20 @@ require([
 //       }
 //   }))
   
-//   $('#search-box').mouseleave(debounce(function(){
-//       if(!hoverDropDown){
-//         $("#results-dropdown-container").hide();
-//       }
-//   }))
+  $('#search-box').mouseleave(debounce(function(){
+      if(!hoverDropDown){
+        $("#results-dropdown-container").hide();
+      }
+  }))
   
-//   $('#results-dropdown-container').mouseenter(function(){
-//       hoverDropDown = true;
-//   })
+  $('#results-dropdown-container').mouseenter(function(){
+      hoverDropDown = true;
+  })
   
-//   $('#results-dropdown-container').mouseleave(function(){
-//       hoverDropDown = false;
-//       $('#results-dropdown-container').hide();
-//   })
+  $('#results-dropdown-container').mouseleave(function(){
+      hoverDropDown = false;
+      $('#results-dropdown-container').hide();
+  })
 
 //   $("#results-list-container").delegate('li', 'click', function () {
 //     var li = $(this)

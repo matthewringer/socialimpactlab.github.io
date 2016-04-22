@@ -1,14 +1,21 @@
-<header class="angled-header" id="search-header" style="background-image: url('{{site.baseurl}}{{page.headerimage}}')">
-    <div class="container">
-        {% include navigation.html %}
-        <div class="container search-header">
-            <hr class="bold" /> 
-            {% include search_box.html %}
-            <hr class="light" />
+<header>
+    <div class="angled-header" id="search-header" style="background-image: url('{{site.baseurl}}{{page.headerimage}}')">
+        <div class="container">
+            {% include navigation.html %}
+            {% if page.headline %}
+            <h1 class="headline"> {{page.headline}} </h1>
+            {% else %}
+            <div class="container search-header headline">
+                <h4>{{page.title}}</h4>
+                <hr class="bold" /> 
+                {% include search_box.html %}
+                <hr class="light" />
+            </div>
+            {% endif %}
         </div>
-    <div>
-</header>
-<div class="container" id="backshape" >
-    <div class="wrapper">
     </div>
-</div>
+    <div class="container" id="backshape" >
+        <div class="wrapper">
+        </div>
+    </div>
+</header>

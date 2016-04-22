@@ -82,7 +82,7 @@ img {
     padding-top: 15px;
     padding-right: 0;
     padding-left: 0;
-    overflow: hidden;
+    //overflow: hidden;
 
     > div > h1 {
         padding-left: 15px;
@@ -107,34 +107,36 @@ img {
     width:100%;
     padding:0 5%;
     transform:skew(0deg,-2.5deg);
-    -ms-transform:skew(0deg,-5deg);
-    -webkit-transform:skew(0deg,-2.5deg); 
+    -ms-transform: skew(0deg,-5deg);
+    -webkit-transform: skew(0deg,-2.5deg); 
     -webkit-backface-visibility: hidden;
 }
 
 #backshape {
- @include desktop {
-    margin-top:-50px;
- }
- @include tablet {
-    margin-top:-25px;
- }   
- @include phone {
-    margin-top:-25px;
- }
-  border-top: 0.5px fffff solid;
-  z-index:-1;
-  display:block;
-  float:left;
-  width:100%;
-  background:white;
-  transform:skew(0deg,5deg);
-  -ms-transform:skew(0deg,5deg); /* IE 9 */
-  -webkit-transform:skew(0deg,2.5deg); /* Safari and Chrome */
-  -webkit-backface-visibility: hidden;
+    @include desktop {
+        margin-top:-50px;
+    }
+    @include tablet {
+        margin-top:-25px;
+    }   
+    @include phone {
+        margin-top:-25px;
+    }
+    border-top: 0.5px fffff solid;
+    z-index:-1;
+    display:block;
+    float:left;
+    width:100%;
+    background:white;
+    transform:skew(0deg,5deg);
+    -ms-transform: skew(0deg,5deg); /* IE 9 */
+    -webkit-transform: skew(0deg,2.5deg); /* Safari and Chrome */
+    -webkit-backface-visibility: hidden;
 }
 
 .logo > svg {
+    margin-left: 10px;
+    margin-top: -10px;
     height: 67.15px;
     width: 42.5px;
 }
@@ -155,6 +157,20 @@ img {
 
 .custom-navbar .nav.navbar-nav.navbar-right li > a {
 	    text-align: right;
+}
+
+.custom-navbar {
+    .collapse.in {
+	    background-color: $simlab-primary-magenta;
+    }
+    .collapsing {
+	    background-color: $simlab-primary-magenta;
+    }
+}
+
+.headline {
+    position: absolute;
+    top: 70px;
 }
 
 // hr lines over and under search box
@@ -183,9 +199,10 @@ hr {
         @content
     }
 }
-#search-header {
-    height:310px;
-}
+
+// #search-header {
+//     height:310px;
+// }
 .search-header{
     > hr.bold{
         border-color: $simlab-primary-grey -moz-use-text-color $simlab-primary-grey;
@@ -198,6 +215,7 @@ hr {
             background-color: transparent;
         }
         > input.form-control {
+            z-index: 0;
             background-color: transparent;
             color: #FFFFFF;
             font-weight: bold;
@@ -207,6 +225,8 @@ hr {
         }
     }
 }
+
+//.input-group .form-control {
 
 //for search button
 .btn-default {
@@ -275,9 +295,16 @@ hr {
 }
 
 .scrollable-menu {
+    // position: relative;
+    z-index: 100;
     height: auto;
-    max-height: 200px;
+    //max-height: 200px;
     overflow-x: hidden;
+    width: 100% !important;
+}
+
+#results-dropdown-container {
+ 
 }
 
 footer {

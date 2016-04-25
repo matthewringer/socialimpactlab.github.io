@@ -2,12 +2,10 @@
   <div class="container footer-top">
     <div class="row">
       <div class="col-md-6 border-right">
-        Subscribt and Connect...
+        {% include course_signup.html %}
       </div>
       <div class="col-md-6 border-left">
-      {% if site.show_social_icons %}
-        {% include social_links.html %}
-      {% endif %}
+        {% include social_buttons.html %}
       </div>
     </div>
     

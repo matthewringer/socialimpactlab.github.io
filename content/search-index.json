@@ -1,7 +1,7 @@
 ---
 ---
 
-{ "pages": [{% for page in site.pages %} {% if page.title %}
+{ "pages": [{% for page in site.pages %} {% if page.title and page.nosearch != true %}
     { 
         "id": "{{ forloop.index }}",
         "title": "{{ page.title }}",

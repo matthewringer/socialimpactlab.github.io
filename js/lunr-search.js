@@ -70,7 +70,8 @@ require([
       title: raw.title,
       categories: raw.categories,
       tags: raw.tags,
-      url: raw.url
+      url: raw.url,
+      icon: "fa-feed"
     }
   })
   
@@ -80,7 +81,8 @@ require([
       title: raw.title,
       categories: raw.categories,
       tags: raw.tags,
-      url: raw.url
+      url: raw.url,
+      icon: "fa-university" //todo hook in other icons
     }});
   
   var questions = posts.concat( pages ).filter(function (q ){ return q.id !== "NaN";});

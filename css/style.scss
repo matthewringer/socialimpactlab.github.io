@@ -8,10 +8,13 @@ $simlab-primary-magenta: #A7166A;
 $simlab-primary-black: #231f20;
 $simlab-primary-grey: #E9E9E9;
 
+
+$simlab-secondary-darkblue: #1B579F;
 $simlab-secondary-slate: #004650;
-$simlab-secondary-blue: #00AECE;
+$simlab-secondary-lightblue: #00AECE;
 $simlab-secondary-yellow: #C6DB00;
 $simlab-secondary-green: #55BE47;
+$simlab-secondary-darkgreen: #2F6600;
 
 %opensans { font-family: 'Open Sans', sans-serif; }
 
@@ -39,7 +42,7 @@ $desktop-width: 992px;
 
 body {
     @extend %opensans;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -51,14 +54,14 @@ img {
 
 .img-inline {
     margin: 0;
-    padding: 0;
+    padding: 7px 0 7px 0;
     width: 100%;
     height: 200px;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -73,8 +76,18 @@ img {
 }
 
 .angled-header{
+    @include desktop {
+        height:350px;
+    }
+    @include tablet {
+        height:350px;
+    }
+    @include phone {
+        height:200px;
+        z-index: 2;
+    }
+    
     background-size:cover;
-    position:relative;
     background: $simlab-primary-magenta no-repeat -100px -110px;
     height:350px;
     width:100%;
@@ -82,8 +95,8 @@ img {
     padding-top: 15px;
     padding-right: 0;
     padding-left: 0;
-    //overflow: hidden;
-
+    position:relative;
+    
     > div > h1 {
         padding-left: 15px;
         > span {
@@ -113,6 +126,8 @@ img {
 }
 
 #backshape {
+    z-index: 1;
+    position: relative;
     @include desktop {
         margin-top:-50px;
     }
@@ -123,13 +138,12 @@ img {
         margin-top:-25px;
     }
     border-top: 0.5px fffff solid;
-    z-index:-1;
     display:block;
     float:left;
     width:100%;
     background:white;
-    transform:skew(0deg,5deg);
-    -ms-transform: skew(0deg,5deg); /* IE 9 */
+    transform:skew(0deg,2.5deg);
+    -ms-transform: skew(0deg,2.5deg); /* IE 9 */
     -webkit-transform: skew(0deg,2.5deg); /* Safari and Chrome */
     -webkit-backface-visibility: hidden;
 }
@@ -226,7 +240,22 @@ hr {
     }
 }
 
-//.input-group .form-control {
+.search-result {
+    > a { 
+        color: $simlab-primary-black; 
+        line-height: 30px;
+    }
+    padding: 5px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    > i {
+        color: $simlab-primary-magenta;
+    }
+}
+
+.container.search-box {
+    margin-bottom: 30px;
+}
 
 //for search button
 .btn-default {
@@ -300,16 +329,63 @@ hr {
     height: auto;
     //max-height: 200px;
     overflow-x: hidden;
+    //TODO: 
+    text-overflow: ellipsis;
     width: 100% !important;
-}
-
-#results-dropdown-container {
- 
+    > ul > li > a {
+        text-overflow: ellipsis;
+    }
 }
 
 footer {
     margin-top: 60px;
     background-color: $simlab-primary-grey;
+}
+
+.course-signup {
+    min-height: 180px;
+    padding: 10px;
+    > i {
+        @include phone {
+            margin: 10px 20px 0 -5px;
+        }
+        @include tablet {
+            margin: 10px 20px 0 -5px;
+        }
+        @include desktop {
+            margin: 25px 20px 20px -5px;
+        }
+        
+        color: #FFFFFF;
+        background-color: $simlab-secondary-darkblue;
+        padding: 20px;
+        border-radius: 44px;
+    }
+    > div > h4 {
+        font-weight: bold;
+    }
+}
+
+.social-buttons{
+    min-height: 180px;
+    padding: 10px;
+    > h4 {
+        font-weight: bold;
+    }
+    > div > div {
+        padding: 10px;
+        > a { 
+            color: #FFFFFF; 
+            background-color: $simlab-secondary-darkgreen;
+            border-radius: 5px;
+            padding: 10px;
+            //margin: 10px;
+            width: 100%;
+            max-width: 200px;
+            height: 40px;
+        }
+        
+    }
 }
 
 .footer-top {

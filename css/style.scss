@@ -194,7 +194,8 @@ img {
 .custom-navbar .nav.navbar-nav.navbar-right li > a {
 	    text-align: right;
         &:hover {
-            color: $simlab-primary-magenta;
+            color: #FFFFFF;
+            text-decoration: underline;
         }
 }
 

@@ -3,5 +3,5 @@
     <i class="fa fa-comment fa-2x pull-left"></i>
     <div>
     <h4>New Course Signup</h4>
-    <p>Interested in joining a new course? Register here and start now! To find out more about SimLAB courses send us an email at courses@simlab.org.</p></div>
+    <p>Interested in joining a new course? Register here and start now! To find out more about SimLAB courses send us an email at <a href="mailto:courses@simlab.org">courses@simlab.org</a>.</p></div>
 </div>

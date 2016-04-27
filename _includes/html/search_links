@@ -1,0 +1,1 @@
+<ul class='list-unstyled'>{% for link in include.links %}<li class='search-links'><a href='{{ site.baseurl }}/search?q={{ link }}'>{{ link }}</a></li>{% endfor %}</ul>

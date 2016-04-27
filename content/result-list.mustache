@@ -1,10 +1,13 @@
-<div>
-  <ul class="list-unstyled">
-    {{#results}}
-      <li id='{{id}}'>
-        <h2><a href='{{url}}'>{{title}}</a></h2>
-        <p>{{tags}}</p>
-      </li>
-    {{/results}}
-  </ul>
-</div>
+{{#results}}
+  <div id='{{id}}' class="row">
+    <div class="row">
+      <h4><a href='{{url}}'>{{title}}</a></h4>
+    </div>
+    <div class="row">
+      {{{ links }}}
+    </div>
+    <div class="row">
+      <p>{{excerpt}}</p>
+    </div>
+  </div>
+{{/results}}

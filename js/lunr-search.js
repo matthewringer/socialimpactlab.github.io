@@ -4,18 +4,28 @@ require([
   '{{site.baseurl}}/js/jquery.js',
   '{{site.baseurl}}/js/mustache.js',
   '{{site.baseurl}}/js/lunr.js',
-  'text!{{site.baseurl}}/content/result-view.mustache',
   'text!{{site.baseurl}}/content/result-list.mustache',
   'text!{{site.baseurl}}/content/result-dropdown.mustache',
   'text!{{site.baseurl}}/content/search-docs.json',
   'text!{{site.baseurl}}/content/search-index.json'
-], function (_, Mustache, lunr, questionView, questionList, quetionDropDown, data, indexDump) {
+], function (_, Mustache, lunr, questionList, quetionDropDown, doc_data, index_data) {
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
   var index = lunr(function () {
     this.field('title', {boost: 10})
     this.field('body')
     this.field('tags')
     this.field('categories')
+    this.field('exerpt')
     this.ref('id') 
   });
 
@@ -30,12 +40,19 @@ require([
       .append(Mustache.to_html(quetionDropDown, {results: qs}))
   }
 
-  var renderQuestionView = function (question) {
-    $("#results-view-container")
-      .empty()
-      .append(Mustache.to_html(questionView, question))
-  }
+  // var renderQuestionView = function (question) {
+  //   $("#results-view-container")
+  //     .empty()
+  //     .append(Mustache.to_html(questionView, question))
+  // }
 
+  var search = function(query){
+    var results = index.search(query)
+     return results.map(function (result) {
+      return results_data.filter(function (q) { return q.id === parseInt(result.ref, 10) })[0]
+    });
+  }
+  
   window.profile = function (term) {
     console.profile('search')
     idx.search(term)
@@ -48,7 +65,7 @@ require([
     console.timeEnd('search')
   }
 
-  var rawDocs = JSON.parse(indexDump)
+  var rawDocs = JSON.parse(index_data)
   
   var addDocs = function(index, docs){
     for(var i = 0; i < docs.length; i++){
@@ -56,6 +73,7 @@ require([
                     title: docs[i].title,
                     categories: docs[i].categories,
                     tags: docs[i].tags, 
+                    exerpt: docs[i].exerpt,
                     url: docs[i].url }); }
   };
   
@@ -64,36 +82,42 @@ require([
   window.idx = addDocs(index, rawDocs.posts); 
   console.timeEnd('load')
 
-  var posts = JSON.parse(data).posts.map(function (raw) {
+  var posts = JSON.parse(doc_data).posts.map(function (raw) {
     return {
       id: raw.id,
       title: raw.title,
-      categories: raw.categories,
-      tags: raw.tags,
+      links: raw.links,
+      excerpt: raw.excerpt,
       url: raw.url,
       icon: "fa-feed"
     }
   })
   
-  var pages = JSON.parse(data).pages.map(function (raw) {
+  var pages = JSON.parse(doc_data).pages.map(function (raw) {
     return {
       id: raw.id,
       title: raw.title,
-      categories: raw.categories,
-      tags: raw.tags,
+      links: raw.links,
+      excerpt: raw.excerpt,
       url: raw.url,
       icon: "fa-university" //todo hook in other icons
     }});
   
-  var questions = posts.concat( pages ).filter(function (q ){ return q.id !== "NaN";});
+  var results_data = posts.concat( pages ).filter(function (q ){ return q.id !== "NaN";});
 
-  renderQuestionList(questions)
-  
-  //renderQuestionView(questions[0])
+
+  //page load events
+  var q =  getParameterByName("q");
+  if(q){
+    $('#search-box').val(q)
+    renderQuestionList(search(q))
+  } else {
+    renderQuestionList(results_data)
+  }
   
   //TODO: this binding it too general....
   $('a.all').bind('click', function () {
-    renderQuestionList(questions)
+    renderQuestionList(results_data)
     $('input').val('')
   })
 
@@ -109,26 +133,17 @@ require([
       }, 100)
     }
   }
-
+  
   $('#search-box').bind('keyup', debounce(function () {
-    
     var query = $(this).val()
-    //if ($(this).val() < 2) return
-    
-    if(query.length < 2){
-        $("#results-dropdown-container").hide();
-        return;
-      } else {
-        $("#results-dropdown-container").show();
-      }
-    
-    var results = index.search(query)
-    
-     results = results.map(function (result) {
-      return questions.filter(function (q) { return q.id === parseInt(result.ref, 10) })[0]
-    })
-
-    renderQuestionList(results)
+    if($("#results-list-container").length === 1){
+      renderQuestionList(search(query));
+    } else if( query.length > 2 ){
+      renderQuestionList(search(query));
+      $("#results-dropdown-container").show();
+    } else {    
+      $("#results-dropdown-container").hide();
+    }
   }))
   
   var hoverDropDown = false;
@@ -153,14 +168,4 @@ require([
       hoverDropDown = false;
       $('#results-dropdown-container').hide();
   })
-
-//   $("#results-list-container").delegate('li', 'click', function () {
-//     var li = $(this)
-//     var id = li.data('question-id')
-
-//     renderQuestionView(questions.filter(function (question) {
-//       return (question.id == id)
-//     })[0])
-//   })
-
 })

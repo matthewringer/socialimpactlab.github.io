@@ -2,6 +2,7 @@
 layout: default
 title: Stories
 headerimage: "/images/stories.jpg"
+nosearch: true
 ---
 <div class="container post-content" >
   {% for post in site.posts %} {% if post.categories contains "stories" %}
@@ -14,7 +15,7 @@ headerimage: "/images/stories.jpg"
       <ul class="list-unstyled post-meta">
         <li >{{ post.date | date: site.date_format }}</li>
         <li >{{ post.author }}</li>
-        <li style="border-right:none;">{{ post.tags }}</li>
+        <li style="border-right:none;">{% include html/search_links links=post.tags %}</li>
       </ul>
       <p class="post-summary">
         {% if post.summary %}

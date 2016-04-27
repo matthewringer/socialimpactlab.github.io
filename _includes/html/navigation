@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="{{ site.baseurl }}/" class="logo">{% include logo_white.svg %}</a>
+      <a href="{{ site.baseurl }}/" class="logo">{% include svg/logo_white %}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

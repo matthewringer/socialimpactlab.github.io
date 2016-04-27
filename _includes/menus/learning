@@ -1,0 +1,11 @@
+<div class="menu">
+    <p class="extra-bold">Learning</p>
+    <ul class="list-unstyled">
+        {% for item in site.data.global.learning %}
+        <li><a href={{item.link}}>
+            <i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
+            <div><p><a href={{item.link}}>{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

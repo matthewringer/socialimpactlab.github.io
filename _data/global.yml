@@ -5,13 +5,24 @@ nav_items:
   - path: "resources"
   - path: "stories"
   - path: "team"
-  
+#Menu Data
+
 services:
- - { link: "Prototyping", icon: "glyphicon-btc", first: "Idea and Concept", second: "Prototyping" }
- - { link: "Management", icon: "glyphicon-btc", first: "Technology Adoption", second: "Management" }
- - { link: "Analysis", icon: "glyphicon-btc", first: "Monitoring", second: "Evaluation" }
- - { link: "Prototyping", icon: "glyphicon-btc", first: "Policy & System", second: "Analysis" }
- - { link: "Subscription", icon: "glyphicon-btc", first: "Technology Coordination", second: "Subscription" }
+ - { link: "Prototyping", icon: "icon-prototyping", first: "Idea and Concept", second: "Prototyping" }
+ - { link: "Management", icon: "icon-management", first: "Technology Adoption", second: "Management" }
+ - { link: "Evaluation", icon: "icon-evaluation", first: "Monitoring &", second: "Evaluation" }
+ - { link: "Analysis", icon: "icon-analysis", first: "Policy & System", second: "Analysis" }
+ - { link: "Subscription", icon: "icon-subscription", first: "Technology Coordination", second: "Subscription" }
  
- 
+learning:
+  - { link: "courses", icon: "icon-course", first: "Idea and Concept", second: "Prototyping" }
+  - { link: "casestudies", icon: "icon-casestudy", first: "Technology Adoption", second: "Management" }
+  - { link: "documentation", icon: "icon-documentation", first: "Monitoring", second: "Evaluation" }
+  - { link: "otherresources", icon: "icon-other", first: "Policy & System", second: "Analysis" }
+  
+categories:
+  - { link: "courses", icon: "icon-course", first: "Courses", second: "Brief Explanation of section" }
+  - { link: "casestudies", icon: "icon-casestudy", first: "Case Studies", second: "Brief Explanation of section" }
+  - { link: "documentation", icon: "icon-documentation", first: "Documentation", second: "Brief Explanation of section" }
+  - { link: "otherresources", icon: "icon-other", first: "Other Resources", second: "Brief Explanation of section" }
  

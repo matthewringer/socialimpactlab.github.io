@@ -2,7 +2,7 @@
 ---
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
-
+@import '../_sass/icomoon';
 
 $simlab-primary-magenta: #A7166A;
 $simlab-primary-black: #231f20;
@@ -46,6 +46,10 @@ $desktop-width: 992px;
   }
 }
 
+html {
+    //max-width: 2000px;
+}
+
 body {
     @extend %opensans;
     font-size: 16px;
@@ -58,16 +62,23 @@ img {
     height: auto;
 }
 
+a { 
+    color: $simlab-primary-magenta; 
+    &:hover { 
+        text-decoration: none;
+        color: $simlab-primary-magenta; 
+    }    
+}
+
 .img-inline {
     margin: 0;
     padding: 7px 0 7px 0;
     width: 100%;
-    height: 200px;
+    height: auto;
+    //max-height: 200px;
 }
 
 .container {
-    // padding-right: 15px;
-    // padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -80,7 +91,6 @@ img {
 .magenta {
         color: $simlab-primary-magenta;
 }
-
 
 .header {
     
@@ -100,16 +110,34 @@ img {
     }
 }
 
+.home-page {
+    @include desktop {
+        background: $simlab-primary-black no-repeat 0 -150px;    
+    }
+    @include tablet {
+        background: $simlab-primary-black no-repeat 0 -100px;
+    }
+    @include phone {
+        background: $simlab-primary-black no-repeat 100 -100px;
+    }
+    @include minimum {
+        background: $simlab-primary-black no-repeat 100 -100px;
+        z-index: 2;
+    }
+}
+
+.default-page {
+    background: $simlab-primary-black;
+}
+
 .header-background {
     z-index: -1;
     position: absolute;
-    opacity: .5;
-    background-size: cover;
-    background: $simlab-primary-black no-repeat -100px -110px;
+    opacity: .8;
     width:100%;
 }
+
 .angled-header{
-    background-size: cover;
     background: transparent;
     width:100%;
     color: #FFFFFF;
@@ -120,11 +148,11 @@ img {
         
     > div { 
         > h1 {
-        padding-left: 15px;
-        > span {
-            font-weight: bold;
+            padding-left: 15px;
+            > span {
+                font-weight: bold;
+            }
         }
-    }
     }
 }
 
@@ -289,7 +317,7 @@ hr {
     background-color: #FFFFFF;
 }
 
-.services {
+.menu {
     @include desktop {
         border-left: 1px solid $simlab-primary-grey;
         margin: 10px;
@@ -303,26 +331,20 @@ hr {
         padding-left: 4px;
         font-size: 0.9em;
         margin-bottom: 40px;
-        > i {
+        > a {
             padding-left: 15px;
-            
             color: $simlab-primary-magenta;
+            &:hover{
+                text-decoration: none;
+            }
         }
     }
     // Icon style
-    > ul > li > a > span {
-        font-size: 2em;
-        color: $simlab-primary-magenta;
+    > ul > li > a > i {
+        margin-top: 7px;
     }
-    // Text line 1 and 2
-    > ul > li > a > div {
-        color: $simlab-primary-black;
-        margin-left: 46px;
-        font-size: 10pt;
-        > p > span {
-            color: $simlab-primary-magenta;
-            font-weight: bold;
-        }
+    .foot {
+        padding-top: 60px;
     }
 }
 
@@ -409,6 +431,32 @@ footer {
         }
         
     }
+}
+
+
+.post-image { 
+    padding-top: 6px;
+}
+.post-link {
+    color: $simlab-primary-black;
+}
+
+.post-meta {
+    margin-left: -15px;
+    
+    > li { 
+        float: left;
+        height: 10px;
+        line-height: 4px;
+        padding: 3px 15px 7px 15px;
+        border-right: solid 1px $simlab-primary-black;
+        font-size: .7em;
+        }
+}
+
+.post-summary {
+    margin-top: 35px;
+    font-size: .9em;
 }
 
 .footer-top {

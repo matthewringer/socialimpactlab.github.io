@@ -31,12 +31,12 @@ layout: default
   </span>
 </div>
 
-<article class="post-content">
+<article >
   {{ content }}
 </article>
 
 {% if site.show_sharing_icons %}
-  {% include share_buttons.html %}
+  {% include html/share_buttons %}
 {% endif %}
 
 {% if site.disqus_shortname %}

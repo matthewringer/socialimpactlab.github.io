@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+{% include html/head %}
 <body >
-{% include header.html %}
+{% include html/header %}
 <div class="container search-box">
         <h3>We are <span class="extra-bold">SIMLab</span><span class="extra-bold magenta">.</span></h3>
         <hr class="bold" />
-        {% include search_box.html %}
+        {% include html/search_box %}
         <hr class="light" />
 </div>
 <div class="container">
@@ -16,18 +16,18 @@
             {{content}}
         </div>
         <div class="col-md-4">
-            {% include services_menu.html %}
+            {% include menus/services %}
         </div>
     </div> <!--/row -->
     <div class="row">
         <div class="col-md-6">
-            <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded img-inline">
+            <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded  img-inline">
         </div>
         <div class="col-md-6">
             <img src="{{site.baseurl}}/images/front_resources.jpg" alt="..." class="img-rounded img-inline">
         </div>
     </div>
 </div> 
-  {% include footer.html %}
+  {% include html/footer %}
 </body>
 </html>

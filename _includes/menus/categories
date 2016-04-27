@@ -1,0 +1,13 @@
+<div class="menu">
+    <p>All <span class="extra-bold">Categories</span> </p>
+    
+    <ul class="list-unstyled">
+        {% for item in site.data.global.categories %}
+        <li><a href={{item.link}}>
+            <i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
+            <div><p><a class="extra-bold" href={{item.link}}>{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
+        </li>
+        {% endfor %}
+    </ul>
+    <p class="foot">Read <span class="extra-bold">Stories</span> <a href="{{site.baseurl}}/stories"  class="fa fa-chevron-circle-right "></a></p>
+</div>

@@ -2,7 +2,7 @@
 layout: post
 title: "Mobile Money in the last mile: the independent evaluation"
 date: 2016-03-07 12:53:00
-categories: blog
+categories: [blog]
 author: Kelly Church
 ---
 ![evaluation]({{site.baseurl}}/images/post_images/sean-at-mombasa.jpg)

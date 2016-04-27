@@ -1,15 +1,15 @@
 <header>
-    <div class="header header-background" style="background-image: url('{{site.baseurl}}{{page.headerimage}}')"> </div>
+    <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{page.headerimage}}'); background-size: cover;"> </div>
     <div class="header angled-header">
         <div class="container" >
-            {% include navigation.html %}
+            {% include html/navigation %}
             {% if page.headline %}
             <h1 class="headline"> {{page.headline}} </h1>
             {% else %}
             <div class="container search-header headline">
                 <h4>{{page.title}}</h4>
                 <hr class="bold" /> 
-                {% include search_box.html %}
+                {% include html/search_box %}
                 <hr class="light" />
             </div>
             {% endif %}

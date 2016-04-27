@@ -5,16 +5,12 @@
     {% include html/header %}
     <div class="container" role="{{page.role}}">
         <div class="row">
-            <div {% if page.menus %} class="col-md-8" {% else %} class="col-md-12"{% endif %}>
+            <div class="col-md-8">
                 {{content}}
             </div>
-            {% if page.menus %}
             <div class="col-md-4">
-                {% for menu in page.menus %}
-                  {% include menus/{{menu}} %}
-                {% endfor %}
+                {% include /menus/categories %}
             </div>
-            {% endif %}
         </div> <!--/row -->
     </div>
   {% include html/footer %}

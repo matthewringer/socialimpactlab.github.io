@@ -2,16 +2,16 @@
   <div class="container footer-top">
     <div class="row">
       <div class="col-md-6 border-right">
-        {% include course_signup.html %}
+        {% include html/course_signup %}
       </div>
       <div class="col-md-6 border-left">
-        {% include social_buttons.html %}
+        {% include html/social_buttons %}
       </div>
     </div>
     
   </div>
   <div class="footer-bottom">
-      <div class="text-center"> <a href="{{ site.baseurl }}/"> {% include logo.html %} </a> </div>
+      <div class="text-center"> <a href="{{ site.baseurl }}/"> {% include svg/logo %} </a> </div>
       <div class="text-center"><p>Washington | New York | London | Nairobi</p></div>
   </div>
   

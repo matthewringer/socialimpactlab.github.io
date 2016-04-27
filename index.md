@@ -1,6 +1,6 @@
 ---
 layout: home
-headerimage: "/images/lightbulbs.jpeg"
+headerimage: "/images/bulbs.jpeg"
 permalink: "/"
 title: "About"
 headline: 'We help make <span class="extra-bold">technology</span> <br/>work for <span class="extra-bold">everyone<span>'

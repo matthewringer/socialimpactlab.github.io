@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+{% include html/head %}
 <body class="site{% if site.animated %} animated fade-in-down{% endif %}">
 
 	{% if site.facebook_comments %}
@@ -15,7 +15,7 @@
 	{% endif %}
 
   <div class="site-wrap">
-    {% include header.html %}
+    {% include html/header %}
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
@@ -24,6 +24,6 @@
     </div>
   </div>
 
-  {% include footer.html %}
+  {% include html/footer %}
 </body>
 </html>

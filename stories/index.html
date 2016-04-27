@@ -4,28 +4,5 @@ title: Stories
 headerimage: "/images/stories.jpg"
 nosearch: true
 ---
-<div class="container post-content" >
-  {% for post in site.posts %} {% if post.categories contains "stories" %}
-    <div class="row post-content">
-    {% if post.teaseimage %}<div class="col-md-4 post-image">
-      <img src="{{site.baseurl}}{{post.teaseimage}}" alt="..." class="img-rounded img-inline">
-      </div>{% endif %}
-    <div {% if post.teaseimage %} class="col-md-8" {% else %} class="col-md-12"{% endif %}>
-      <a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold"><h4 >{{ post.title }}</h4></a>
-      <ul class="list-unstyled post-meta">
-        <li >{{ post.date | date: site.date_format }}</li>
-        <li >{{ post.author }}</li>
-        <li style="border-right:none;">{% include html/search_links links=post.tags %}</li>
-      </ul>
-      <p class="post-summary">
-        {% if post.summary %}
-          {{ post.summary | strip_html }}
-        {% else %}
-          {{ post.excerpt | strip_html }}
-        {% endif %}
-      </p>
-    </div>
-  </div>  
-  {% endif %}{% endfor %}
-</div>
+{% include html/posts_list posts=site.posts filter="stories" %}
 

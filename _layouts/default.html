@@ -5,8 +5,8 @@
     {% include html/header %}
     <div class="container" role="{{page.role}}">
         <div class="row">
-            <div {% if page.menus %} class="col-md-8" {% else %} class="col-md-12"{% endif %}>
-                {{content}}
+            <div class="{% if page.menus %} col-md-8 {% else %} col-md-12 {% endif %}" >
+                    {{content}}
             </div>
             {% if page.menus %}
             <div class="col-md-4">

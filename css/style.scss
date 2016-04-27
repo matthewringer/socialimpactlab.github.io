@@ -78,10 +78,10 @@ a {
     //max-height: 200px;
 }
 
-.container {
-    margin-right: auto;
-    margin-left: auto;
-}
+// .container {
+//     margin-right: auto;
+//     margin-left: auto;
+// }
 
 .extra-bold {
     font-weight: 900;
@@ -424,7 +424,6 @@ footer {
             background-color: $simlab-secondary-darkgreen;
             border-radius: 5px;
             padding: 10px;
-            //margin: 10px;
             width: 100%;
             max-width: 200px;
             height: 40px;
@@ -433,9 +432,12 @@ footer {
     }
 }
 
-
+.post-content{
+    margin: 0;
+    padding: 0;
+}
 .post-image { 
-    padding-top: 6px;
+    padding: 6px 0;
 }
 .post-link {
     color: $simlab-primary-black;

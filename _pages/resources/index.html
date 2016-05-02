@@ -1,0 +1,10 @@
+---
+layout: page
+title: Resources
+permalink: /resources/
+layout: resources
+headerimage: "/images/resource.jpg"
+---
+{% capture limit %}{{ site.resources | minus: 7 }}{% endcapture %}
+{% include html/posts_list_sidebar posts=site.resources limit=5 offset=0 %}
+ 

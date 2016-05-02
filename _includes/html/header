@@ -1,5 +1,6 @@
 <header>
-    <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{page.headerimage}}'); background-size: cover;"> </div>
+    <div class="header shadow" ></div>
+    <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{page.headerimage}}'); background-size: cover;"></div>
     <div class="header angled-header">
         <div class="container" >
             {% include html/navigation %}
@@ -20,3 +21,13 @@
         </div>
     </div>
 </header>
+{% if site.facebook_comments %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={{ site.facebook_appid }}";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endif %}

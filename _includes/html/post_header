@@ -1,0 +1,21 @@
+<h1>{{ page.title }}</h1>
+<div class="container">
+    {% if page.teaseimage %}
+    <div class="row">
+        <div class="{% if include.sidebar %} col-md-8 {% else %} col-md-12 {% endif %}" style="margin-left: -15px;" >
+            <img src="{{site.baseurl}}{{page.teaseimage}}" alt="{{page.teaseimage-alttext}}" class="img-rounded img-inline">
+        </div>
+    </div>
+    {% if page.teaseimage-caption %}
+    <div class="row">
+        <p class="caption">{{ page.teaseimage-caption }}</p>
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="row">
+        {% include html/post_metadata post=page %}
+        <span class="post-meta"> <br/> {% include html/minutes %} minute read
+        {% if page.pdf %} <a href="{{page.pdf}}">(PDF)</a> {% endif %}
+        </span>
+    </div>
+</div>

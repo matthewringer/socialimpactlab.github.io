@@ -1,1 +1,1 @@
-<span class="fa fa-xs icon-documentation magenta"></span>
+<span class="fa fa-{{include.size}} icon-documentation magenta"></span>

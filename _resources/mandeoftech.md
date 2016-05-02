@@ -3,6 +3,7 @@ layout: post
 title: "SIMLab's framework for monitoring and evaluating inclusive technologies in social change projects"
 author: Laura Walker McDonald, SIMLab
 permalink: /resources/mandeoftech/
+categories: [resources]
 category: resources
 ---
 ![desk]({{site.baseurl}}/images/post_images/m&e.jpg)

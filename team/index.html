@@ -8,23 +8,25 @@ nosearch: true
 <div class="row">
 {% for page in site.pages%}
       {% if page.categories contains "staff" %}
-<div class="col-md-3" style="min-height:320px;">
+<div class="col-xs-6 col-md-4" style="min-height:400px;">
   <a href="{{site.baseurl}}/team/{{page.locator}}" class="card">
-      <img class="img-rounded img-inline" style="max-width:216px" src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
-      <h4 style="max-width:216px">{{page.title}}</h4>
-      <p class="small" style="max-width:216px" >{{page.role}}</p>
+      <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
+      <h4 >{{page.title}}</h4>
+      <p class="small"  >{{page.role}}</p>
   </a>
 </div>
  {% endif %}
 {% endfor %}
 </div>
+<div class="container">
 <div class="row">
-<h2>Careers</h2>
-{% for page in site.pages%}
-  {% if page.categories contains "jobs" %}
-  <h3><a class="post-link" style="background:none" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
-  {% endif %}
-{% endfor %}
+  <h2>Careers</h2>
+  {% for page in site.pages%}
+    {% if page.categories contains "jobs" %}
+    <h3><a class="post-link" style="background:none" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+    {% endif %}
+  {% endfor %}
 
-<p>Don't see the job you want? Send us a CV and a letter telling us why we desperately need you to <a href="mailto:jobs@simlab.org">jobs@simlab.org</a></p>
+  <p>Don't see the job you want? Send us a CV and a letter telling us why we desperately need you to <a href="mailto:jobs@simlab.org">jobs@simlab.org</a></p>
+</div>
 </div>

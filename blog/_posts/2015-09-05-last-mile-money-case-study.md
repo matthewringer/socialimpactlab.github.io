@@ -1,24 +1,37 @@
 ---
-layout: post
+layout: casestudy
 title: "SIMLab's experience in Kenya: Implementing a mobile money management tool and training approach in the last mile"
-author: Kelly Church, SIMLab
+date: 2015-09-05 14:25:00
+author: Kelly Church
 permalink: /resources/lastmilemoney/
 pdf: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
-category: resources
+categories: [resources, casestudies]
+tags: [Training, Mobile, "Disaster Response"]
+teaseimage: "/images/dfidcase/Picture1.png"
+teaseimage-caption: "_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_"
+teaseimage-alttext: "desk"
+
+sections: 
+    - "About SIMLab"
+    - { link: "Unbanked", 
+        text: "'Unbanked' in Kenya: providing financial services in the world's most mobile-first economy", 
+        description: " " }
 ---
-![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
-_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
+
+
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
 
-## About SIMLab
+{% include html/section_link sections=page.sections id=0 %}
+
 Social Impact Lab (SIMLab) helps people and organizations to use inclusive technologies to build systems and services that are accessible, responsive, and resilient. Until December 2014, SIMLab was the home of the FrontlineSMS project, a suite of software that helps organizations build services with text messages. FrontlineSMS has now spun out as a separate, for-profit social enterprise, and SIMLab continues to focus on solving many of the challenges of implementing projects using inclusive technologies. They support implementation, the sharing of learning and synthesis of best practice, and advocate to decision-makers and donors for policy-level change.
 
 SIMLab defines inclusive technologies as those which embody values critical to truly scalable, locally-owned impact; accessibility, ease of use, interoperability, and sustainability. Mobile is a key example&mdash;SMS and voice telephony reach all of the world's 3.6 billion mobile subscribers&mdash;as is radio, a critical technology for broad reach at relatively low cost. We also embrace both ends of the spectrum of inclusive tech&mdash;the increasing availability and affordability of cheap web-enabled phones and mobile data make them more accessible for relatively disconnected communities, and more analogue communications technologies, such as public criers, noticeboards and human networks, like religious structures and community leadership, reach into even the most remote and disconnected communities.
 
 SIMLab's Last Mile Mobile Money Project helps small and medium-sized enterprises (SMEs) and under-resourced organizations explore available tools to realize the latent potential in mobile value transfer technologies for social change. SIMLab helped partners to break down barriers to innovation; both internally, through change management and business process consulting, and externally, through trainings on how to engage with and educate end-users to begin using accessible mobile money technologies. Through this project, SIMLab has been able to help organizations realize the uses and limitations of inclusive technologies and mobile money, while better understanding the types of organizational characteristics necessary in the implementation of digitization and cashless systems.
 
-## 'Unbanked' in Kenya: providing financial services in the world's most mobile-first economy
+{% include html/section_link sections=page.sections id=1 %}
+
 The 2014 annual report of the Africa Progress Panel (APP), a group headed by Kofi Annan, highlighted economic development as one of three major areas where progress was needed. For wealthier communities, financial inclusion is fairly easy&mdash;transferring, saving, and managing money are just an ATM or app away. For last-mile and low-income communities, these processes are not only far away, they're often impossibly complex and exclusionary. Poor physical infrastructure (roads, electricity), security risks, and lack of financial capital all prohibit those in last-mile communities from accessing global and regional markets, value chains, and financial services. These barriers preclude rural, poor, and other marginalized populations from accessing resources that could facilitate economic development&mdash;from starting their own businesses, accessing markets, insuring their crops, and planning for their future.
 
 These populations, often referred to as 'unbanked' for their lack of access to formal bank accounts, and the small and medium-sized enterprises (SMEs) and NGOs that serve them are impacted in very practical ways. For example, to access services or transmit funds, people may have to travel long distances while carrying large sums of cash, incurring heavy transportation costs and leaving them vulnerable to personal security risks.
@@ -190,7 +203,7 @@ Indicose plans to send SMS notifications about upcoming meetings, automatically 
 One of Indicose's main challenges is that as a community-based organization seeking to reduce poverty, and they have had a hard time sanctioning nonpayers, which has negatively affected the organization as a whole. The SACCO hopes that SMS automation and cleaner financial transactions will help members to better maintain their loans and uplift not only the SACCO, but the community as a whole.
 
 
-> *This project was made possible thanks to:*
+> This project was made possible thanks to:
 > ![UKaid]({{site.baseurl}}/images/dfidcase/Picture0.png)    
 
 ---

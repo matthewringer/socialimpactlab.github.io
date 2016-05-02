@@ -1,1 +1,1 @@
-<span class="fa fa-xs icon-download magenta"></span>
+<span class="fa fa-{{include.size}} icon-download magenta"></span>

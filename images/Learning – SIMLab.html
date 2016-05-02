@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learning &#8211; SIMLab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We help make technology work for everyone.">
+    <meta name="author" content="">
+    
+    <link rel="canonical" href="http://simlab.org/blog/page2/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for SIMLab" href="/feed.xml" />
+
+    <link rel="stylesheet" href="/css/style.css?201605021058" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Learning">
+    <meta property="og:description" content="We help make technology work for everyone.">
+    <meta property="og:url" content="http://simlab.org/blog/page2/">
+    <meta property="og:site_name" content="SIMLab">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@simlab" />
+    
+    <meta name="twitter:title" content="Learning" />
+    <meta name="twitter:description" content="We help make technology work for everyone." />
+    <meta name="twitter:url" content="http://simlab.org/blog/page2/" />
+
+    <!-- Icons -->
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54445094-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+    <script src="//fast.eager.io/xk-GmRBDH4.js"></script>
+    
+    <!-- todo browserify -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" ></script>
+    <script data-main="/js/lunr-search.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
+    
+</head>
+
+<body>
+    <header>
+    <div class="header header-background  default-page " style="background-image: url('/images/whoweare.jpg'); background-size: cover;"> </div>
+    <div class="header angled-header">
+        <div class="container" >
+            <nav class="navbar navbar-default custom-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="logo"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 326.7 250" style="enable-background:new 0 0 326.7 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FDFEFF;}
+	.st1{fill:#FDFEFF;}
+</style>
+<path class="st0" d="M302,24H21.3c0,0-17,0-17,17v166.5c0,0,0,17,17,17h260.5L319,188V41C319,41,319,24,302,24z M75.9,176.7l0,0.2
+	l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2
+	l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2
+	l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1
+	l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1L64,194l-0.2,0.1l-0.2,0.1
+	l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.3,0l-0.3,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0l-0.2,0
+	l-0.1,0h-5.9l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1L42,193l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2
+	l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l0-0.2l0-0.2l0-0.2
+	l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.1l0-0.1l0-0.1l0-0.1l0-0.3l0-0.3l0-0.2l0-0.2l0-0.2l0-0.2
+	l0-0.2l0-0.1l0-0.1l0-0.2l0-0.1V54.3h42.9V176.7z M132.9,176.7l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2
+	l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2
+	l0,0.2l0,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1
+	l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1L121,194l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0
+	l-0.3,0l-0.3,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0l-0.2,0l-0.1,0h-5.9l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1
+	l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1L93,187l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2
+	l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2
+	l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2
+	l0-0.2l0-0.2l0-0.1l0-0.1l0-0.1l0-0.1l0-0.3l0-0.3l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.1l0-0.1l0-0.2l0-0.1V54.3h42.9V176.7z
+	 M189.9,176.7l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2
+	l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l0,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2
+	l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.2l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1
+	l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.1,0.1l-0.2,0.1l-0.2,0.1
+	l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1
+	l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0.1l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.1,0l-0.1,0l-0.1,0l-0.1,0l-0.3,0l-0.3,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.1,0l-0.1,0l-0.2,0l-0.1,0h-5.9l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0l-0.2,0
+	l-0.2,0l-0.2,0l-0.2,0l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.2-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.1
+	l-0.1-0.1L150,187l-0.1-0.1l-0.1-0.1l-0.1-0.1l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2
+	l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2l-0.1-0.2
+	l-0.1-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.1l0-0.1l0-0.1l0-0.1l0-0.3
+	l0-0.3l0-0.2l0-0.2l0-0.2l0-0.2l0-0.2l0-0.1l0-0.1l0-0.2l0-0.1V54.3h42.9V176.7z"/>
+<path class="st1" d="M39.5,159.5v16c0,0,0,12.4,12.4,12.4h5c0,0,12.4,0,12.4-12.4v-16H39.5L39.5,159.5z"/>
+<path class="st1" d="M153.6,60.4v115.1c0,0,0,12.4,12.4,12.4h5c0,0,12.4,0,12.4-12.4V60.4H153.6L153.6,60.4z"/>
+<path class="st1" d="M96.6,110.2v65.3c0,0,0,12.4,12.4,12.4h5c0,0,12.4,0,12.4-12.4v-65.3H96.6L96.6,110.2z"/>
+</svg>
+</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- TODO: make an include and configure from site.data.global --> 
+        
+            <li><a href="/services/">  services   </a></li>
+        
+            <li><a href="/blog/">  learning   </a></li>
+        
+            <li><a href="/resources/">  resources   </a></li>
+        
+            <li><a href="/stories/">  stories   </a></li>
+        
+            <li><a href="/team/">  team   </a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+            
+            <div class="container search-header headline">
+                <h4>Learning</h4>
+                <hr class="bold" /> 
+                <form  role="search" autocomplete="off" action="/search" method="get"> 
+    <div class="input-group no-border">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default no-border">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+        </span>
+        <input id="search-box" name="q" type="text" class="form-control no-border" placeholder="Search">
+        <ul class="dropdown-menu scrollable-menu" id="results-dropdown-container">
+        </ul>
+    </div>
+</form>
+
+                <hr class="light" />
+            </div>
+            
+        </div>
+    </div>
+    <div class="container" id="backshape" >
+        <div class="wrapper">
+        </div>
+    </div>
+</header>
+
+
+    <div class="container" role="">
+        <div class="row">
+            <div class=" col-md-12 " >
+                <div >
+                    <div class="post">
+  <article class="post-content">
+  <div class="row">
+
+
+
+<div class="container " >
+   
+    <div class="row ">
+    
+    <div class="col-md-12 post-content">
+      <h4><a href="/blog/2015/10/31/frontlines-tenth-birthday/" class="post-link extra-bold">Thoughts on our ethos for FrontlineSMS' tenth birthday</a></h4>
+      <ul class="list-unstyled post-meta">
+    <li >Oct 31, 2015</li>
+    
+    
+    
+    
+    <li  style="border-right:none;"   ><a href="/team/laura">Laura Walker McDonald</a></li>
+    
+    
+</ul>
+      <p class="post-summary">
+        
+          Happy Halloween! The 31st October isn’t just your annual opportunity to eat your weight in sweets - it’s also the official birthday of FrontlineSMS, and this year marks the tenth anniversary of its first release! The award-winning SMS management tool was the core of SIMLab’s work for our first seven years - but the first version of the software was actually released for the first time on this day in 2005.
+        
+      </p>
+    </div>
+  </div>  
+   
+    <div class="row ">
+    
+    <div class="col-md-12 post-content">
+      <h4><a href="/blog/2015/09/17/online-course-announcement/" class="post-link extra-bold">Learn to use mobile in your work through our online course</a></h4>
+      <ul class="list-unstyled post-meta">
+    <li >Sep 17, 2015</li>
+    
+    
+    
+    
+    <li  style="border-right:none;"   ><a href="/team/valerie">Valerie Oliphant</a></li>
+    
+    
+</ul>
+      <p class="post-summary">
+        
+          Update! We’ve extended the deadline to apply to this Sunday, 4 October. Don’t delay and apply for our course today!
+
+
+        
+      </p>
+    </div>
+  </div>  
+   
+    <div class="row ">
+    
+    <div class="col-md-12 post-content">
+      <h4><a href="/blog/2015/09/08/sms-emergencies/" class="post-link extra-bold">Can SMS be used to reach women and girls in new ways in emergencies?</a></h4>
+      <ul class="list-unstyled post-meta">
+    <li >Sep 8, 2015</li>
+    
+    
+    
+    
+    <li  style="border-right:none;"   ><a href="/team/laura">Laura Walker McDonald</a></li>
+    
+    
+</ul>
+      <p class="post-summary">
+        
+          Humanitarian agencies have made increasing use of SMS and mobile telephony in disaster response since the South Asian Tsunami in 2004-5, but particularly following the Haitian earthquake in 2010, where lack of access to communities and high mobile penetration combined to make SMS an attractive means of distributing key messages about sanitation and available assistance. From the last mile rural community to the most vulnerable in urban settings, the predictable cost, asynchronous but intimate nature, and inherent robustness of SMS make it ideal for moving small packets of information swiftly and reliably. In contexts where communication by other means is costly or unreliable, SMS can be effectively used to manage staff and volunteers, collect management information and monitoring data, and provide a responsive two-way communications channel for beneficiaries and communities.
+
+
+        
+      </p>
+    </div>
+  </div>  
+   
+    <div class="row ">
+    <div class="col-md-4 post-image">
+      <img src="/images/dfidcase/Picture1.png" alt="desk" class="img-rounded img-inline">
+      </div>
+    <div class="col-md-8 post-content">
+      <h4><a href="/resources/lastmilemoney/" class="post-link extra-bold">SIMLab's experience in Kenya: Implementing a mobile money management tool and training approach in the last mile</a></h4>
+      <ul class="list-unstyled post-meta">
+    <li >Sep 5, 2015</li>
+    
+    
+    
+    
+    <li  ><a href="/team/kelly">Kelly Church</a></li>
+    
+    
+    <li style="border-right:none;"><ul class='list-unstyled'><li class='search-links'><a href='/search?q=Training'>Training</a></li><li class='search-links'><a href='/search?q=Mobile'>Mobile</a></li><li class='search-links'><a href='/search?q=Disaster Response'>Disaster Response</a></li></ul></li>
+    
+</ul>
+      <p class="post-summary">
+        
+          This case study describes the midterm progress and learning from a two-year project, funded by the UK Government’s Department for International Development (DFID). The project introduced a new mobile money management software to forty ‘last-mile’ organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
+
+
+        
+      </p>
+    </div>
+  </div>  
+  
+</div>
+
+
+
+<div class="container">
+  <div class="col-xs-2 pull-left" style="padding-left:0;">
+    
+        <a class="pagination-item"   href="/blog/" ><i class="fa fa-chevron-left pagination left"></i>Next Post</a>
+    
+  </div>
+  <div class="col-xs-2 pull-right" >
+    
+      <a class="pull-right" href="/blog/page3/">Previous Post<i class="fa fa-chevron-right pagination right"></i></a>
+    
+  </div>
+</div>
+
+</div>
+
+  
+  </article>
+</div>
+
+                </div>    
+            </div>
+            
+        </div> <!--/row -->
+    </div>
+  <footer>
+  <div class="container footer-top">
+    <div class="row">
+      <div class="col-md-6 border-right">
+        <div class="course-signup">
+    <i class="fa fa-comment fa-2x pull-left"></i>
+    <div>
+    <h4>New Course Signup</h4>
+    <p>Interested in joining a new course? Register here and start now! To find out more about SimLAB courses send us an email at <a href="mailto:courses@simlab.org">courses@simlab.org</a>.</p></div>
+</div>
+      </div>
+      <div class="col-md-6 border-left">
+        <div class="connect-links">
+  <h4>Connect</h4>
+  <p>Join our network and learn how we can use technology for social change.</p>
+  <div class="row">
+    <div class="col-xs-4 col-md-4 social-buttons">
+      <a class="fa fa-rss bg-green" href="/feed.xml"></a>
+    </div>  
+    <div class="col-xs-4 col-md-4 social-buttons">  
+        <a class="fa fa-twitter bg-green" href="https://twitter.com/simlab"></a>
+    </div>  
+    <div class="col-xs-4 col-md-4 social-buttons">  
+        <a class="fa fa-envelope bg-green" href="mailto:hello@simlab.org"></a>
+    </div>  
+  </div>
+</div>
+
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+      <div class="text-center"> <a href="/"> <svg width="78px" height="50px" viewBox="0 0 315 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled 2</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="SIMLAB-ICON-TYPE-01">
+                    <g id="Group-8" fill="#231F20">
+                        <path d="M17.008,-0.047 C17.008,-0.047 0,-0.047 0,16.961 L0,183.496 C0,183.496 0,200.504 17.008,200.504 L277.506,200.504 L314.643,163.938 L314.643,16.961 C314.643,16.961 314.643,-0.047 297.636,-0.047 L17.008,-0.047" id="Fill-1"></path>
+                    </g>
+                    <path d="M144.685,32.243 L144.685,152.649 C144.685,152.649 144.685,169.181 161.217,169.181 L167.125,169.181 C167.125,169.181 183.657,169.181 183.657,152.649 L183.657,32.243 L144.685,32.243" id="Fill-9" fill="#FFFFFF"></path>
+                    <path d="M144.685,32.243 L144.685,152.649 C144.685,152.649 144.685,169.181 161.217,169.181 L167.125,169.181 C167.125,169.181 183.657,169.181 183.657,152.649 L183.657,32.243 L144.685,32.243 L144.685,32.243 Z" id="Stroke-10" stroke="#FFFFFF" stroke-width="3.888"></path>
+                    <path d="M148.897,36.312 L148.897,151.461 C148.897,151.461 148.897,163.858 161.297,163.858 L166.293,163.858 C166.293,163.858 178.691,163.858 178.691,151.461 L178.691,36.312 L148.897,36.312" id="Fill-11" fill="#A7166A"></path>
+                    <path d="M87.652,32.243 L87.652,152.649 C87.652,152.649 87.652,169.181 104.184,169.181 L110.092,169.181 C110.092,169.181 126.624,169.181 126.624,152.649 L126.624,32.243 L87.652,32.243" id="Fill-12" fill="#FFFFFF"></path>
+                    <path d="M87.652,32.243 L87.652,152.649 C87.652,152.649 87.652,169.181 104.184,169.181 L110.092,169.181 C110.092,169.181 126.624,169.181 126.624,152.649 L126.624,32.243 L87.652,32.243 L87.652,32.243 Z" id="Stroke-13" stroke="#FFFFFF" stroke-width="3.888"></path>
+                    <path d="M91.865,86.181 L91.865,151.46 C91.865,151.46 91.865,163.859 104.264,163.859 L109.26,163.859 C109.26,163.859 121.659,163.859 121.659,151.46 L121.659,86.181 L91.865,86.181" id="Fill-14" fill="#A7166A"></path>
+                    <path d="M30.619,32.243 L30.619,152.649 C30.619,152.649 30.619,169.181 47.151,169.181 L53.059,169.181 C53.059,169.181 69.591,169.181 69.591,152.649 L69.591,32.243 L30.619,32.243" id="Fill-15" fill="#FFFFFF"></path>
+                    <path d="M30.619,32.243 L30.619,152.649 C30.619,152.649 30.619,169.181 47.151,169.181 L53.059,169.181 C53.059,169.181 69.591,169.181 69.591,152.649 L69.591,32.243 L30.619,32.243 L30.619,32.243 Z" id="Stroke-16" stroke="#FFFFFF" stroke-width="3.888"></path>
+                    <path d="M34.831,135.503 L34.831,151.461 C34.831,151.461 34.831,163.859 47.23,163.859 L52.227,163.859 C52.227,163.859 64.625,163.859 64.625,151.461 L64.625,135.503 L34.831,135.503" id="Fill-17" fill="#A7166A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg> </a> </div>
+      <div class="text-center"><p>Washington | New York | London | Nairobi</p></div>
+  </div>
+  
+<!--  
+    <small>
+      <br>
+      All SIMLab-owned content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.
+    </small>-->
+</footer>
+
+</body>
+</html>

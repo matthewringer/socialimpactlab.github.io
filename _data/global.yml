@@ -1,4 +1,5 @@
 #Global Data
+blog_path: "/blog"
 nav_items: 
   - path: "services"
   - { path: "blog" , text: "learning" }
@@ -8,21 +9,21 @@ nav_items:
 #Menu Data
 
 services:
- - { link: "Prototyping", icon: "icon-prototyping", first: "Idea and Concept", second: "Prototyping" }
- - { link: "Management", icon: "icon-management", first: "Technology Adoption", second: "Management" }
- - { link: "Evaluation", icon: "icon-evaluation", first: "Monitoring &", second: "Evaluation" }
- - { link: "Analysis", icon: "icon-analysis", first: "Policy & System", second: "Analysis" }
- - { link: "Subscription", icon: "icon-subscription", first: "Technology Coordination", second: "Subscription" }
+ - { link: "/services/prototyping", icon: "icon-prototyping", first: "Idea and Concept", second: "Prototyping" }
+ - { link: "/services/management", icon: "icon-management", first: "Technology Adoption", second: "Management" }
+ - { link: "/services/evaluation", icon: "icon-evaluation", first: "Monitoring &", second: "Evaluation" }
+ - { link: "/services/analysis", icon: "icon-analysis", first: "Policy & System", second: "Analysis" }
+ - { link: "/services/subscription", icon: "icon-subscription", first: "Technology Coordination", second: "Subscription" }
  
 learning:
-  - { link: "courses", icon: "icon-course", first: "Idea and Concept", second: "Prototyping" }
-  - { link: "casestudies", icon: "icon-casestudy", first: "Technology Adoption", second: "Management" }
-  - { link: "documentation", icon: "icon-documentation", first: "Monitoring", second: "Evaluation" }
-  - { link: "otherresources", icon: "icon-other", first: "Policy & System", second: "Analysis" }
+  - { link: "/courses", icon: "icon-course", first: "Idea and Concept", second: "Prototyping" }
+  - { link: "/casestudies", icon: "icon-casestudy", first: "Technology Adoption", second: "Management" }
+  - { link: "/documentation", icon: "icon-documentation", first: "Monitoring", second: "Evaluation" }
+  - { link: "/otherresources", icon: "icon-other", first: "Policy & System", second: "Analysis" }
   
 categories:
-  - { link: "courses", icon: "icon-course", first: "Courses", second: "Brief Explanation of section" }
-  - { link: "casestudies", icon: "icon-casestudy", first: "Case Studies", second: "Brief Explanation of section" }
-  - { link: "documentation", icon: "icon-documentation", first: "Documentation", second: "Brief Explanation of section" }
-  - { link: "otherresources", icon: "icon-other", first: "Other Resources", second: "Brief Explanation of section" }
+  - { link: "/courses", icon: "icon-course", first: "Courses", second: "Brief Explanation of section" }
+  - { link: "/casestudies", icon: "icon-casestudy", first: "Case Studies", second: "Brief Explanation of section" }
+  - { link: "/documentation", icon: "icon-documentation", first: "Documentation", second: "Brief Explanation of section" }
+  - { link: "/otherresources", icon: "icon-other", first: "Other Resources", second: "Brief Explanation of section" }
  

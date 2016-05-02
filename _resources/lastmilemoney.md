@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "SIMLab's experience in Kenya: Implementing a mobile money management tool and training approach in the last mile"
-date: 2015-09-05 14:25:00
-author: Kelly Church
+author: Kelly Church, SIMLab
 permalink: /resources/lastmilemoney/
 pdf: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
+categories: [resources, casestudies]
 category: resources
+date: 2015-09-05
 ---
-![desk](./images/dfidcase/Picture1.png)
+![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
 _SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
@@ -19,7 +20,7 @@ SIMLab defines inclusive technologies as those which embody values critical to t
 
 SIMLab's Last Mile Mobile Money Project helps small and medium-sized enterprises (SMEs) and under-resourced organizations explore available tools to realize the latent potential in mobile value transfer technologies for social change. SIMLab helped partners to break down barriers to innovation; both internally, through change management and business process consulting, and externally, through trainings on how to engage with and educate end-users to begin using accessible mobile money technologies. Through this project, SIMLab has been able to help organizations realize the uses and limitations of inclusive technologies and mobile money, while better understanding the types of organizational characteristics necessary in the implementation of digitization and cashless systems.
 
-##'Unbanked' in Kenya: providing financial services in the world's most mobile-first economy
+## 'Unbanked' in Kenya: providing financial services in the world's most mobile-first economy
 The 2014 annual report of the Africa Progress Panel (APP), a group headed by Kofi Annan, highlighted economic development as one of three major areas where progress was needed. For wealthier communities, financial inclusion is fairly easy&mdash;transferring, saving, and managing money are just an ATM or app away. For last-mile and low-income communities, these processes are not only far away, they're often impossibly complex and exclusionary. Poor physical infrastructure (roads, electricity), security risks, and lack of financial capital all prohibit those in last-mile communities from accessing global and regional markets, value chains, and financial services. These barriers preclude rural, poor, and other marginalized populations from accessing resources that could facilitate economic development&mdash;from starting their own businesses, accessing markets, insuring their crops, and planning for their future.
 
 These populations, often referred to as 'unbanked' for their lack of access to formal bank accounts, and the small and medium-sized enterprises (SMEs) and NGOs that serve them are impacted in very practical ways. For example, to access services or transmit funds, people may have to travel long distances while carrying large sums of cash, incurring heavy transportation costs and leaving them vulnerable to personal security risks.
@@ -191,7 +192,7 @@ Indicose plans to send SMS notifications about upcoming meetings, automatically 
 One of Indicose's main challenges is that as a community-based organization seeking to reduce poverty, and they have had a hard time sanctioning nonpayers, which has negatively affected the organization as a whole. The SACCO hopes that SMS automation and cleaner financial transactions will help members to better maintain their loans and uplift not only the SACCO, but the community as a whole.
 
 
-> This project was made possible thanks to:
+> *This project was made possible thanks to:*
 > ![UKaid]({{site.baseurl}}/images/dfidcase/Picture0.png)    
 
 ---

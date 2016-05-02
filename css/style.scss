@@ -3,12 +3,34 @@
 @import '../_sass/bootstrap';
 @import '../_sass/syntax-highlighting';
 @import '../_sass/icomoon';
+@import '../_sass/global';
 
+
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+//simlab colors
 $simlab-primary-magenta: #A7166A;
 $simlab-primary-black: #231f20;
 $simlab-primary-grey: #E9E9E9;
-
-
 $simlab-secondary-darkblue: #1B579F;
 $simlab-secondary-slate: #004650;
 $simlab-secondary-lightblue: #00AECE;
@@ -16,39 +38,6 @@ $simlab-secondary-yellow: #C6DB00;
 $simlab-secondary-green: #55BE47;
 $simlab-secondary-darkgreen: #2F6600;
 
-%opensans { font-family: 'Open Sans', sans-serif; }
-
-$phone-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 992px;
-
-@mixin minimum {
-  @media (min-width: 0) and (max-width: #{$phone-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin phone {
-  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-html {
-    //max-width: 2000px;
-}
 
 body {
     @extend %opensans;
@@ -75,17 +64,59 @@ a {
     padding: 7px 0 7px 0;
     width: 100%;
     height: auto;
-    //max-height: 200px;
 }
 
-// .container {
-//     margin-right: auto;
-//     margin-left: auto;
-// }
+.caption {
+    font-size: .7em;
+    font-style: italic;    
+}
 
 .extra-bold {
     font-weight: 900;
     font-stretch: ultra-condensed;
+}
+
+.bg-green {
+    background-color: $simlab-secondary-darkgreen;
+}
+
+.bg-twiter {
+    background-color: $twitter;
+}
+
+.bg-facebook {
+    background-color: $facebook;
+}
+
+.bg-googleplus {
+    background-color: $googleplus;
+}
+
+.bg-linkedin {
+    background-color: $linkedin;
+}
+
+.bg-digg {
+    //todo: unknown
+    background-color: $simlab-secondary-lightblue;
+}
+
+.bg-tumblr {
+    background-color: $tumblr;
+}
+
+.bg-reddit {
+    //todo: unknown
+    backface-color: $simlab-secondary-lightblue;
+}
+
+.bg-stumbleupon {
+    background-color: $stumbleupon;
+}
+
+.bg-hacker-news {
+    //todo: unknown
+    background-color: $simlab-secondary-lightblue;
 }
 
 .magenta {
@@ -105,7 +136,7 @@ a {
         
     }
     @include minimum {
-        height: 300px;
+        height: 260px;
         z-index: 2;
     }
 }
@@ -122,12 +153,18 @@ a {
     }
     @include minimum {
         background: $simlab-primary-black no-repeat 100 -100px;
-        z-index: 2;
     }
 }
 
 .default-page {
     background: $simlab-primary-black;
+}
+
+.shadow {
+    z-index: -2;
+    position: absolute;
+    background-color: #000000;
+    width:100%;
 }
 
 .header-background {
@@ -196,6 +233,9 @@ a {
     -ms-transform: skew(0deg,2.5deg); /* IE 9 */
     -webkit-transform: skew(0deg,2.5deg); /* Safari and Chrome */
     -webkit-backface-visibility: hidden;
+    @include minimum {
+      display: none;
+    }
 }
 
 .logo > svg {
@@ -317,11 +357,33 @@ hr {
     background-color: #FFFFFF;
 }
 
+
+.right-divider {
+    @include tablet {
+        border-right: 3px solid $simlab-primary-grey;
+        padding-right: 15px;
+    }
+    @include desktop {
+        border-right: 3px solid $simlab-primary-grey;
+        padding-right: 15px;
+    }
+}
+
+.left-divider {
+    @include tablet {
+        border-left: 3px solid $simlab-primary-grey;
+        padding-left: 15px;
+    }
+    @include desktop {
+        border-left: 3px solid $simlab-primary-grey;
+        padding-left: 15px;
+    }
+}
+
 .menu {
     @include desktop {
-        border-left: 1px solid $simlab-primary-grey;
         margin: 10px;
-        padding: 10px 0 10px 30px;
+        padding: 10px 0 10px 10px;
     }
     // Heading 
     > p {
@@ -330,7 +392,7 @@ hr {
         }
         padding-left: 4px;
         font-size: 0.9em;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         > a {
             padding-left: 15px;
             color: $simlab-primary-magenta;
@@ -411,59 +473,89 @@ footer {
     }
 }
 
-.social-buttons{
+.connect-links {
     min-height: 180px;
     padding: 10px;
     > h4 {
         font-weight: bold;
     }
-    > div > div {
+}
+
+.social-buttons{
+    padding: 10px;
+    > a { 
+        color: #FFFFFF; 
+        border-radius: 5px;
         padding: 10px;
-        > a { 
-            color: #FFFFFF; 
-            background-color: $simlab-secondary-darkgreen;
-            border-radius: 5px;
-            padding: 10px;
-            width: 100%;
-            max-width: 200px;
-            height: 40px;
-        }
-        
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
     }
 }
 
 .post-content{
-    margin: 0;
-    padding: 0;
+    padding-right: 15px;
 }
+
 .post-image { 
-    padding: 6px 0;
+    padding: 6px 0 0 15px;
 }
+
 .post-link {
     color: $simlab-primary-black;
+    
+    &:hover{
+        color: $simlab-primary-magenta;
+    }
 }
 
 .post-meta {
-    margin-left: -15px;
+    margin-left: -5px;
     
     > li { 
-        float: left;
-        height: 10px;
-        line-height: 4px;
-        padding: 3px 15px 7px 15px;
-        border-right: solid 1px $simlab-primary-black;
+        
+        padding: 3px 5px 7px 5px;
         font-size: .7em;
+        
+        @include tablet {
+            float: left;
+            border-right: solid 1px $simlab-primary-black;
+            line-height: 4px;
+            height: 10px;
         }
+        @include desktop {
+            float: left;
+            border-right: solid 1px $simlab-primary-black;
+            line-height: 4px;
+            height: 10px;
+        }    
+    }
 }
 
 .post-summary {
     margin-top: 35px;
-    font-size: .9em;
 }
 
 .search-links {
     float: left;
-    padding: 0 5px 0 5px;
+    padding: 0 5px 0 0;
+}
+
+.pagination {
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;    
+    border: 2px solid $simlab-primary-grey;
+}
+
+.left {
+    margin: 0 10px 0 0;
+    padding: 6px 0 0 6px;
+}
+
+.right {
+    margin: 0 0 0 10px;
+    padding: 6px 0 0 8px;
 }
 
 .footer-top {

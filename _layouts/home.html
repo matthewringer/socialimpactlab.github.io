@@ -11,19 +11,21 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-sm-8">
+            <div class="right-divider" style="min-height:350px;">
             <h4 class="extra-bold">{{ page.title }}</h4>
             {{content}}
+            </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             {% include menus/services %}
         </div>
     </div> <!--/row -->
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-6 col-md-6">
             <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded  img-inline">
         </div>
-        <div class="col-md-6">
+        <div class="col-xs-6 col-md-6">
             <img src="{{site.baseurl}}/images/front_resources.jpg" alt="..." class="img-rounded img-inline">
         </div>
     </div>

@@ -5,11 +5,13 @@
     {% include html/header %}
     <div class="container" role="{{page.role}}">
         <div class="row">
-            <div class="{% if page.menus %} col-md-8 {% else %} col-md-12 {% endif %}" >
+            <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %}" >
+                <div {% if page.menus %} class="right-divider"{% endif %}>
                     {{content}}
+                </div>    
             </div>
             {% if page.menus %}
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 {% for menu in page.menus %}
                   {% include menus/{{menu}} %}
                 {% endfor %}

@@ -1,15 +1,15 @@
-<div class="social-buttons">
+<div class="connect-links">
   <h4>Connect</h4>
   <p>Join our network and learn how we can use technology for social change.</p>
   <div class="row">
-    <div class="col-md-4">
-      <a class="fa fa-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+    <div class="col-xs-4 col-md-4 social-buttons">
+      <a class="fa fa-rss bg-green" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
     </div>  
-    <div class="col-md-4">  
-        <a class="fa fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"></a>
+    <div class="col-xs-4 col-md-4 social-buttons">  
+        <a class="fa fa-twitter bg-green" href="https://twitter.com/{{ site.twitter_username }}"></a>
     </div>  
-    <div class="col-md-4">  
-        <a class="fa fa-envelope" href="mailto:{{ site.email }}"></a>
+    <div class="col-xs-4 col-md-4 social-buttons">  
+        <a class="fa fa-envelope bg-green" href="mailto:{{ site.email }}"></a>
     </div>  
   </div>
 </div>

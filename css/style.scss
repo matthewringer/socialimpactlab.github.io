@@ -532,7 +532,7 @@ footer {
 }
 
 .course-signup {
-    min-height: 190px;
+    min-height: 203px;
     padding: 10px;
     > i {
         @include phone {
@@ -550,17 +550,11 @@ footer {
         padding: 20px;
         border-radius: 44px;
     }
-    > div > h4 {
-        font-weight: bold;
-    }
 }
 
 .connect-links {
-    min-height: 190px;
+    min-height: 203px;
     padding: 10px;
-    > h4 {
-        font-weight: bold;
-    }
 }
 
 .social-buttons{

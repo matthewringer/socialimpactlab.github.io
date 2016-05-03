@@ -2,7 +2,7 @@
     <h2 class="extra-bold">Learning</h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.learning %}
-        <li><a href={{site.baseurl}}{{item.link}}>
+        <li><a href="{{site.baseurl}}{{item.link}}">
             <i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
             <div><p><a href={{item.link}}>{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
         </li>

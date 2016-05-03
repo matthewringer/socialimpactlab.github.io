@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Early Warning System in Nigeria
+title: "Early Warning System in Nigeria"
 author: Valerie Oliphant, SIMLab
 category: resources
 permalink: /resources/EWSNigeria/

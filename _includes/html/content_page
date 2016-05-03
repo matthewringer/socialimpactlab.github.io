@@ -1,0 +1,8 @@
+{% assign array = include.array %}
+{% if site.paginate > array.size %}
+{% assign next_page = include.next_page %}
+{% endif %}
+{% assign previous_page = include.previous_page %}
+{% assign text = "Page" %}
+{% include html/posts_list_sidebar posts=array limit=site.paginate offset=0 %}
+{% include html/categories_pagination next_page=next_page previous_page=previous_page text=text %}

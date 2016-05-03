@@ -3,7 +3,7 @@ layout: page
 title: Services
 permalink: /services/
 headerimage: "/images/lightbulbs.jpeg"
-menus: [services, learning]
+menus: [services]
 ---
 
 Whether you're a non-profit, government, or aid agency, SIMLab can help you bring professional rigor to your technology for social change projects. We offer a range of services with flat pricing at all stages of your work, from idea to final evaluation.

@@ -39,11 +39,9 @@ $simlab-secondary-green: #55BE47;
 $simlab-secondary-darkgreen: #2F6600;
 
 
-body {
-    @extend %opensans;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-}
+// $headline-text: 48px;
+// $subheadline-text: 24px;
+// $regular-text: 16px;
 
 img {
     display: block;
@@ -59,21 +57,44 @@ a {
     }    
 }
 
-.img-inline {
-    margin: 0;
-    padding: 7px 0 7px 0;
-    width: 100%;
-    height: auto;
-}
-
 .caption {
-    font-size: .7em;
+    //TODO: differes from style guide
+    //font-size: .7em;
     font-style: italic;    
 }
 
 .extra-bold {
     font-weight: 900;
-    font-stretch: ultra-condensed;
+    font-stretch: expanded;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    @extend %opensans;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    font-stretch: condenses;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+}
+
+.img-inline {
+    margin: 0;
+    padding: 7px 0 7px 0;
+    width: 100%;
+    height: auto;
 }
 
 .bg-green {
@@ -123,8 +144,63 @@ a {
         color: $simlab-primary-magenta;
 }
 
+.home-wrapper {
+    width: 100%;
+    position: absolute;
+    @include desktop {
+        top:300px;
+    }
+    @include tablet {
+        top:270px;
+    }
+    @include phone {
+        top:230px;
+        
+    }
+    @include minimum {
+        top: 220px;
+    }   
+}
+
+.content-wrapper {
+    width: 100%;
+    position: absolute;
+    @include desktop {
+        top:330px;
+    }
+    @include tablet {
+        top:300px;
+    }
+    @include phone {
+        top:250px;
+        
+    }
+    @include minimum {
+        top: 260px;
+    }   
+}
+
+.headline {
+    position: absolute;
+    top: 70px;
+    @include phone {
+        font-size: 2em;
+    }
+    @include minimum {
+        font-size: 2em;
+    }
+}
+
+.titleline {
+    @include phone {
+        font-size: 2em;
+    }
+    @include minimum {
+        font-size: 2em;
+    }
+}
+
 .header {
-    
     @include desktop {
         height:350px;
     }
@@ -170,7 +246,7 @@ a {
 .header-background {
     z-index: -1;
     position: absolute;
-    opacity: .8;
+    opacity: .7;
     width:100%;
 }
 
@@ -254,7 +330,7 @@ a {
 .navbar-default .navbar-nav { 
     > li > a {
     color: #FFFFFF;
-    font-size: 14px;
+    //font-size: 14px;
     font-weight: bold;
     }
 }
@@ -263,7 +339,7 @@ a {
 	    text-align: right;
         &:hover {
             color: #FFFFFF;
-            text-decoration: underline;
+            //text-decoration: underline;
         }
 }
 
@@ -274,11 +350,6 @@ a {
     .collapsing {
 	    background-color: $simlab-primary-magenta;
     }
-}
-
-.headline {
-    position: absolute;
-    top: 70px;
 }
 
 // hr lines over and under search box
@@ -303,9 +374,10 @@ hr {
 
 
 @mixin setPlaceHolderColor { 
-    &::-webkit-input-placeholder, &:-moz-placeholder , &::-moz-placeholder, &:-ms-input-placeholder {
-        @content
-    }
+    ::-webkit-input-placeholder { @content }
+    :-moz-placeholder  { @content }
+    ::-moz-placeholder { @content } 
+    :-ms-input-placeholder { @content }
 }
 
 .search-header{
@@ -323,18 +395,24 @@ hr {
             z-index: 0;
             background-color: transparent;
             color: #FFFFFF;
-            font-weight: bold;
-            @include setPlaceHolderColor {
-                color: #FFFFFF;
-            }   
+            font-weight: bold; 
+            font-size: initial;
         }
+        @include setPlaceHolderColor {
+                color: #FFFFFF;
+            }  
     }
+}
+
+.form-control {
+    font-size: initial;
+    font-weight: bold; 
 }
 
 .search-result {
     > a { 
         color: $simlab-primary-black; 
-        line-height: 30px;
+        //line-height: 30px;
     }
     padding: 5px;
     text-overflow: ellipsis; 
@@ -342,6 +420,10 @@ hr {
     > i {
         color: $simlab-primary-magenta;
     }
+}
+
+.dropdown-menu {
+    font-size: initial;
 }
 
 .container.search-box {
@@ -391,7 +473,7 @@ hr {
             margin-top: 17px;
         }
         padding-left: 4px;
-        font-size: 0.9em;
+        //font-size: 0.9em;
         margin-bottom: 20px;
         > a {
             padding-left: 15px;
@@ -450,7 +532,7 @@ footer {
 }
 
 .course-signup {
-    min-height: 180px;
+    min-height: 190px;
     padding: 10px;
     > i {
         @include phone {
@@ -474,7 +556,7 @@ footer {
 }
 
 .connect-links {
-    min-height: 180px;
+    min-height: 190px;
     padding: 10px;
     > h4 {
         font-weight: bold;
@@ -498,11 +580,13 @@ footer {
 }
 
 .post-image { 
-    padding: 6px 0 0 15px;
+    margin-top: 10px;
+    //margin-right: 15px;
+    padding: 6px 15px 0 15px;
 }
 
 .post-link {
-    color: $simlab-primary-black;
+    color: $simlab-primary-magenta;
     
     &:hover{
         color: $simlab-primary-magenta;
@@ -510,13 +594,12 @@ footer {
 }
 
 .post-meta {
+    margin-top: 15px;
     margin-left: -5px;
-    
     > li { 
-        
+        //margin: 10px 0 10px 0;
         padding: 3px 5px 7px 5px;
-        font-size: .7em;
-        
+        //font-size: .7em;
         @include tablet {
             float: left;
             border-right: solid 1px $simlab-primary-black;
@@ -533,12 +616,16 @@ footer {
 }
 
 .post-summary {
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .search-links {
     float: left;
     padding: 0 5px 0 0;
+}
+
+.pagination-wrapper{
+    margin-top: 25px;    
 }
 
 .pagination {
@@ -556,6 +643,10 @@ footer {
 .right {
     margin: 0 0 0 10px;
     padding: 6px 0 0 8px;
+}
+
+.team-card {
+    min-height:480px;
 }
 
 .footer-top {

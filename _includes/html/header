@@ -8,7 +8,14 @@
             <h1 class="headline"> {{page.headline}} </h1>
             {% else %}
             <div class="container search-header headline">
-                <h4>{{page.title}}</h4>
+                {% if page.category %}
+                    {% assign title = page.category | capitalize %}
+                {% elsif page.categories %}
+                    {% assign title = page.categories | first | capitalize %}
+                {% else %}
+                    {% assign title = page.title %}
+                {% endif %}
+                <h2>{{title}}</h2>
                 <hr class="bold" /> 
                 {% include html/search_box %}
                 <hr class="light" />

@@ -1,3 +1,4 @@
+<div class="clearfix">
 <ul class="list-unstyled post-meta">
     <li >{{ include.post.date | date: site.date_format }}</li>
     {% if page.update_date %}
@@ -12,3 +13,4 @@
     <li style="border-right:none;">{% include html/search_links links=include.post.tags %}</li>
     {% endif %}
 </ul>
+</div>

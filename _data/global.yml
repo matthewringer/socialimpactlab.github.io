@@ -20,6 +20,8 @@ learning:
   - { link: "/casestudies", icon: "icon-casestudy", first: "Technology Adoption", second: "Management" }
   - { link: "/documentation", icon: "icon-documentation", first: "Monitoring", second: "Evaluation" }
   - { link: "/otherresources", icon: "icon-other", first: "Policy & System", second: "Analysis" }
+  - { link: "/otherresources", icon: "icon-analysis", first: "Policy & System", second: "Analysis" }
+  - { link: "/otherresources", icon: "icon-subscription", first: "Technology Coordination", second: "Subscription" }
   
 categories:
   - { link: "/courses", icon: "icon-course", first: "Courses", second: "Brief Explanation of section" }

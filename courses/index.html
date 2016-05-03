@@ -4,5 +4,11 @@ title: Courses
 headerimage: "/images/stories.jpg"
 nosearch: true
 ---
-{% include html/posts_list posts=site.posts filter="courses" %}
-
+{% assign array = site.categories.courses %}
+{% if site.paginate < array.size %}
+{% assign next_page = "/courses/page2" %}
+{% endif %}
+{% assign text = "Page" %}
+{% include html/posts_list posts=array limit=site.paginate offset=0 %}
+{% include html/categories_pagination next_page=next_page text=text %}
+ 

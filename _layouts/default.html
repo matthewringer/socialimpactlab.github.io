@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 {% include html/head %}
+
 <body>
     {% include html/header %}
-    <div class="container" role="{{page.role}}">
-        <div class="row">
-            <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %}" >
-                <div {% if page.menus %} class="right-divider"{% endif %}>
-                    {{content}}
-                </div>    
+    <div class="content-wrapper">
+        <div class="container" role="{{page.role}}">
+            <div class="row">
+                <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %}">
+                    <div {% if page.menus %} class="right-divider" {% endif %}>
+                        {{content}}
+                    </div>
+                </div>
+                {% if page.menus %}
+                <div class="col-sm-4">
+                    {% for menu in page.menus %} {% include menus/{{menu}} %} {% endfor %}
+                </div>
+                {% endif %}
             </div>
-            {% if page.menus %}
-            <div class="col-sm-4">
-                {% for menu in page.menus %}
-                  {% include menus/{{menu}} %}
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div> <!--/row -->
+            <!--/row -->
+        </div>
+        {% include html/footer %}
     </div>
-  {% include html/footer %}
 </body>
 </html>

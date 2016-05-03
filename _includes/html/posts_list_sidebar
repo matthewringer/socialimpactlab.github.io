@@ -5,21 +5,19 @@
 {% capture limit %} {{ include.posts.size  }} {% endcapture %}
 {% assign offset = 0 %}
 {% endif %}
-<div class="container " >
+<div class="container" >
   {% for post in include.posts limit:limit offset:offset %} 
     <div class="row ">
-    {% if post.teaseimage %}<div class="col-md-4 post-image">
-      <img src="{{site.baseurl}}{{post.teaseimage}}" alt="{{post.teaseimage-alttext}}" class="img-rounded img-inline">
-      </div>{% endif %}
-    <div class="{% if post.teaseimage %}col-md-4{% else %}col-md-7{% endif %} post-content">
-      <h4><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h4>
+    <div class="col-sm-7 post-content">
+      <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
       {% include html/post_metadata post=post %}
       <p class="post-summary">
-        {% if post.summary %}
-          {{ post.summary | strip_html }}
+         {% if post.summary %}
+          {% assign summary = post.summary %}
         {% else %}
-          {{ post.excerpt | strip_html }}
+          {% assign summary = post.excerpt %}
         {% endif %}
+        {{ summary | strip_newlines | strip | strip_html }}
       </p>
     </div>
   </div>  

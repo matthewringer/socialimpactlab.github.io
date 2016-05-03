@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Case Studies
+title: Resources
+permalink: /resources/page2
 headerimage: "/images/stories.jpg"
+menus: [categories]
 nosearch: true
 ---
-{% assign array = site.categories.casestudies | sort: 'date' | reverse %}
-{% assign previous_page = "/casestudies" %}
+{% assign array = site.categories.resources %}
+{% assign previous_page = "/resources" %}
 {% assign text = "Page" %}
 {% include html/posts_list_sidebar posts=array limit=array.size offset=site.paginate %}
 {% include html/categories_pagination previous_page=previous_page text=text %}

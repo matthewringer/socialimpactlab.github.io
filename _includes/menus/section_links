@@ -1,5 +1,5 @@
 <div class="menu">
-    <p class="extra-bold"> <i class="fa fa-lg icon-section magenta"></i> Section Quick Links</p>
+    <h2 class="extra-bold"> <i class="fa fa-lg icon-section magenta"></i> Section Quick Links</h2>
     <ul class="list-unstyled">
         {% for item in page.sections %}
         <li>

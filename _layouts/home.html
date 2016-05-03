@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
 {% include html/head %}
-<body >
-{% include html/header %}
-<div class="container search-box">
-        <h3>We are <span class="extra-bold">SIMLab</span><span class="extra-bold magenta">.</span></h3>
-        <hr class="bold" />
-        {% include html/search_box %}
-        <hr class="light" />
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="right-divider" style="min-height:350px;">
-            <h4 class="extra-bold">{{ page.title }}</h4>
-            {{content}}
+<body>
+    {% include html/header %}
+    <div class="home-wrapper">
+        <div class="container search-box">
+            <h1 class="titleline"> We are<span class="extra-bold">SIMLab</span><span class="extra-bold magenta">.</span></h1>
+            <hr class="bold" /> {% include html/search_box %}
+            <hr class="light" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="right-divider" style="min-height:350px;">
+                        <h2 class="extra-bold">{{ page.title }}</h2> {{content}}
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    {% include menus/services %}
+                </div>
+            </div>
+            <!--/row -->
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded  img-inline">
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <img src="{{site.baseurl}}/images/front_resources.jpg" alt="..." class="img-rounded img-inline">
+                </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            {% include menus/services %}
-        </div>
-    </div> <!--/row -->
-    <div class="row">
-        <div class="col-xs-6 col-md-6">
-            <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded  img-inline">
-        </div>
-        <div class="col-xs-6 col-md-6">
-            <img src="{{site.baseurl}}/images/front_resources.jpg" alt="..." class="img-rounded img-inline">
-        </div>
+        {% include html/footer %}
     </div>
-</div> 
-  {% include html/footer %}
+    <!-- content-wrapper -->
 </body>
+
 </html>

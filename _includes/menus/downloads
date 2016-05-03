@@ -1,5 +1,5 @@
 <div class="menu">
-    <p class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></p>
+    <h2 class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.services %}
         <li><a href={{item.link}}>

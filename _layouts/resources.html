@@ -3,18 +3,22 @@
 {% include html/head %}
 <body>
     {% include html/header %}
-    <div class="container" role="{{page.role}}">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="right-divider">
-                {{content}}
+    <div class="content-wrapper">
+        <div class="container" role="{{page.role}}">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="right-divider">
+                        {{content}}
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    {% include /menus/categories %}
                 </div>
             </div>
-            <div class="col-md-4">
-                {% include /menus/categories %}
-            </div>
-        </div> <!--/row -->
+            <!--/row -->
+        </div>
+        {% include html/footer %}
     </div>
-  {% include html/footer %}
 </body>
+
 </html>

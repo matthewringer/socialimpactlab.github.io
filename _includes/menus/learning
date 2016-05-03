@@ -1,5 +1,5 @@
 <div class="menu">
-    <p class="extra-bold">Learning</p>
+    <h2 class="extra-bold">Learning</h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.learning %}
         <li><a href={{item.link}}>

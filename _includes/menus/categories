@@ -1,6 +1,5 @@
 <div class="menu">
-    <p>All <span class="extra-bold">Categories</span> </p>
-    
+    <h2>All <span class="extra-bold">Categories</span> </h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.categories %}
         <li><a href={{item.link}}>

@@ -8,8 +8,8 @@ nosearch: true
 <div class="row">
 {% for page in site.pages%}
       {% if page.categories contains "staff" %}
-<div class="col-xs-6 col-md-4" style="min-height:400px;">
-  <a href="{{site.baseurl}}/team/{{page.locator}}" class="card">
+<div class="col-xs-6 col-md-4 team-card">
+  <a href="{{site.baseurl}}/team/{{page.locator}}">
       <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
       <h4 >{{page.title}}</h4>
       <p class="small"  >{{page.role}}</p>

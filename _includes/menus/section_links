@@ -9,9 +9,7 @@
         <a href="{{site.baseurl}}{{page.location}}#{{item}}">{{item}}</a>
         {% endif %}
         <br/>
-        
         <p class="small"> {{item.description}} </p>
-        
         </li>
         {% endfor %}
     </ul>

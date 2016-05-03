@@ -4,7 +4,7 @@
         {% for item in site.data.global.categories %}
         <li><a href="{{site.baseurl}}{{item.link}}">
             <i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
-            <div><p><a class="extra-bold" href={{item.link}}>{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
+            <div><p><a class="extra-bold" href="{{site.baseurl}}{{item.link}}">{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
         </li>
         {% endfor %}
     </ul>

@@ -8,7 +8,7 @@
         <div class="container" role="{{page.role}}">
             <div class="row">
                 <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %}">
-                    <div {% if page.menus %} class="right-divider" {% endif %}>
+                    <div id="render_me" {% if page.menus %} class="right-divider" {% endif %}>
                         {{content}}
                     </div>
                 </div>

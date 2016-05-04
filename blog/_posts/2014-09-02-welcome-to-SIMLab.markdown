@@ -8,8 +8,6 @@ excerpt: "Well, this is an exciting day. Welcome to the Social Impact Lab. For a
 tags: [development, OpenGov]
 ---
 
-{{site.baseurl}}
-
 Well, this is an exciting day.
 
 Welcome to the Social Impact Lab. For almost nine years, we’ve been the team behind FrontlineSMS, the world’s most-used text messaging platform. Our users have monitored elections, managed clinics, gathered research data, But as we’ve worked with organizations all over the world, in every sector of social change work, we’ve learned that getting the technology up and running is just ten percent of the problem&mdash;the real challenges are human, organisational, financial, and ethical.

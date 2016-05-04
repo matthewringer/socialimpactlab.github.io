@@ -1,11 +1,3 @@
-<!--{% if include.link %}
-    {% assign link = page.sections[link] %}
-{% else %}
-    {% assign link = include.text %}
-{% endif %}
-{% assign text = include.text %}
-<h2 id="{{link}}"><a href="{{site.baseurl}}{{page.location}}#{{link}}" >{{text}}</a></h2>-->
-
 {% assign id = include.id %}
 {% assign section = include.sections[id] %}
 {% if section.link %}

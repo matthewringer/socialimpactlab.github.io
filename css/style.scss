@@ -330,7 +330,7 @@ p {
 .navbar-default .navbar-nav { 
     > li > a {
     color: #FFFFFF;
-    //font-size: 14px;
+    font-size: .9em; //14px;
     font-weight: bold;
     }
 }
@@ -569,6 +569,10 @@ footer {
     }
 }
 
+.asset-seperator {
+    margin-bottom: 70px;
+}
+
 .post-content{
     padding-right: 15px;
 }
@@ -593,7 +597,7 @@ footer {
     > li { 
         //margin: 10px 0 10px 0;
         padding: 3px 5px 7px 5px;
-        //font-size: .7em;
+        font-size: .9em;
         @include tablet {
             float: left;
             border-right: solid 1px $simlab-primary-black;

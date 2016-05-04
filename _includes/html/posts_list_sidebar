@@ -7,8 +7,8 @@
 {% endif %}
 <div class="container" >
   {% for post in include.posts limit:limit offset:offset %} 
-    <div class="row ">
-    <div class="col-sm-7 post-content">
+    <div class="row post-list-item">
+    <div class="col-sm-7 asset-seperator">
       <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
       {% include html/post_metadata post=post %}
       <p class="post-summary">
@@ -20,6 +20,6 @@
         {{ summary | strip_newlines | strip | strip_html }}
       </p>
     </div>
-  </div>  
+  </div>
   {% endfor %}
 </div>

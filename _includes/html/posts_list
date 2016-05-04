@@ -7,7 +7,7 @@
 {% endif %}
 <div class="container" >
   {% for post in include.posts limit:limit offset:offset %}{% if post.category == include.filter or post.categories | contains: include.filter or include.filter == "" %}
-    <div class="row ">
+    <div class="row asset-seperator">
     {% if post.teaseimage %}<div class="col-md-4 post-image">
       <img src="{{site.baseurl}}{{post.teaseimage}}" alt="{{post.teaseimage-alttext}}" class="img-rounded img-inline">
       </div>{% endif %}
@@ -23,6 +23,6 @@
         {{ summary | strip_newlines | strip | strip_html | truncate: 320 }}
       </p>
     </div>
-  </div>  
+  </div>
   {%endif%}{% endfor %}
 </div>

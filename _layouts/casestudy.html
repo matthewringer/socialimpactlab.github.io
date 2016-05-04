@@ -7,7 +7,11 @@
     <div class="container" role="{{page.role}}">
       <div class="row">
         <div class="col-md-8">
-          {% include html/post_header sidebar=true %} {{ content }} {% include html/share_buttons %} {% include html/disqus_comments
+          <article id="content">
+          {% include html/post_header sidebar=true %} 
+          {{ content }} 
+          </article>
+          {% include html/share_buttons %} {% include html/disqus_comments
           %} {% include html/facebook_comments %} {% include html/related_posts %}
         </div>
         <div class="col-md-4">

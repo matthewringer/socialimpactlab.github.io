@@ -1,11 +1,6 @@
 <div class="menu">
-    <h2 class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
+    <h2 class="extra-bold"><span class="fa icon-download magenta"></span> Downloads </h2>
     <ul class="list-unstyled">
-        {% for item in site.data.global.services %}
-        <li><a href="{{site.baseurl}}{{item.link}}">
-            <i class="fa fa-2x {{item.icon}} pull-left"></i></a>
-            <div><p>{{item.first}}<br/><span><a class="extra-bold" href={{site.baseurl}}{{item.link}}>{{item.second}}</a></span></p></div>
-        </li>
-        {% endfor %}
+        <li><a href="#" id="download-pdf">Interactive PDF</a></li>
     </ul>
 </div>

@@ -1,6 +1,7 @@
 #Global Data
 blog_path: "/blog"
 nav_items: 
+  - { path: "", text: "home" }
   - path: "services"
   - { path: "blog" , text: "learning" }
   - path: "resources"

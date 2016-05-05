@@ -53,8 +53,19 @@ a {
     color: $simlab-primary-magenta; 
     &:hover { 
         text-decoration: none;
-        color: $simlab-primary-magenta; 
-    }    
+        color: $simlab-primary-magenta;
+    }
+}
+
+.disable-link
+{
+    text-decoration: none !important;
+    color: $simlab-primary-grey;
+    cursor: default;
+     &:hover { 
+        text-decoration: none;
+        color: $simlab-primary-grey;
+    }
 }
 
 .caption {

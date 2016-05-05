@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 title: We are SIMLab. <br> We help make technology work for everyone.
 permalink: /
 ---

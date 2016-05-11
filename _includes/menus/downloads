@@ -6,8 +6,8 @@
     </ul>
     {% else %}
     <ul class="list-unstyled">
-        <li><a id="create-pdf" href="#">PDF</a></li>
-    </ul>
+        <li><a id="create-pdf"  href="#">PDF</a></li>
+    </ul>  <!--data-toggle="modal" data-target="#myModal"-->
     {% endif %}
     {% if page.epub %}
     <ul class="list-unstyled">
@@ -49,3 +49,25 @@
         checkdownload("#download-epub","{{page.epub}}");
 </script>
 {% endif %}
+
+{% unless page.pdf %}
+<!--<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div id="print-preview" class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>-->
+{% endunless%}

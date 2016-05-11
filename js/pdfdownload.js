@@ -122,6 +122,7 @@ var fromHtml = function(){
 
 var fromHtml2 = function(){
     var doc = new jsPDF('p', 'pt', 'a4');
+    doc.encoding = 'WinAnsiEncoding'
     var specialElementHandlers = {
         '#pdfignore': function(element, renderer){
             return true;
@@ -131,7 +132,7 @@ var fromHtml2 = function(){
     margins = {
         top: 5,
         bottom: 5,
-        left: 10,
+        left: 50,
         width: 522
     }
 
@@ -147,7 +148,7 @@ var fromHtml2 = function(){
     
     var div = $('#content');
     
-    div.find("img").css( "width", "500px" );
+    //div.find("img").css( "width", "500px" );
     // function(){
     //     var width = (this.width <= 150)? this.width : 150;  //.css("width");
     //     return width+"px";
@@ -171,7 +172,7 @@ var fromHtml2 = function(){
 }
 
 
-var fromHtml3 = function(){
+var fromHtml3 = function() {
     
     // var div = $('#content');
     
@@ -215,41 +216,92 @@ var fromHtml3 = function(){
         var pathArray = window.location.pathname.split( '/' ).clean("");
         pdf.save(pathArray[pathArray.length-1] + '.pdf');
     }
+    
     var currentPageHeight = 0;
-    
-    //console.log($('#content'));
-    //console.log($('#content')[0]);
-    
-    // pdf.addHTML(document.body, 
-    // function() {
-    //     console.log('callback');
-    //      doc.save('sampler-file.pdf');
-    //     }
-    // );
-    
-    $('#content').children("*").each(function() {
-        console.log(this);
+    $('#content').clone().children("*").each(function() {
         var element = this;
         var nextSibling = element.nextElementSibling;
-        
-        if(nextSibling === null){
-            pdf.addHTML(element, callback);
-            return;
-        }
-        
-        if(currentPageHeight + element.clientHeight < 900)
-        {
+        if(nextSibling === null) {
+            pdf.addHTML( element, callback); 
+        } else if (currentPageHeight + element.clientHeight < 900) {
             currentPageHeight =+ element.clientHeight;
-            pdf.addHTML(element, callback);
-        }
-        else{
+            pdf.addHTML( element );
+        } else {
             pdf.addPage();
+            pdf.addHTML( element );
             currentPageHeight = element.clientHeight;
-            pdf.addHTML(element, callback);
         }
     });
+}
+
+var fromHtml4 = function() {
     
-    setTimeout(callback,6000);
+$("#print-preview").empty();
+//$("#myModal").modal("show");
+//A4 dimensions are *'width x height = 595 x 842 pt'.
+var promises = [];
+var newPage = function( element ){
+    return new Promise(function (resolve) 
+    {
+        var div = document.createElement("div");
+        div.id = element.id+"-preview";
+        $("#print-preview").append(div)
+        html2canvas(element, {
+        onrendered: function(canvas) {
+            $("#"+div.id).append(canvas);
+            $("#"+element.id).remove();
+            var data = canvas.toDataURL('image/png');
+            resolve(data);
+        }});
+    })
+}
+
+var count = 0;
+var page = 0;
+var temp_div = document.createElement("div");
+var children = $('#content').clone().children();
+for( var c = 0; c < children.length; c++ )
+{
+    temp_div.appendChild(children[c]);
+    if( count < 5 ) {
+        count++
+    } else {
+        count = 0;
+        page++;
+        var id = "page"+page;
+        temp_div.style = "width: 595px; height:842px; margin:15px; padding:15px; border:black 1px solid;";
+        temp_div.id = id;
+        $("#print-preview-footer").append(temp_div);
+        //$("#print-preview-footer").append($("#"+id).clone());
+        $("#"+id).addClass("pdf-page");
+        temp_div = document.createElement("div");
+    }
+}
+
+var pages = $("#print-preview-footer").children();
+pages.each(function(){
+    promises.push(newPage(this)); //$("#"+this.id)[0])
+});
+
+//promises.push(newPage("#print-preview-footer"));
+
+//promises.push(newPage("#disqus_thread"));
+
+//promises.push(newPage("#content"));
+
+//promises.push(newPage($("#print-preview-footer").find("#page2")[0]));
+
+var doc = new jsPDF();
+Promise.all( promises ).then(function (ru_text) { 
+    for( var p = 0; p < ru_text.length; p++ ) {
+        doc.addImage(ru_text[p], 'JPEG', 0,0);
+        //doc.text(20, 20, 'this is a page!');
+        doc.addPage();
+    }
+    //var pathArray = window.location.pathname.split( '/' ).clean("");
+    //doc.save(pathArray[pathArray.length-1] + '.pdf');
+    doc.save('page.pdf');
+    });
 }
 
 // var addElement = function( element ){
@@ -259,4 +311,140 @@ var fromHtml3 = function(){
 // }
 
 
-$('#create-pdf').click(fromHtml2);
+var fromHtml5 =  function(){
+
+    var build_canvases = function(i, elements, callback, canvases) {
+        if(typeof canvases === 'undefined') canvases = [];
+        if(i < elements.length) {
+        var element = elements[i]; //todo check
+        html2canvas(element, {
+            async: false,
+            //canvas: null,
+            onrendered: function(canvas) {
+                $("#print-preview").append(canvas);
+                canvases.push({"id":element.id, "data":canvas.toDataURL('image/png')});
+                build_canvases((i+1), elements, callback, canvases);
+            }});
+        } else {
+            callback(canvases);
+        }
+    }
+    
+    var count = 0;
+    var page = 0;
+    var temp_div = document.createElement("div");
+    var children = $('#content').clone().children();
+    for( var c = 0; c < children.length; c++ )
+    {
+        temp_div.appendChild(children[c]);
+        if( count < 5 ) {
+            count++
+        } else {
+            count = 0;
+            page++;
+            var id = "page"+page;
+            temp_div.style = "width: 500px; height: 800px; margin:15px; padding:15px; border:black 1px solid;";
+            temp_div.id = id;
+            $("#print-preview-footer").append(temp_div);
+            $("#"+id).addClass("pdf-page");
+            temp_div = document.createElement("div");
+        }
+    }
+    var elements = []
+    var pages = $("#print-preview-footer").children();
+        pages.each(function(){
+        elements.push(this);
+    });
+    
+    
+    //should block untill 
+    build_canvases(0,elements, function(ru_text){
+        for( var p = 0; p < ru_text.length; p++ ) {
+            doc.addImage(ru_text[p].data, 'JPEG', 0,0);
+            doc.addPage();
+        }
+        doc.save('page.pdf');
+    });
+}
+
+
+var fromHtml6 =  function(){
+    var count = 0;
+    var page = 0;
+    var temp_div = document.createElement("div");
+    var children = $('#content').clone().children();
+    for( var c = 0; c < children.length; c++ )
+    {
+        temp_div.appendChild(children[c]);
+        if( count < 5 ) {
+            count++
+        } else {
+            count = 0;
+            page++;
+            var id = "page"+page;
+            temp_div.style = "width: 500px; height: 800px; margin:15px; padding:15px; border:black 1px solid;";
+            temp_div.id = id;
+            $("#print-preview-footer").append(temp_div);
+            $("#print-preview").append($("#"+id).clone());
+            $("#"+id).addClass("pdf-page");
+            temp_div = document.createElement("div");
+        }
+    }
+    var promises = []
+    var pages = $("#print-preview-footer").children();
+        pages.each(function(){
+        promises.push(html2canvas(this));
+    });
+    
+    
+    //should block untill 
+    var doc = new jsPDF();
+    Promise.all( promises ).then(function (canvases) { 
+        for( var p = 0; p < canvases.length; p++ ) {
+            try{
+                $("#print-preview").append(canvas);
+            } catch(e){
+                console.log(e);
+            }
+            var data = canvases[p].toDataURL();
+            doc.addImage(data, 'JPEG', 0,0);
+            doc.addPage();
+        }
+        doc.save('page.pdf');
+    });
+}
+
+var fromHtml7 =  function(){
+    
+    var content = $('#content');
+    content.css("padding-left","15px");
+    var promise = html2canvas(content[0]);
+    Promise.all( [promise] ).then(function (c) { 
+        var canvas = c[0];
+        var imgData = canvas.toDataURL('image/png');
+        var imgWidth = 210; 
+        var pageHeight = 295;  
+        var imgHeight = canvas.height * imgWidth / canvas.width;
+        var heightLeft = imgHeight;
+
+        var doc = new jsPDF('p', 'mm');
+        var position = 0;
+
+        doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+
+        while (heightLeft >= 0) {
+            position = heightLeft - imgHeight;
+            doc.addPage();
+            doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+            heightLeft -= pageHeight;
+        }
+        doc.save('page.pdf');
+    });
+}
+
+$('#myModal').on('hidden', function () {
+    
+})
+
+$('#create-pdf').click(fromHtml7);

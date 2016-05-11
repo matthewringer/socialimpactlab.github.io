@@ -15,6 +15,7 @@
       <div class="text-center"><p>Washington | New York | London | Nairobi</p></div>
   </div>
   
+  <div id="print-preview-footer"></div>
 <!--  
     <small>
       <br>

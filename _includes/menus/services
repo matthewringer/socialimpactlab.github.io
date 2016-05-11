@@ -2,8 +2,9 @@
     <h2 class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.services %}
-        <li><a href="{{site.baseurl}}{{item.link}}">
-            <i class="fa fa-2x {{item.icon}} pull-left"></i></a>
+        <li>{% if site.data.global.showicons %}
+            <a href="{{site.baseurl}}{{item.link}}">
+            <i class="fa fa-2x {{item.icon}} pull-left"></i></a>{% endif %}
             <div><p>{{item.first}}<br/><span><a class="extra-bold" href={{site.baseurl}}{{item.link}}>{{item.second}}</a></span></p></div>
         </li>
         {% endfor %}

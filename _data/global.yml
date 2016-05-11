@@ -30,3 +30,4 @@ categories:
   - { link: "/documentation", icon: "icon-documentation", first: "Documentation", second: "Brief Explanation of section" }
   - { link: "/otherresources", icon: "icon-other", first: "Other Resources", second: "Brief Explanation of section" }
  
+ showicons: false

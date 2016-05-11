@@ -2,8 +2,9 @@
     <h2 class="extra-bold">Learning</h2>
     <ul class="list-unstyled">
         {% for item in site.data.global.learning %}
-        <li><a href="{{site.baseurl}}{{item.link}}">
-            <i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
+        <li>{% if site.data.global.showicons %}
+            <a href="{{site.baseurl}}{{item.link}}">
+            <i class="fa fa-2x {{item.icon}} pull-left"></i></a>{% endif %} 
             <div><p><a href={{site.baseurl}}{{item.link}}>{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
         </li>
         {% endfor %}

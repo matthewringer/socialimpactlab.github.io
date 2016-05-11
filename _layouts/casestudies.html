@@ -6,7 +6,7 @@
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 right-divider">
           <article id="content">
           {% include html/post_header sidebar=true %} 
           {{ content }} 
@@ -15,7 +15,7 @@
           %} {% include html/facebook_comments %} {% include html/related_posts %}
         </div>
         <div class="col-md-4">
-          <div class="menu-divider">
+          <div>
             {% include menus/downloads %} {% include menus/section_links %}
           </div>
         </div>
@@ -25,5 +25,4 @@
     {% include html/footer %}
   </div>
 </body>
-
 </html>

@@ -1,13 +1,13 @@
 <div class="container pagination-wrapper">
   <div class="col-md-6 pull-left" style="padding-left:0;">
     {% if include.previous_page %}
-    <a class="pagination-item" href="{{include.previous_page}}"><i class="fa fa-chevron-left pagination left"></i>Previous {{ include.text }}</a>    {% else %}
+    <a class="pagination-item" href="{{ site.baseurl }}{{include.previous_page}}"><i class="fa fa-chevron-left pagination left"></i>Previous {{ include.text }}</a>    {% else %}
     <i class="fa fa-chevron-left pagination left"></i><span>Previous {{include.text}}</span> {% endif %}
   </div>
   <div class="col-md-6">
     <div class="pull-right">
       {% if include.next_page %}
-      <a class="pull-right" href="{{include.next_page}}">Next {{include.text}}<i class="fa fa-chevron-right pagination right"></i></a>      {% else %}
+      <a class="pull-right" href="{{ site.baseurl }}{{include.next_page}}">Next {{include.text}}<i class="fa fa-chevron-right pagination right"></i></a>      {% else %}
       <span>Next {{include.text}}</span><i class="fa fa-chevron-right pagination right"></i> {% endif %}
     </div>
   </div>

@@ -7,7 +7,7 @@ menus: [categories]
 ---
 {% assign array = site.categories.resources %}
 {% if site.paginate < array.size %}
-{% assign next_page = "{site.baseurl}/resources/page2" %}
+{% assign next_page = "/resources/page2" %}
 {% endif %}
 {% assign text = "Page" %}
 {% include html/posts_list_sidebar posts=array limit=site.paginate offset=0 %}

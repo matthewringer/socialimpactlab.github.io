@@ -6,7 +6,7 @@ headerimage: "/images/stories.jpg"
 nosearch: true
 ---
 {% assign array = site.categories.documentation %}
-{% assign previous_page = "{site.baseurl}/documentation" %}
+{% assign previous_page = "/documentation" %}
 {% assign text = "Page" %}
 {% include html/posts_list_sidebar posts=array limit=array.size offset=site.paginate %}
 {% include html/categories_pagination previous_page=previous_page text=text %}

@@ -6,7 +6,7 @@ nosearch: true
 ---
 {% assign array = site.categories.casestudies %}
 {% if site.paginate < array.size %}
-{% assign next_page = "{site.baseurl}/casestudies/page2" %}
+{% assign next_page = "/casestudies/page2" %}
 {% endif %}
 {% assign text = "Page" %}
 {% include html/posts_list posts=array limit=site.paginate offset=0 %}

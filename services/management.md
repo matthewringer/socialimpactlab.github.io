@@ -6,4 +6,4 @@ headerimage: "/images/lightbulbs.jpeg"
 menus: [services, learning]
 ---
 
-# {% include icons/management size="5x" %} h1 5x
+# Management

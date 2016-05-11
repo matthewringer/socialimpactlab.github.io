@@ -6,4 +6,4 @@ headerimage: "/images/lightbulbs.jpeg"
 menus: [services, learning]
 ---
 
-# {% include icons/prototyping %} Idea to Prototype
+# Idea to Prototype

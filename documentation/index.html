@@ -6,7 +6,7 @@ nosearch: true
 ---
 {% assign array = site.categories.documentation %}
 {% if site.paginate < array.size %}
-{% assign next_page = "/documentation/page2" %}
+{% assign next_page = "{site.baseurl}/documentation/page2" %}
 {% endif %}
 {% assign text = "Page" %}
 {% include html/posts_list posts=array limit=site.paginate offset=0 %}

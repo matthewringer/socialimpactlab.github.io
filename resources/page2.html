@@ -7,7 +7,7 @@ menus: [categories]
 nosearch: true
 ---
 {% assign array = site.categories.resources %}
-{% assign previous_page = "/resources" %}
+{% assign previous_page = "{site.baseurl}/resources" %}
 {% assign text = "Page" %}
 {% include html/posts_list_sidebar posts=array limit=array.size offset=site.paginate %}
 {% include html/categories_pagination previous_page=previous_page text=text %}

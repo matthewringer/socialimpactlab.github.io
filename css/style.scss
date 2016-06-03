@@ -108,6 +108,10 @@ p {
     height: auto;
 }
 
+.bg-magenta {
+    background-color: $simlab-primary-magenta;
+}
+
 .bg-green {
     background-color: $simlab-secondary-darkgreen;
 }
@@ -536,12 +540,6 @@ hr {
         text-overflow: ellipsis;
     }
 }
-
-footer {
-    margin-top: 60px;
-    background-color: $simlab-primary-grey;
-}
-
 .course-signup {
     min-height: 203px;
     padding: 10px;
@@ -569,15 +567,27 @@ footer {
 }
 
 .social-buttons{
+    > li {
+        float:left;
+        padding:10px;
+    }
+}
+
+.round-button{
     padding: 10px;
-    > a { 
-        color: #FFFFFF; 
+    color: #FFFFFF; 
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.rectangle-button{
+    color: #FFFFFF; 
         border-radius: 5px;
         padding: 10px;
         width: 100%;
         max-width: 200px;
         height: 40px;
-    }
 }
 
 .asset-seperator {
@@ -658,47 +668,37 @@ footer {
     min-height:480px;
 }
 
-.footer-top {
-    min-height: 120px;
-    padding-bottom: 30px;
-    > div {        
-      > div  { 
-        min-height: 100px;
-        background-color: #FFFFFF;
-        border-top: solid 30px $simlab-primary-grey;
-        }
-        
-        .border-right {
-            @include desktop {
-                border-right: solid 15px $simlab-primary-grey;
-                border-left: solid 15px $simlab-primary-grey;   
-            }
-        }
-        .border-left {
-            @include desktop {
-                border-left: solid 15px $simlab-primary-grey;
-                border-right: solid 15px $simlab-primary-grey;
-            }
-        }
-        
-    }
-}
-
-.footer-bottom {
-    background-color: $simlab-primary-magenta;
-    min-height: 50px;
-    > div > p { 
-        margin-top: -20px;
-        color: #FFFFFF; 
-        padding-bottom: 20px; 
-    }
-    > div > a > svg {
-        margin-top: -5px;
+.small-logo{
+    position:relative;
+    top: -40px;
+    > a > svg {
+        position:relative;
+        top: 24px;
         height: 67.15px;
         width: 42.5px;
-    }
+        }
 }
 
+footer {
+    margin-top: 60px;
+    background-color: #FFFFFF;
+}
+
+.center { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-box{
+    background-color: lightgray;
+    border-radius: 0;
+}
+.subscribe-button{
+    background-color: $simlab-primary-magenta;
+    color: #FFFFFF;
+    border-radius: 0;
+    padding-top:9px;
+}
 
 #myModal .modal-dialog {
   width: 70%;

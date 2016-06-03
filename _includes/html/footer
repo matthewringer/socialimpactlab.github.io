@@ -1,25 +1,49 @@
 <footer>
-  <div class="container footer-top">
+  <div class="container">
     <div class="row">
-      <div class="col-md-6 border-right">
-        {% include html/course_signup %}
+      <div class="col-sm-4 border-left" style="min-height:130px;">
+        <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> SIM<b class="magenta">Lab</b></h2>
+        <div style="position:relative; top:-40px;">
+          {% include html/social_buttons %}
+        </div>
       </div>
-      <div class="col-md-6 border-left">
-        {% include html/social_buttons %}
+      <div class="col-sm-4 border-left left-divider right-divider" style="min-height:130px;">
+        <div class="col-sm-offset-3 col-sm-6" >
+          <h2>Site Map</h2> 
+          <ul class="list-unstyled">
+          {% for item in site.data.global.nav_items %}
+              <li><a href="{{ site.baseurl }}/{{ item.path }}"> {% if item.text %} {{ item.text }} {% else %} {{ item.path }} {% endif%}  </a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 border-right">
+        <div class="col-md-offset-3 col-sm-6" style="min-height:130px;">
+          <h2>Subscribe</h2>
+          <form  role="subscribe" autocomplete="off" > 
+            <div class="input-group no-border">
+                <input id="subscribe-box" name="q" type="text" class="form-control no-border subscribe-box" placeholder="Enter email address">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default no-border subscribe-button">
+                        <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    </button>
+                </span>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    
   </div>
-  <div class="footer-bottom">
-      <div class="text-center"> <a href="{{ site.baseurl }}/"> {% include svg/logo %} </a> </div>
-      <div class="text-center"><p>Washington | New York | London | Nairobi</p></div>
+  <hr class="light" />
+  <div class="container" style="padding-top:10px;">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>To work with us, send us an email at <a href="mailto:courses@simlab.org">courses@simlab.org</a></p>
+      </div>
+      <div class="col-sm-6">
+        <small><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> All SIMLab-owned content is licensed CC-BY-NC-SA 4.0.</a></small>
+      </div>
+    </div>
   </div>
-  
-  <div id="print-preview-footer"></div>
-<!--  
-    <small>
-      <br>
-      All SIMLab-owned content is licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a>.
-    </small>-->
-    <script type="text/javascript" src="{{site.baseurl}}/js/pdfdownload.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/pdfdownload.js"></script>
 </footer>

@@ -3,10 +3,10 @@ showicons: false
 blog_path: "/blog"
 nav_items: 
   - { path: "", text: "home" }
+  - path: "about"
   - path: "services"
-  - { path: "blog" , text: "learning" }
   - path: "resources"
-  - path: "stories"
+  - { path: "blog" , text: "stories" }
   - path: "team"
 #Menu Data
 

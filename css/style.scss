@@ -668,6 +668,16 @@ hr {
     min-height:480px;
 }
 
+.grid-item{
+    min-width: 200px;
+    min-height: 100px;
+    > img {
+        margin: auto;
+        max-width: 200px;
+        max-height: 50px;
+    }
+}
+
 .small-logo{
     position:relative;
     top: -40px;
@@ -698,6 +708,7 @@ footer {
     color: #FFFFFF;
     border-radius: 0;
     padding-top:9px;
+    padding-bottom:7.5px;
 }
 
 #myModal .modal-dialog {

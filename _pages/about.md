@@ -5,13 +5,10 @@ permalink: /about
 menus: [services]
 ---
 
-<!-- 
-
+## Partners, Clients, and Funders
 SIMLab is a nonprofit with a mission to realize a world where technology helps build societies that are equitable and inclusive. We help find the technologies that will be inclusive, and accessible, for the people you want to talk to and the contexts you need to work in; from radio to social media, from SMS to Whatsapp, from the mobile web to community noticeboards. We’ll help you deliver services, share information, and communicate with communities, generating new data and new conversations along the way.
 
-It won’t always be straightforward, and we’ll help uncover and share honest, difficult lessons. But we draw on social science, systems thinking, and human-centered design approaches, and our ten years of experience implementing technology projects in the world’s most difficult contexts. -->
-
-## Partners, Clients, and 
+It won’t always be straightforward, and we’ll help uncover and share honest, difficult lessons. But we draw on social science, systems thinking, and human-centered design approaches, and our ten years of experience implementing technology projects in the world’s most difficult contexts.
 
 Technology can transform social change work, bridging gaps and starting new conversations&mdash;or miss its mark, and push people further away.
 

@@ -2,24 +2,24 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 border-left" style="min-height:130px;">
-        <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> SIM<b class="magenta">Lab</b></h2>
+        <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> <span style="font-weight:lighter;">SIM</span><b class="magenta">Lab</b></h2>
         <div style="position:relative; top:-40px;">
           {% include html/social_buttons %}
         </div>
       </div>
       <div class="col-sm-4 border-left left-divider right-divider" style="min-height:130px;">
         <div class="col-sm-offset-3 col-sm-6" >
-          <h2>Site Map</h2> 
+          <h3>Site Map</h3>
           <ul class="list-unstyled">
           {% for item in site.data.global.nav_items %}
-              <li><a href="{{ site.baseurl }}/{{ item.path }}"> {% if item.text %} {{ item.text }} {% else %} {{ item.path }} {% endif%}  </a></li>
+              <li><a href="{{ site.baseurl }}/{{ item.path }}" style="color:#858585;" > {% if item.text %} {{ item.text | capitalize }} {% else %} {{ item.path | capitalize }} {% endif%}  </a></li>
           {% endfor %}
           </ul>
         </div>
       </div>
       <div class="col-sm-4 border-right">
         <div class="col-md-offset-1 col-sm-9" style="min-height:130px;">
-          <h2>Subscribe</h2>
+          <h3>Subscribe</h3>
           <!--<form  role="subscribe" autocomplete="off" > 
             <div class="input-group no-border">
                 <input id="subscribe-box" name="q" type="text" class="form-control no-border subscribe-box" placeholder="Enter email address">
@@ -41,8 +41,8 @@
       <div class="col-sm-6">
         <p>To work with us, send us an email at <a href="mailto:courses@simlab.org">courses@simlab.org</a></p>
       </div>
-      <div class="col-sm-6">
-        <small><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> All SIMLab-owned content is licensed CC-BY-NC-SA 4.0.</a></small>
+      <div class="col-sm-6 col-sm-push-1">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> All SIMLab-owned content is licensed CC-BY-NC-SA 4.0.</a>
       </div>
     </div>
   </div>

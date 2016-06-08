@@ -5,7 +5,7 @@
         <li>{% if site.data.global.showicons %}
             <a href="{{site.baseurl}}{{item.link}}">
             <i class="fa fa-2x {{item.icon}} pull-left"></i></a>{% endif %}
-            <div><p>{{item.first}}<br/><span><a class="extra-bold" href={{site.baseurl}}{{item.link}}>{{item.second}}</a></span></p></div>
+            <div><p><a class="extra-bold" href={{site.baseurl}}{{item.link}}>{{item.title}}</a><br/><span>{{item.description}}</span></p></div>
         </li>
         {% endfor %}
     </ul>

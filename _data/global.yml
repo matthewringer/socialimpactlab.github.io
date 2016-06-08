@@ -11,11 +11,11 @@ nav_items:
 #Menu Data
 
 services:
- - { link: "/services/prototyping", icon: "icon-prototyping", first: "Idea and Concept", second: "Prototyping" }
- - { link: "/services/management", icon: "icon-management", first: "Technology Adoption", second: "Management" }
- - { link: "/services/evaluation", icon: "icon-evaluation", first: "Monitoring &", second: "Evaluation" }
- - { link: "/services/analysis", icon: "icon-analysis", first: "Policy & System", second: "Analysis" }
- - { link: "/services/subscription", icon: "icon-subscription", first: "Technology Coordination", second: "Subscription" }
+ - { link: "/services/prototyping", icon: "icon-prototyping", title: "Service one", description: "description text" }
+ - { link: "/services/management", icon: "icon-management", title: "Service two", description: "description text" }
+ - { link: "/services/evaluation", icon: "icon-evaluation", title: "Service three", description: "description text" }
+ - { link: "/services/analysis", icon: "icon-analysis", title: "Service four", description: "description text" }
+ - { link: "/services/subscription", icon: "icon-subscription", title: "Service five", description: "description text" }
  
 learning:
   - { link: "/courses", icon: "icon-course", first: "Idea and Concept", second: "Prototyping" }

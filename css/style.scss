@@ -528,12 +528,9 @@ hr {
 }
 
 .scrollable-menu {
-    // position: relative;
     z-index: 100;
     height: auto;
-    //max-height: 200px;
     overflow-x: hidden;
-    //TODO: 
     text-overflow: ellipsis;
     width: 100% !important;
     > ul > li > a {
@@ -561,6 +558,14 @@ hr {
     }
 }
 
+.about-role {
+    //color:#858585;
+    color: $simlab-primary-black;
+    position: relative;
+    top:-10px;
+    line-height: 15px;
+}
+
 .connect-links {
     min-height: 203px;
     padding: 10px;
@@ -574,8 +579,13 @@ hr {
 }
 
 .round-button{
-    padding: 10px;
-    color: #FFFFFF; 
+    > a { 
+        color: #FFFFFF;
+        position: relative;
+        top: -3px;
+        left: 3px;
+    } 
+    margin-right: 10px;
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -716,9 +726,6 @@ footer {
 }
 
 .pdf-page {
-    //width:500px;
-    //height:900px;
-    //color: black;
     font-size: 15px;
     line-height: 1.5;
     @extend %opensans;

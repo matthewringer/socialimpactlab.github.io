@@ -4,6 +4,11 @@ title: Team
 permalink: /team/
 nosearch: true
 ---
+
+<h3>Our Team. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h3>
+<br/>
+<p>Intro to inviting collaboration. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 <p>Send us an email to join the collaboration. <a href="mailto:hello@simlab.org">hello@simlab.org</a></p>
 <div class="row">
 {% for page in site.pages%}
@@ -11,8 +16,8 @@ nosearch: true
 <div class="col-xs-6 col-md-4 team-card">
   <a href="{{site.baseurl}}/team/{{page.locator}}">
       <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
-      <h4 >{{page.title}}</h4>
-      <p class="small"  >{{page.role}}</p>
+      <h4><b>{{page.title}}</b></h4>
+      <p class="small about-role">{{page.role}}</p>
   </a>
 </div>
  {% endif %}

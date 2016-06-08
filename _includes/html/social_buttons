@@ -1,11 +1,11 @@
 <ul class="list-unstyled social-buttons">
-  <li>
-    <a class="fa fa-rss bg-magenta round-button" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+  <li class="bg-magenta round-button">
+    <a class="fa fa-rss " href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
   </li>
-  <li>
-    <a class="fa fa-twitter bg-magenta round-button" href="https://twitter.com/{{ site.twitter_username }}"></a>
+  <li class="bg-magenta round-button">
+    <a class="fa fa-twitter " href="https://twitter.com/{{ site.twitter_username }}"></a>
     </li>
-    <li>
-      <a class="fa fa-envelope bg-magenta round-button" href="mailto:{{ site.email }}"></a>
+    <li class="bg-magenta round-button" >
+      <a class="fa fa-envelope" style="left:0;" href="mailto:{{ site.email }}"></a>
   </li>  
 </ul>

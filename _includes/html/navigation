@@ -8,7 +8,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="{{ site.baseurl }}/" class="logo">{% include svg/logo_white %}</a>
+      <a href="{{ site.baseurl }}/" class="logo">
+      <img src="{{site.baseurl}}/images/SIMLab_Horizontal_White.png" style="width:170px;"></img>
+       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

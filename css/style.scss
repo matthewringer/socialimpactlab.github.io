@@ -328,7 +328,6 @@ p {
     position: relative;
     @include desktop {
         margin-top:-50px;
-        height: 300px;
     }
     @include tablet {
         margin-top:-25px;

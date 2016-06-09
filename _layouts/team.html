@@ -3,16 +3,16 @@
 {% include html/head headerimage="/images/resources.jpg"%}
 <body>
     {% include html/header %}
-    <div class="content-wrapper">
+    <div class="content-wrapper" style="margin-top:50px;">
         <div class="container" role="{{page.role}}">
             <div class="row">
                 <div class="col-sm-8 right-divider">
-                    <article id="content">
-                    {{content}}
-                    </article>
+                        <article id="content">
+                        {{content}}
+                        </article>
                 </div>
                 <div class="col-sm-4">
-                    {% include /menus/categories %}
+                    {% include /menus/team_member %}
                 </div>
             </div>
             <!--/row -->

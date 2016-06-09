@@ -10,23 +10,14 @@
             <hr class="light" />
         </div>
         <div class="container">
+            {% include html/features %}
             <div class="row">
-                <div class="col-sm-8">
-                    <div class="right-divider" style="min-height:350px;">
-                        <h2 class="extra-bold">{{ page.title }}</h2> {{content}}
-                    </div>
+                <div class="col-sm-8 right-divider" style="min-height:350px;">
+                    <h2 class="extra-bold">{{ page.title }}</h2> 
+                    {{content}}
                 </div>
                 <div class="col-sm-4">
                     {% include menus/services %}
-                </div>
-            </div>
-            <!--/row -->
-            <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    <img src="{{site.baseurl}}/images/front_projects.jpg" alt="..." class="img-rounded  img-inline">
-                </div>
-                <div class="col-xs-6 col-md-6">
-                    <img src="{{site.baseurl}}/images/front_resources.jpg" alt="..." class="img-rounded img-inline">
                 </div>
             </div>
         </div>

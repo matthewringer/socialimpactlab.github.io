@@ -6,10 +6,15 @@ categories: staff
 twitter: valoliphant
 permalink: /team/valerie/
 image: valerie_big.jpg
-layout: page
+layout: team
 tags:
 - governance
 - education
+
+email: tbd@simlab.org
+skype: tbd_simlab
+twitter: "@tbd_simlab"
+contact-info: "contact description text here"
 ---
 
 ![valerie]({{site.baseurl}}/images/valerie_big.jpg)

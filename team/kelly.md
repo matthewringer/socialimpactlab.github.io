@@ -7,9 +7,13 @@ categories: staff
 permalink: /team/kelly/
 twitter: kellyMchurch
 image: kelly_big.jpg
-layout: page
+layout: team
 tags:
 - credit
+email: kellychurch@simlab.org
+skype: kchurch_simlab
+twitter: "@kelly_simlab"
+contact-info: "contact description text here"
 ---
 ![kelly]({{site.baseurl}}/images/kelly_big.jpg)
 

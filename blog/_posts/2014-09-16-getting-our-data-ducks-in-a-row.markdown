@@ -2,7 +2,7 @@
 layout: post
 title: "Getting our Data Ducks in a Row"
 date: 2014-09-16 12:06:00
-categories: [blog, stories]
+categories: [blog, stories, feature]
 author: Laura Walker McDonald
 teaseimage: /images/post_images/sean-at-mombasa.jpg
 tags: [development, OpenGov]

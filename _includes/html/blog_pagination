@@ -2,9 +2,9 @@
 <div class="container pagination-wrapper">
   <div class="col-md-6 pull-left" style="padding-left:0;">
     {% if paginator.previous_page %}
-    <a class="pagination-item" {% if paginator.page==2 %} href="{{ site.baseurl }}{{ blog }}/" {% else %} href="{{ site.baseurl }}{{ blog }}/page{{paginator.previous_page}}/"
+    <a class="pagination-item" {% if paginator.page == 2 %} href="{{ site.baseurl }}{{ blog }}/" {% else %} href="{{ site.baseurl }}{{ blog }}/page{{paginator.previous_page}}/"
       {% endif %}><i class="fa fa-chevron-left pagination left"></i>Previous Page</a> {% else %}
-    <i class="fa fa-chevron-left pagination left"></i><span>Previous Page</span> {% endif %}
+    <i class="fa fa-chevron-left pagination left"></i><span>Previous Page</span>{% endif %}
   </div>
   <div class="col-md-6">
     <div class="pull-right">

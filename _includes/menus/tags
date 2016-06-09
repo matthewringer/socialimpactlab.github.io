@@ -1,0 +1,21 @@
+<div class="menu">
+    <h2><span class="lighter">Blog</span> Tags</h2>
+    <ul class="list-unstyled">
+     {% for tag in site.tags  %}
+     {% assign t = tag | first %}
+     <li>
+     <a href="{{ site.baseurl }}/search/?q={{t}}" class="post-link extra-bold">{{ t | upcase }}</a>
+     </li>
+     {% endfor %}
+     </ul>
+     <br/>
+     <h2><span class="lighter">Blog</span> Categories</h2>
+    <ul class="list-unstyled">
+     {% for tag in site.categories  %}
+     {% assign t = tag | first %}
+     <li>
+     <a href="{{ site.baseurl }}/search/?q={{t}}" class="post-link extra-bold">{{ t | upcase }}</a>
+     </li>
+     {% endfor %}
+     </ul>
+</div>

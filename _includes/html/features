@@ -1,0 +1,11 @@
+<div class="row">
+    {% for tag in site.categories  %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+        {% if t == "feature" %}
+            {% for post in posts %}
+                {% include html/feature-block post=post %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>

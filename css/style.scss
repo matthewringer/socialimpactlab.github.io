@@ -74,6 +74,10 @@ a {
     font-style: italic;    
 }
 
+.lighter {
+    font-weight:lighter;
+}
+
 .extra-bold {
     font-weight: 900;
     font-stretch: expanded;
@@ -84,6 +88,7 @@ body {
     line-height: 1.5;
     @extend %opensans;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 h1 {
@@ -198,7 +203,15 @@ p {
 .headline {
     position: absolute;
     top: 70px;
+    @include desktop {
+        padding-right: 55px;
+    }
+    @include tablet {
+        padding-right: 25px;
+        top:300px;
+    }
     @include phone {
+        padding-right: 25px;
         font-size: 2em;
     }
     @include minimum {
@@ -256,6 +269,9 @@ p {
     position: absolute;
     background-color: #000000;
     width:100%;
+    @include desktop {
+        width: 1170px;    
+    }
 }
 
 .header-background {
@@ -263,6 +279,10 @@ p {
     position: absolute;
     opacity: .7;
     width:100%;
+    @include desktop {
+        width: 1170px;
+        margin: auto;    
+    }
 }
 
 .angled-header{
@@ -308,6 +328,7 @@ p {
     position: relative;
     @include desktop {
         margin-top:-50px;
+        height: 300px;
     }
     @include tablet {
         margin-top:-25px;
@@ -642,6 +663,11 @@ hr {
             height: 10px;
         }    
     }
+}
+
+.feature {
+    padding-top:75px;
+    min-height: 250px;
 }
 
 .post-summary {

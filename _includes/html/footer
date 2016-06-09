@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 border-left" style="min-height:130px;">
-        <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> <span style="font-weight:lighter;">SIM</span><b class="magenta">Lab</b></h2>
-        <div style="position:relative; top:-40px;">
+        <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> <span class="lighter">SIM</span><b class="magenta">Lab</b></h2>
+        <div style="position:relative; top:-30px;">
           {% include html/social_buttons %}
         </div>
       </div>
@@ -35,6 +35,7 @@
       </div>
     </div>
   </div>
+  <br/>
   <hr class="light" />
   <div class="container" style="padding-top:10px;">
     <div class="row">

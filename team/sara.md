@@ -4,7 +4,12 @@ locator: sara
 role: Project Manager
 categories: staff
 permalink: /team/sara/
-layout: page
+layout: team
+
+email: tbd@simlab.org
+skype: tbd_simlab
+twitter: "@tbd_simlab"
+contact-info: "contact description text here"
 ---
 ![sara]({{site.baseurl}}/images/sara_big.jpg)
 

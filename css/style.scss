@@ -201,8 +201,7 @@ p {
 }
 
 .headline {
-    position: absolute;
-    top: 70px;
+    
     @include desktop {
         padding-right: 55px;
     }
@@ -213,9 +212,13 @@ p {
     @include phone {
         padding-right: 25px;
         font-size: 2em;
+        position: absolute;
+        top: 70px;
     }
     @include minimum {
         font-size: 2em;
+        position: absolute;
+        top: 70px;
     }
 }
 

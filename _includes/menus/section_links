@@ -2,7 +2,7 @@
     <h2 class="extra-bold"> <i class="fa fa-lg icon-section magenta"></i> Section Quick Links</h2>
     <ul class="list-unstyled">
         {% for item in page.sections %}
-        <li>
+        <li class="section-link">
         {% if item.link and item.text %}
         <a class="extra-bold" href="{{site.baseurl}}{{page.location}}#{{item.link}}">{{item.text}}</a>
         {% else %}

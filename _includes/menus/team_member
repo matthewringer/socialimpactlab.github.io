@@ -19,7 +19,7 @@
     <h2 class="extra-bold">Posts by {{page.locator | capitalize }} </h2>
      {% for post in site.posts  %}
      {% if post.author == page.title %}
-     <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
+     <h4><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h4>
      {% endif %}
      {% endfor %}
     

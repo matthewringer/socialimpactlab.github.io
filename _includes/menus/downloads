@@ -2,11 +2,11 @@
     <h2 class="extra-bold"><span class="fa icon-download magenta"></span> Downloads </h2>
     {% if page.pdf %}
     <ul class="list-unstyled">
-        <li id="download-pdf"><a href="{{site.baseurl}}{{page.pdf}}" download>Interactive PDF</a></li>
+        <li id="download-pdf"><a class="extra-bold" href="{{site.baseurl}}{{page.pdf}}" download>Interactive PDF</a></li>
     </ul>
     {% else %}
     <ul class="list-unstyled">
-        <li><a id="create-pdf"  href="#">PDF</a></li>
+        <li><a id="create-pdf" class="extra-bold" href="#">PDF</a></li>
     </ul>  <!--data-toggle="modal" data-target="#myModal"-->
     {% endif %}
     {% if page.epub %}

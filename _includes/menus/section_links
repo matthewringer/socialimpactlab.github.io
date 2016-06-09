@@ -4,9 +4,9 @@
         {% for item in page.sections %}
         <li>
         {% if item.link and item.text %}
-        <a href="{{site.baseurl}}{{page.location}}#{{item.link}}">{{item.text}}</a>
+        <a class="extra-bold" href="{{site.baseurl}}{{page.location}}#{{item.link}}">{{item.text}}</a>
         {% else %}
-        <a href="{{site.baseurl}}{{page.location}}#{{item}}">{{item}}</a>
+        <a class="extra-bold" href="{{site.baseurl}}{{page.location}}#{{item}}">{{item}}</a>
         {% endif %}
         <br/>
         <p class="small"> {{item.description}} </p>

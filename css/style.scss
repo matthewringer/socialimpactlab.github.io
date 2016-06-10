@@ -597,6 +597,14 @@ hr {
     min-height: 203px;
     padding: 10px;
 }
+.share-buttons{
+    a { color: white;
+        padding: 12px 10px 10px 13.5px;
+        height: 40px;
+        width: 40px;
+        float: left;
+    }
+}
 
 .social-buttons{
     > li {

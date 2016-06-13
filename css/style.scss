@@ -168,13 +168,13 @@ p {
     width: 100%;
     position: absolute;
     @include desktop {
-        top:300px;
+        top:330px;
     }
     @include tablet {
-        top:270px;
+        top:300px;
     }
     @include phone {
-        top:230px;
+        top:240px;
         
     }
     @include minimum {
@@ -204,6 +204,8 @@ p {
     
     @include desktop {
         padding-right: 55px;
+        padding-top: 25px;
+        font-size: 2.75em;
     }
     @include tablet {
         padding-right: 25px;
@@ -211,7 +213,7 @@ p {
     }
     @include phone {
         padding-right: 25px;
-        font-size: 2em;
+        font-size: 1.6em;
         position: absolute;
         top: 70px;
     }
@@ -233,7 +235,7 @@ p {
 
 .header {
     @include desktop {
-        height:350px;
+        height:550px;
     }
     @include tablet {
         height:300px;
@@ -273,8 +275,15 @@ p {
     background-color: #000000;
     width:100%;
     @include desktop {
-        width: 1170px;    
+        width: 2880px;    
     }
+}
+.header-wrapper{
+    @include desktop {
+        width: 2880px;    
+    }
+    padding:0; 
+    background-color:#FFFFFF;
 }
 
 .header-background {
@@ -283,7 +292,7 @@ p {
     opacity: .7;
     width:100%;
     @include desktop {
-        width: 1170px;
+        width: 2880px;
         margin: auto;    
     }
 }
@@ -330,7 +339,8 @@ p {
 #backshape {
     position: relative;
     @include desktop {
-        margin-top:-50px;
+        margin-top:-250px;
+        height: 330px;
     }
     @include tablet {
         margin-top:-25px;
@@ -352,11 +362,11 @@ p {
     }
 }
 
-.logo > svg {
-    margin-left: 10px;
-    margin-top: -10px;
-    height: 67.15px;
-    width: 42.5px;
+.logo {
+    img {
+        width:200px; 
+        padding-top:8px;
+    }
 }
 
 .navbar-default {
@@ -370,6 +380,12 @@ p {
     color: #FFFFFF;
     font-size: .9em; //14px;
     font-weight: bold;
+    }
+}
+
+.navbar-right {
+    @include tablet {
+        margin-right: -38px;
     }
 }
 

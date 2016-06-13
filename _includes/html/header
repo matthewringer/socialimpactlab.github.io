@@ -4,7 +4,7 @@
 {% assign headerimage = include.headerimage %}
 {% endif %}
 <header>
-    <div class="container" style="padding:0; background-color:#FFFFFF;" >
+    <div class="container header-wrapper" style="" >
     <div class="header shadow"></div>
     <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{headerimage}}'); background-size: cover;"></div></div>
     <div class="header angled-header">

@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="{{ site.baseurl }}/" class="logo">
-      <img src="{{site.baseurl}}/images/SIMLab_Horizontal_White.png" style="width:170px;"></img>
+      <img src="{{site.baseurl}}/images/SIMLab_Horizontal_White.png" ></img>
        </a>
     </div>
 

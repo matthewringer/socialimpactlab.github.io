@@ -4,8 +4,14 @@
   </li>
   <li class="bg-magenta round-button">
     <a class="fa fa-twitter " href="https://twitter.com/{{ site.twitter_username }}"></a>
-    </li>
-    <li class="bg-magenta round-button" >
-      <a class="fa fa-envelope" style="left:0;" href="mailto:{{ site.email }}"></a>
-  </li>  
+  </li>
+  <li class="bg-magenta round-button" >
+      <a class="fa fa-envelope" style="left:1px;" href="mailto:{{ site.email }}"></a>
+  </li>
+  <li class="bg-magenta round-button" >
+      <a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}/?fref=nf"></a>
+  </li> 
+  <li class="bg-magenta round-button" >
+      <a class="fa fa-linkedin"  href="https://www.linkedin.com/company/{{ site.linkedin_username }}?trk=company_logo"></a>
+  </li>
 </ul>

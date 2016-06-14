@@ -100,6 +100,8 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -521,6 +523,9 @@ hr {
 }
 
 .menu {
+    h2 { 
+        padding-top: 10px;
+    }
     @include desktop {
         margin: 10px;
         padding: 10px 0 10px 10px;
@@ -773,6 +778,12 @@ footer {
     background-color: #FFFFFF;
 }
 
+.address {
+    padding-top: 0px;
+    position: relative;
+    margin: 15px 0 0px;
+    top: -14px;
+}
 .center { 
     margin-left: auto;
     margin-right: auto;

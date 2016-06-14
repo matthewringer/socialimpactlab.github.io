@@ -5,8 +5,8 @@ permalink: /about
 menus: [services]
 ---
 
-<h3>We are SIMLab. <br> We help make technology work for everyone.</h3>
-<br/>
+## We are SIMLab. <br> We help make technology work for everyone.
+
 Technology can transform social change work, bridging gaps and starting new conversations—or miss its mark, and push people further away.
 
 SIMLab is a nonprofit with a mission to realize a world where technology helps build societies that are equitable and inclusive. We help find the technologies that will be inclusive, and accessible, for the people you want to talk to and the contexts you need to work in; from radio to social media, from SMS to Whatsapp, from the mobile web to community noticeboards. We’ll help you deliver services, share information, and communicate with communities, generating new data and new conversations along the way.
@@ -14,7 +14,7 @@ SIMLab is a nonprofit with a mission to realize a world where technology helps b
 It won’t always be straightforward, and we’ll help uncover and share honest, difficult lessons. But we draw on social science, systems thinking, and human-centered design approaches, and our ten years of experience implementing technology projects in the world’s most difficult contexts.
 
 Send us an email at <a href="mailto:courses@simlab.org">courses@simlab.org</a>
-<br/>
+
 
 ## Partners, Clients, and Funders
 <br/>

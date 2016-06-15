@@ -1,13 +1,15 @@
 {{#results}}
   <div id='{{id}}' class="row">
-    <div class="row">
-      <h4><a href='{{url}}'>{{title}}</a></h4>
-    </div>
-    <div class="row">
-      {{{ links }}}
-    </div>
-    <div class="row">
-      <p>{{excerpt}}</p>
+    <div class="col-sm-12 post-header">
+      <h2><a href='{{url}}'>{{title}}</a></h2>
+      <div class="clearfix">
+        <ul class="list-unstyled post-meta">
+          <li style="padding-left:5px;">{{date}}</li>
+          {{{ author }}}
+          <li style="border-right:none;">{{{ links }}}</li>
+        </ul>
+      </div>
+      <p class="post-summary">{{excerpt}}</p>
     </div>
   </div>
 {{/results}}

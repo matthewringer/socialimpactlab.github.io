@@ -7,4 +7,4 @@
     {% assign link = section %}
     {% assign text = section %}
 {% endif %}
-<h2 id="{{link}}"><a href="{{site.baseurl}}{{page.location}}#{{link}}" >{{text}}</a></h2>
+<h2 id="{{link}}"><a href="{{site.baseurl}}{{page.url}}#{{link}}" >{{text}}</a></h2>

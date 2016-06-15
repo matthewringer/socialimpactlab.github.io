@@ -2,7 +2,7 @@
 layout: page
 title: Services
 permalink: /services/
-headerimage: "/images/lightbulbs.jpeg"
+headerimage: "/images/services_header.jpg"
 menus: [services]
 ---
 

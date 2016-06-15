@@ -48,8 +48,8 @@ function getParameterByName(name, url) {
 
   var search = function(query){
     var results = index.search(query)
-     return results.map(function (result) {
-      return results_data.filter(function (q) { return q.id === parseInt(result.ref, 10) })[0]
+     return results.map(function (result) { //parseInt(result.ref, 10)
+      return results_data.filter(function (q) { return q.id === result.ref })[0]
     });
   }
   
@@ -74,25 +74,20 @@ function getParameterByName(name, url) {
                     categories: docs[i].categories,
                     tags: docs[i].tags, 
                     exerpt: docs[i].exerpt,
-                    url: docs[i].url }); }
+                    author: docs[i].author,
+                    url: docs[i].url,
+                    date: docs[i].date }); }
   };
   
   console.time('load')
   addDocs(index, rawDocs.pages);
-  window.idx = addDocs(index, rawDocs.posts); 
+  addDocs(index, rawDocs.posts); 
+  addDocs(index, rawDocs.casestudies);
+  addDocs(index, rawDocs.courses);
+  addDocs(index, rawDocs.documentation);
+  window.idx = addDocs(index, rawDocs.resources); 
   console.timeEnd('load')
 
-  var posts = JSON.parse(doc_data).posts.map(function (raw) {
-    return {
-      id: raw.id,
-      title: raw.title,
-      links: raw.links,
-      excerpt: raw.excerpt,
-      url: raw.url,
-      icon: "fa-feed"
-    }
-  })
-  
   var pages = JSON.parse(doc_data).pages.map(function (raw) {
     return {
       id: raw.id,
@@ -100,11 +95,78 @@ function getParameterByName(name, url) {
       links: raw.links,
       excerpt: raw.excerpt,
       url: raw.url,
+      author: raw.author,
+      date: raw.date,
+      icon: "fa-university" //todo hook in other icons
+    }});
+    
+  var posts = JSON.parse(doc_data).posts.map(function (raw) {
+    return {
+      id: raw.id,
+      title: raw.title,
+      links: raw.links,
+      excerpt: raw.excerpt,
+      url: raw.url,
+      author: raw.author,
+      date: raw.date,
+      icon: "fa-feed"
+    }
+  })
+    
+  var casestudies = JSON.parse(doc_data).casestudies.map(function (raw) {
+    return {
+      id: raw.id,
+      title: raw.title,
+      links: raw.links,
+      excerpt: raw.excerpt,
+      url: raw.url,
+      author: raw.author,
+      date: raw.date,
       icon: "fa-university" //todo hook in other icons
     }});
   
-  var results_data = posts.concat( pages ).filter(function (q ){ return q.id !== "NaN";});
-
+  var courses = JSON.parse(doc_data).courses.map(function (raw) {
+    return {
+      id: raw.id,
+      title: raw.title,
+      links: raw.links,
+      excerpt: raw.excerpt,
+      url: raw.url,
+      author: raw.author,
+      date: raw.date,
+      icon: "fa-university" //todo hook in other icons
+    }});
+  
+  var documentation = JSON.parse(doc_data).documentation.map(function (raw) {
+    return {
+      id: raw.id,
+      title: raw.title,
+      links: raw.links,
+      excerpt: raw.excerpt,
+      url: raw.url,
+      author: raw.author,
+      date: raw.date,
+      icon: "fa-university" //todo hook in other icons
+    }});
+  
+  var resources = JSON.parse(doc_data).resources.map(function (raw) {
+    return {
+      id: raw.id,
+      title: raw.title,
+      links: raw.links,
+      excerpt: raw.excerpt,
+      url: raw.url,
+      author: raw.author,
+      date: raw.date,
+      icon: "fa-university" //todo hook in other icons
+    }});
+  
+var results_data = pages.concat( posts );
+results_data = results_data.concat( casestudies );
+results_data = results_data.concat( courses );
+results_data = results_data.concat( documentation )
+results_data = results_data.concat( resources );
+results_data = results_data.filter(function (q ){ return q.id !== "NaN";})
 
   //page load events
   var q =  getParameterByName("q");

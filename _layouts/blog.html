@@ -5,6 +5,7 @@
 <body>
     {% include html/header headerimage="/images/stories.jpg" %}
     <div class="content-wrapper">
+        <div class="top-margin"></div>
         <div class="container" role="{{page.role}}">
             {% if paginator.page == 1 %}{% include html/features %}{% endif %}
             <br/>

@@ -95,6 +95,11 @@ h1 {
     font-size: 3em;
     font-weight: 300;
     font-stretch: condenses;
+    
+    // font-size: 1.5em;
+    // font-weight: 700;
+    // padding-top: 30px;
+    // padding-bottom: 10px;
 }
 
 h2 {
@@ -203,7 +208,6 @@ p {
 }
 
 .headline {
-    
     @include desktop {
         padding-right: 55px;
         padding-top: 25px;
@@ -244,7 +248,6 @@ p {
     }
     @include phone {
         height:250px;
-        
     }
     @include minimum {
         height: 260px;
@@ -267,6 +270,10 @@ p {
     }
 }
 
+.top-margin{
+    margin-top:50px;
+}
+
 .default-page {
     background: $simlab-primary-black;
 }
@@ -276,14 +283,8 @@ p {
     position: absolute;
     background-color: #000000;
     width:100%;
-    @include desktop {
-        width: 2880px;    
-    }
 }
 .header-wrapper{
-    @include desktop {
-        width: 2880px;    
-    }
     padding:0; 
     background-color:#FFFFFF;
 }
@@ -294,9 +295,18 @@ p {
     opacity: .7;
     width:100%;
     @include desktop {
-        width: 2880px;
-        margin: auto;    
+        background-position: 0% 70%;    
     }
+    @include tablet {
+        background-position: 0% 80%;
+    }
+    @include phone {
+        //background-position: 10% 20%;
+    }
+    @include minimum {
+        //background-position: 10% 20%;
+    }
+    
 }
 
 .angled-header{
@@ -330,7 +340,7 @@ p {
     }
     display:block;
     float:left;
-    width:100%;
+    width:110%;
     padding:0 5%;
     transform:skew(0deg,-2.5deg);
     -ms-transform: skew(0deg,-5deg);
@@ -342,7 +352,7 @@ p {
     position: relative;
     @include desktop {
         margin-top:-250px;
-        height: 330px;
+        height: 230px;
     }
     @include tablet {
         margin-top:-25px;
@@ -353,7 +363,7 @@ p {
     border-top: 0.5px fffff solid;
     display:block;
     float:left;
-    width:100%;
+    width:110%;
     background:white;
     transform:skew(0deg,2.5deg);
     -ms-transform: skew(0deg,2.5deg); /* IE 9 */
@@ -395,7 +405,6 @@ p {
 	    text-align: right;
         &:hover {
             color: #FFFFFF;
-            //text-decoration: underline;
         }
 }
 
@@ -436,7 +445,14 @@ hr {
     :-ms-input-placeholder { @content }
 }
 
+.input-group .form-control{
+    z-index:0;
+}
+
 .search-header{
+    position: absolute;
+    top: 70px;
+    h2 { padding: 0; }
     > hr.bold{
         border-color: $simlab-primary-grey -moz-use-text-color $simlab-primary-grey;
         border-top: 3px solid $simlab-primary-grey;
@@ -499,25 +515,29 @@ hr {
     background-color: #FFFFFF;
 }
 
+.larger-bolder {
+    font-size: 1.4em;
+    font-weight: 500;
+}
 
 .right-divider {
     @include tablet {
-        border-right: 3px solid $simlab-primary-grey;
-        padding-right: 15px;
+        border-right: 2px solid $simlab-primary-grey;
+        padding-right: 50px;
     }
     @include desktop {
-        border-right: 3px solid $simlab-primary-grey;
-        padding-right: 15px;
+        border-right: 2px solid $simlab-primary-grey;
+        padding-right: 50px;
     }
 }
 
 .left-divider {
     @include tablet {
-        border-left: 3px solid $simlab-primary-grey;
+        border-left: 2px solid $simlab-primary-grey;
         padding-left: 15px;
     }
     @include desktop {
-        border-left: 3px solid $simlab-primary-grey;
+        border-left: 2px solid $simlab-primary-grey;
         padding-left: 15px;
     }
 }
@@ -656,8 +676,15 @@ hr {
         height: 40px;
 }
 
-.asset-seperator {
-    margin-bottom: 70px;
+.post-header {
+    padding-top: 30px;
+    h2 {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
 }
 
 .post-content{
@@ -708,12 +735,12 @@ hr {
     
     a { color: #FFFFFF;
         &:hover{
-            color: #FFFFFF;
+            color: $simlab-primary-magenta;
         }
      }
     .overlay { 
         padding-top:75px;
-        background-color:rgba(0, 0, 0, 0.6);
+        background-color:rgba(0, 0, 0, 0.5);
         min-height: 250px;
     }
 }

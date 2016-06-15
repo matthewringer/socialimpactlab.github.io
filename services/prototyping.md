@@ -2,8 +2,8 @@
 layout: page
 title: Prototyping
 permalink: /services/prototyping
-headerimage: "/images/lightbulbs.jpeg"
-menus: [services, learning]
+headerimage: "/images/services_header.jpg"
+menus: [services]
 ---
 
-# Idea to Prototype
+## Service One

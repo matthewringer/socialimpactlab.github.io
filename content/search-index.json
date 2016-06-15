@@ -1,28 +1,78 @@
 ---
 ---
-{% assign pages = site.resources | concat: site.pages %}
-
-{ "pages": [{% for page in pages %} {% if page.title and page.nosearch != true %}
+{% assign index_id = 0 %}
+{ "pages": [{% for page in site.pages %} {% if page.title and page.search == true %}
     { 
-        "id": "{{ forloop.index }}",
-        "title": "{{ page.title | strip_html }}",
-        "categories": "{{page.categories | join: " "}}",
-        "tags": "{{page.tags | join: " "}}",
+        "id": "{% increment index_id %}",
+        "title": "{% if page.title %}  {{ page.title | strip_html }} {% endif %}",
+        "categories": "{% if page.categories %} {{page.categories | join: " "}} {% endif %}",
+        "tags": "{% if page.tags %} {{page.tags | join: " "}} {% endif %}",
         "excerpt": "",
-        "url": "{{site.baseurl}}{{page.url}}"
-    } {% else %} {
+        "url": "{% if page.url %} {{site.baseurl}}{{page.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if page.date %} {{ page.date | date: site.date_format }} {% endif %}"
+    }{% else %} {
         "id": "NaN",
         "title": "",
         "categories": "",
         "tags": "",
         "excerpt": "",
-        "url": ""
+        "url": "",
+        "author": "",
+        "date": ""
     }{% endif %}{% unless forloop.last %},{% endunless %}
   {% endfor %}],
   "posts": [{% for post in site.posts %} 
-    { "id": "{{ forloop.index | plus: site.pages.size }}",
-        "title": "{{ post.title | strip_html }}",
-        "categories": "{{post.categories | join: " "}}",
-        "tags": "{{post.tags | join: " "}}", 
+    { "id": "{% increment index_id %}",
+        "title": "{% if post.title %} {{ post.title | strip_html }} {% endif %}",
+        "categories": " {% if post.categories %} {{post.categories | join: " "}} {% endif %}",
+        "tags": " {% if post.tags %} {{post.tags | join: " "}} {% endif %}", 
         "excerpt": "",
-        "url": "{{site.baseurl}}{{post.url}}" }{% unless forloop.last %},{% endunless %}{% endfor %}]}
+        "url": "{% if site.baseurl %} {{site.baseurl}}{{post.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if post.date %} {{ post.date | date: site.date_format }} {% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "casestudies": [{% for post in site.casestudies %} 
+    { "id": "{% increment index_id %}",
+        "title": "{% if post.title %} {{ post.title | strip_html }} {% endif %}",
+        "categories": " {% if post.categories %} {{post.categories | join: " "}} {% endif %}",
+        "tags": " {% if post.tags %} {{post.tags | join: " "}} {% endif %}", 
+        "excerpt": "",
+        "url": "{% if site.baseurl %} {{site.baseurl}}{{post.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if post.date %} {{ post.date | date: site.date_format }} {% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "courses": [{% for post in site.courses %} 
+    { "id": "{% increment index_id %}",
+        "title": "{% if post.title %} {{ post.title | strip_html }} {% endif %}",
+        "categories": " {% if post.categories %} {{post.categories | join: " "}} {% endif %}",
+        "tags": " {% if post.tags %} {{post.tags | join: " "}} {% endif %}", 
+        "excerpt": "",
+        "url": "{% if site.baseurl %} {{site.baseurl}}{{post.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if post.date %} {{ post.date | date: site.date_format }} {% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "documentation": [{% for post in site.documentation %} 
+    { "id": "{% increment index_id %}",
+        "title": "{% if post.title %} {{ post.title | strip_html }} {% endif %}",
+        "categories": " {% if post.categories %} {{post.categories | join: " "}} {% endif %}",
+        "tags": " {% if post.tags %} {{post.tags | join: " "}} {% endif %}", 
+        "excerpt": "",
+        "url": "{% if site.baseurl %} {{site.baseurl}}{{post.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if post.date %} {{ post.date | date: site.date_format }} {% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "resources": [{% for post in site.resources %} 
+    { "id": "{% increment index_id %}",
+        "title": "{% if post.title %} {{ post.title | strip_html }} {% endif %}",
+        "categories": " {% if post.categories %} {{post.categories | join: " "}} {% endif %}",
+        "tags": " {% if post.tags %} {{post.tags | join: " "}} {% endif %}", 
+        "excerpt": "",
+        "url": "{% if site.baseurl %} {{site.baseurl}}{{post.url}} {% endif %}",
+        "author": "{% if post.author %} {{post.author}}{{post.author}} {% endif %}",
+        "date": "{% if post.date %} {{ post.date | date: site.date_format }} {% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "counts": 
+    {
+      "pages":"{{ site.pages | size }}",
+      "documentation":"{{ site.documentation | size }}",
+      "courses":"{{ site.courses | size }}",
+      "resources":"{{ site.resources | size }}",
+      "casestudies":"{{ site.casestudies | size }}"
+    }
+}

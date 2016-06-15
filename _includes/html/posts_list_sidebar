@@ -5,21 +5,22 @@
 {% capture limit %} {{ include.posts.size  }} {% endcapture %}
 {% assign offset = 0 %}
 {% endif %}
-<div class="container" >
-  {% for post in include.posts limit:limit offset:offset %} 
-    <div class="row post-list-item">
-    <div class="col-sm-7 asset-seperator">
-      <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
-      {% include html/post_metadata post=post %}
-      <p class="post-summary">
-         {% if post.summary %}
-          {% assign summary = post.summary %}
-        {% else %}
-          {% assign summary = post.excerpt %}
-        {% endif %}
-        {{ summary | strip_newlines | strip | strip_html }}
-      </p>
-    </div>
+{% for post in include.posts limit:limit offset:offset %} 
+<div class="row ">
+  <div class="col-sm-12 post-header">
+    {% if post.type %}
+    <p>{{ post.type }}</p>
+    {% endif %}
+    <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
+    {% include html/post_metadata post=post %}
+    <p class="post-summary">
+        {% if post.summary %}
+        {% assign summary = post.summary %}
+      {% else %}
+        {% assign summary = post.excerpt %}
+      {% endif %}
+      {{ summary | strip_newlines | strip | strip_html }}
+    </p>
   </div>
-  {% endfor %}
 </div>
+{% endfor %}

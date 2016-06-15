@@ -1,0 +1,16 @@
+---
+layout: default
+title: Documentation
+headerimage: "/images/stories.jpg"
+nosearch: true
+menus: [categories]
+permalink: "/documentation/"
+---
+{% assign array = site.documentation %}
+{% if site.paginate < array.size %}
+{% assign next_page = "/documentation/page2" %}
+{% endif %}
+{% assign text = "Page" %}
+{% include html/posts_list_sidebar posts=array limit=site.paginate offset=0 %}
+{% include html/categories_pagination next_page=next_page text=text %}
+ 

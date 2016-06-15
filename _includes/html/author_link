@@ -1,0 +1,1 @@
+{% assign tags = include.post.tags | size %}{% if include.post.author %}{% assign name = include.post.author | split: ' ' %} <li {% unless tags > 0 %} style='border-right:none;'  {% endunless %} ><a href='{{site.baseurl}}/team/{{name.first | downcase}}'>{{ include.post.author }}</a></li> {% endif %}

@@ -92,14 +92,10 @@ body {
 }
 
 h1 {
-    font-size: 3em;
-    font-weight: 300;
-    font-stretch: condenses;
-    
-    // font-size: 1.5em;
-    // font-weight: 700;
-    // padding-top: 30px;
-    // padding-bottom: 10px;
+    font-size: 2em;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 h2 {
@@ -231,6 +227,9 @@ p {
 }
 
 .titleline {
+    font-size: 3em;
+    font-weight: 300;
+    font-stretch: condenses;
     @include phone {
         font-size: 2em;
     }

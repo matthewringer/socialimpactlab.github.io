@@ -2,7 +2,7 @@
 <html>
 {% include html/head %}
 <body>
-  {% include html/header headerimage="/images/stories.jpg" title="Case Studies" %}
+  {% include html/header title="Case Studies" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
@@ -12,8 +12,6 @@
           {{ content }} 
           </article>
           <br/>
-          {% include html/share_buttons %} {% include html/disqus_comments
-          %} {% include html/facebook_comments %} {% include html/related_posts %}
         </div>
         <div class="col-md-4">
           <div>
@@ -21,6 +19,9 @@
           </div>
         </div>
       </div>
+      {% include html/share_buttons %}
+      {% include html/disqus_comments %} 
+      {% include html/facebook_comments %} {% include html/related_posts %}
       <!--/row -->
     </div>
     {% include html/footer %}

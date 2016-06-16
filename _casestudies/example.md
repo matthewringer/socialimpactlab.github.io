@@ -1,5 +1,5 @@
 ---
-layout: casestudies
+layout: casestudy
 title: "Example Case Study"
 date: 2016-05-03 14:25:00
 author: Kelly Church

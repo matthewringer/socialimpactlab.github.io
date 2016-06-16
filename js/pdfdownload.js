@@ -118,7 +118,6 @@ var layoutPages =  function(){
         //     addPage('#content','page'+pageNum);
         //     words = node.text().split(" ");
         //     $('#page'+pageNum).append('<p id="NewNode">' + words.slice(lines.index+1, words.length-1).join(" ")+ '</p>');
-            
         //     node.remove();
         //     node = $("#NewNode");
         //     currentPageHeight = node.outerHeight(true);
@@ -131,6 +130,6 @@ var layoutPages =  function(){
         }
         element.id = elementId;
     }
-    //printCanvas('#content','document.pdf');
+    printCanvas('#content','document.pdf');
 }
 $('#create-pdf').click(layoutPages);

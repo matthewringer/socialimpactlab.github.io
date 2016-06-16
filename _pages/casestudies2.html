@@ -6,7 +6,7 @@ nosearch: true
 menus: [categories]
 permalink: "/casestudies/page2"
 ---
-{% assign array = site.categories.casestudies | sort: 'date' | reverse %}
+{% assign array = site.casestudies | sort: 'date' | reverse %}
 {% assign previous_page = "/casestudies" %}
 {% assign text = "Page" %}
 {% include html/posts_list_sidebar posts=array limit=array.size offset=site.paginate %}

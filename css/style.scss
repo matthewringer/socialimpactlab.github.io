@@ -53,7 +53,7 @@ a {
     color: $simlab-primary-magenta; 
     &:hover { 
         text-decoration: none;
-        color: $simlab-primary-magenta;
+        color: $simlab-primary-black;
     }
 }
 
@@ -270,7 +270,7 @@ p {
 }
 
 .top-margin{
-    margin-top:50px;
+    margin-top:70px;
 }
 
 .default-page {
@@ -391,6 +391,9 @@ p {
     color: #FFFFFF;
     font-size: .9em; //14px;
     font-weight: bold;
+    &:hover{
+                text-decoration: underline;
+            }
     }
 }
 
@@ -574,6 +577,33 @@ hr {
     }
 }
 
+.site-map-links {
+    color:#858585;
+    &:hover{
+                color: $simlab-primary-magenta;
+            }
+}
+
+.team-sidebar{
+    @include desktop {
+        margin: -35px 10px 10px 10px;
+        padding: 0px 0 10px 10px;
+    }
+    
+    h2 { 
+        padding-bottom: 0;
+    }
+    h4 {
+        padding-top: 0;
+    }
+    a.contanct {
+        color: $simlab-primary-black;
+        &:hover{
+                color: $simlab-primary-black;
+            }
+    }
+}
+
 @mixin setFormFxAll { 
     &:focus, &:hover, &:active {
         @content
@@ -650,6 +680,7 @@ hr {
     > li {
         float:left;
         padding:10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -664,6 +695,10 @@ hr {
     border-radius: 20px;
     width: 40px;
     height: 40px;
+    &:hover {
+        background-color: $simlab-primary-black;
+    }
+    
 }
 
 .rectangle-button{
@@ -692,19 +727,18 @@ hr {
 
 .post-image { 
     margin-top: 10px;
-    //margin-right: 15px;
     padding: 6px 15px 0 15px;
 }
 
 .post-link {
     color: $simlab-primary-magenta;
-    
     &:hover{
-        color: $simlab-primary-magenta;
+        color: $simlab-primary-black;
     }
 }
+
 .section-link{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .post-meta {
     margin-top: 15px;
@@ -805,10 +839,12 @@ footer {
 }
 
 .address {
-    padding-top: 0px;
     position: relative;
-    margin: 15px 0 0px;
-    top: -14px;
+    // margin: 15px 0 0px;
+    top: -20px;
+    
+    overflow: auto;
+    clear: both;
 }
 .center { 
     margin-left: auto;

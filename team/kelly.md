@@ -13,7 +13,6 @@ tags:
 email: kellychurch@simlab.org
 skype: kchurch_simlab
 twitter: "@kelly_simlab"
-contact-info: "contact description text here"
 ---
 ![kelly]({{site.baseurl}}/images/kelly_big.jpg)
 

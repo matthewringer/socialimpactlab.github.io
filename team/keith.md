@@ -11,8 +11,6 @@ layout: team
 email: tbd@simlab.org
 skype: tbd_simlab
 twitter: "@tbd_simlab"
-contact-info: "contact description text here"
-
 ---
 ![keith]({{site.baseurl}}/images/keith_big.jpg)
 

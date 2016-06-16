@@ -14,7 +14,9 @@
             <h1 class="extra-bold headline"> {{page.headline}} </h1>
             {% else %}
             <div class="container search-header">
-                {% if page.category %}
+                {% if include.title %}
+                    {% assign title = include.title %}
+                {% elsif page.category %}
                     {% assign title = page.category | capitalize %}
                 {% elsif page.categories %}
                     {% assign title = page.categories | first | capitalize %}

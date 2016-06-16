@@ -10,7 +10,6 @@ layout: team
 email: tbd@simlab.org
 skype: tbd_simlab
 twitter: "@tbd_simlab"
-contact-info: "contact description text here"
 ---
 ![miranda]({{site.baseurl}}/images/miranda_big.jpg)
 

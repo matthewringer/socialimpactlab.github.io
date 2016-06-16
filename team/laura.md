@@ -12,7 +12,6 @@ categories: staff
 email: tbd@simlab.org
 skype: tbd_simlab
 twitter: "@tbd_simlab"
-contact-info: "contact description text here"
 ---
 
 ![laura]({{site.baseurl}}/images/laura_big.jpg)

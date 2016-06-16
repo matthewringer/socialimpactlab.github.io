@@ -14,7 +14,6 @@ tags:
 email: tbd@simlab.org
 skype: tbd_simlab
 twitter: "@tbd_simlab"
-contact-info: "contact description text here"
 ---
 
 ![valerie]({{site.baseurl}}/images/valerie_big.jpg)

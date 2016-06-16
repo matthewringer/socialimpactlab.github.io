@@ -809,7 +809,15 @@ hr {
 }
 
 .team-card {
-    min-height:480px;
+    @include phone {
+        min-height:285px;
+    }
+    @include tablet {
+        min-height:480px;
+    }
+    @include desktop {
+        min-height:480px;
+    }
 }
 
 .careers {

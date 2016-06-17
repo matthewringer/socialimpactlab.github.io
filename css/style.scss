@@ -492,7 +492,9 @@ hr {
 .search-result {
     > a { 
         color: $simlab-primary-black; 
-        //line-height: 30px;
+        &:hover{
+            color: $simlab-primary-magenta;
+        }
     }
     padding: 5px;
     text-overflow: ellipsis; 

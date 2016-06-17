@@ -10,5 +10,5 @@
         </li>
         {% endfor %}
     </ul>
-    <p class="foot">Read <span class="extra-bold">Stories</span> <a href="{{site.baseurl}}/stories"  class="fa fa-chevron-circle-right "></a></p>
+    <p class="foot">Read <span class="extra-bold">Stories</span> <a href="{{site.baseurl}}/blog"  class="fa fa-chevron-circle-right "></a></p>
 </div>

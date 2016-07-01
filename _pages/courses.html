@@ -6,7 +6,13 @@ nosearch: true
 menus: [categories]
 permalink: "/courses/"
 ---
-{% assign array = site.courses %}
+{% assign array = "" | split: "|" %}
+{% for course in site.courses %}
+    {% if course.layout == "course" %}
+        {% assign array = array | push: course %}
+    {% endif %}
+{% endfor %}
+
 {% if site.paginate < array.size %}
 {% assign next_page = "/courses/page2" %}
 {% endif %}

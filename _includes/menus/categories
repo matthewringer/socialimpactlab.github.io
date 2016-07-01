@@ -1,13 +1,12 @@
 <div class="menu">
     <h2><span class="lighter">Filter</span> Categories </h2>
     <ul class="list-unstyled">
-        {% for item in site.data.global.categories %}
+        {% for item in site.collections %}
+        {% unless item.title == "Resources" %}
         <li>
-            {% if site.data.global.showicons %}
-            <a href="{{site.baseurl}}{{item.link}}"><i class="fa fa-2x {{item.icon}} pull-left"></i></a> 
-            {% endif %}
-            <div><p><a class="extra-bold" href="{{site.baseurl}}{{item.link}}">{{item.first}}</a><br/><span>{{item.second}}</span></p></div>
+            <div><p><a class="extra-bold" href="{{site.baseurl}}{{item.root}}">{{item.title}}</a><br/><span>{{item.description}}</span></p></div>
         </li>
+        {% endunless %}
         {% endfor %}
     </ul>
     <p class="foot">Read <span class="extra-bold">Stories</span> <a href="{{site.baseurl}}/blog"  class="fa fa-chevron-circle-right "></a></p>

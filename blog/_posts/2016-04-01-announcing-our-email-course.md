@@ -4,6 +4,7 @@ title: "Announcing our new email-based course on mobile tech for CSOs!"
 date: 2016-03-29 15:45:00
 categories: blog
 author: Valerie Oliphant
+email: email@simlab.org
 ---
 Did you miss our online course, ["Scalable, Low-Cost Technologies for Civil Society Organizations"](http://simlab.org/blog/announcements/2014/12/11/simlabs-mobile-technology-training/)? Now you can take it at your own pace! Sign up for our new email-based course [here](http://courses.simlab.org/sign-up/).
 

@@ -4,7 +4,7 @@
         {% assign posts = tag | last %}
         {% if t == "feature" %}
             {% for post in posts %}
-                {% include html/feature-block post=post %}
+                {% include html/feature_block post=post %}
             {% endfor %}
         {% endif %}
     {% endfor %}

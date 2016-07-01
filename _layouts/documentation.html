@@ -2,7 +2,7 @@
 <html>
 {% include html/head %}
 <body>
-  {% include html/header title=site.casestudies.title headerimage="/images/resources_header.jpg" %}
+  {% include html/header title=site.documentation.title headerimage="/images/resources_header.jpg" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
@@ -15,7 +15,8 @@
         </div>
         <div class="col-md-4">
           <div>
-            {% include menus/downloads %} {% include menus/section_links %}
+            {% include menus/downloads %} 
+            {% include menus/section_links %}
           </div>
         </div>
       </div>

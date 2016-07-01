@@ -72,14 +72,26 @@ sass:
 
 collections:
  courses:
+   title: Courses
+   description: "Brief Explanation of section"
    output: true
    permalink: /courses/:name/
+   root: /courses/
  casestudies:
+   title: Case Studies
+   description: "Brief Explanation of section"
    output: true
    permalink: /casestudies/:name/
+   root: /casestudies/
  documentation:
+   title: Guides and Frameworks
+   description: "Brief Explanation of section"
    output: true
-   permalink: /documentation/:name/
+   permalink: /guidesandframeworks/:name/
+   root: /guidesandframeworks/
  resources:
+   title: Resources
+   description: "Brief Explanation of section"
    output: true
    permalink: /resources/:name/
+   root: /resources/

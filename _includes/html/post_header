@@ -7,6 +7,6 @@
 <p class="caption">{{ page.teaseimage-caption }}</p>
 {% endif %}
 {% endif %}
-<p class="post-meta"> <br/> {% include html/minutes %} minute read
+<p class="post-header-meta"> <br/> {% include html/minutes %} minute read
         {% if page.pdf %} <a href="{{page.pdf}}">(PDF)</a> {% endif %}
 </p>

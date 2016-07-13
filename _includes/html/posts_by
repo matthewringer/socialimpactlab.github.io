@@ -1,6 +1,4 @@
 {% assign name = page.title | split: ' ' %}
-
-
 {% assign haspost = 'none' %}
 {%for post in site.posts%}
 	{%if post.author == page.title%}
@@ -9,8 +7,8 @@
 		{%endif%}
 		{%if haspost == 'none'%}
 			{%assign haspost = 'first'%}
-			<h2>Posts by {{name.first}}</h2>
+			<h2>Posts by {{ name.first | split: ' ' | first }}</h2>
 		{%endif%}
-		<a class="post-link" href="{{site.baseurl}}{{post.url}}">{{post.title}}{% if post.subtitle %}: {{post.subtitle}}{%endif%}</a><br>
+		<a class="post-link author-posts" href="{{site.baseurl}}{{post.url}}">{{post.title}}{% if post.subtitle %}: {{post.subtitle}}{%endif%}</a><br>
 	{%endif%}
 {%endfor%}

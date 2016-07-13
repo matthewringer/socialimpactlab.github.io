@@ -1,9 +1,9 @@
 <div class="menu">
-    <h2 class="extra-bold">Posts by {{ page.author }} </h2>
+    <h2 class="extra-bold">Posts by {{ page.author | split: ' ' | first }} </h2>
     <ul class="list-unstyled">
      {% for post in site.posts  %}
      {% if post.author == page.author and post.title != page.title %}
-     <li><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></li>
+     <li class="author-posts"><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></li>
      {% endif %}
      {% endfor %}
      </ul>
@@ -14,7 +14,7 @@
      <ul class="list-unstyled">
         <li>
             <div><p> <span class="extra-bold">Email</span>
-            <a class="contanct" href="mailto:{{page.email}}"> {{page.email}}</a></p></div>
+            <a href="mailto:{{page.email}}"> {{page.email}}</a></p></div>
         </li>
     </ul>
     {% endif %}

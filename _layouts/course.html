@@ -6,11 +6,11 @@
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8 right-divider">
           <article id="content">
           <p> {{ page.excerpt }} </p>
           <h2> {{ page.title }} </h2>
-          <table class="table table-bordered" >
+          <!--<table class="table table-bordered" >
             <tr>
               <th>COURSE OPENS</th>
               <th>DURATION</th>
@@ -23,7 +23,7 @@
               <td>{{ page.modules | size }} modules </td>
               <td>{{ page.students }}</td>
             </tr>
-          </table>
+          </table>-->
           <ul class="list-unstyled">
             {% for item in page.modules %}
             <li class="section-link">
@@ -40,6 +40,34 @@
           {{ content }} 
           </article>
           <br/>
+        </div>
+        <div class="col-md-4">
+          <div class="menu">
+            <h2 class="extra-bold">Course Details</h2>
+            <ul class="list-unstyled" >
+                <li><p><span class="extra-bold">Opens:</span> {{ page.open_date | date: site.date_format }}</p></li>
+                <li><p><span class="extra-bold">Duration:</span> {{ page.duration }}</p></li>
+                <li><p><span class="extra-bold">Curriculum:</span> {{ page.modules | size }} modules </p></li>
+                <li><p><span class="extra-bold">Students:</span> {{ page.students }}</p></li>
+            </ul>
+            <h2 class="extra-bold">Contact</h2>
+            <ul class="list-unstyled">
+              <li>
+                <div>
+                  <p class="extra-bold">
+                    <a href="{{ site.baseurl }}/subscribe">Subscribe</a>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="extra-bold">
+                    <a href="{{ site.baseurl }}/feedback">Feedback</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       {% include html/share_buttons %}

@@ -38,10 +38,11 @@ $simlab-secondary-yellow: #C6DB00;
 $simlab-secondary-green: #55BE47;
 $simlab-secondary-darkgreen: #2F6600;
 
-
-// $headline-text: 48px;
-// $subheadline-text: 24px;
-// $regular-text: 16px;
+iframe {
+    height: 100%; 
+    width: 100%;
+    border: none;
+}
 
 img {
     display: block;
@@ -69,8 +70,6 @@ a {
 }
 
 .caption {
-    //TODO: differes from style guide
-    //font-size: .7em;
     font-style: italic;    
 }
 
@@ -508,8 +507,6 @@ hr {
     font-size: initial;
 }
 
-
-
 //for search button
 .btn-default {
     color: $simlab-primary-magenta;
@@ -598,12 +595,6 @@ hr {
     h4 {
         padding-top: 0;
     }
-    a.contanct {
-        color: $simlab-primary-black;
-        &:hover{
-                color: $simlab-primary-black;
-            }
-    }
 }
 
 @mixin setFormFxAll { 
@@ -658,7 +649,6 @@ hr {
 }
 
 .about-role {
-    //color:#858585;
     color: $simlab-primary-black;
     position: relative;
     top:-10px;
@@ -669,6 +659,7 @@ hr {
     min-height: 203px;
     padding: 10px;
 }
+
 .share-buttons{
     a { color: white;
         padding: 12px 10px 10px 13.5px;
@@ -737,6 +728,12 @@ hr {
     }
 }
 
+.author-posts {
+    display: inline-block;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
 .section-link{
     padding-bottom: 10px;
 }
@@ -744,8 +741,7 @@ hr {
 .post-meta {
     margin-top: -10px;
     margin-left: -5px;
-    > li { 
-        //margin: 10px 0 10px 0;
+    > li {
         padding: 3px 15px 7px 15px;
         font-size: .9em;
         @include tablet {
@@ -858,7 +854,6 @@ footer {
 
 .address {
     position: relative;
-    // margin: 15px 0 0px;
     top: -20px;
     
     overflow: auto;

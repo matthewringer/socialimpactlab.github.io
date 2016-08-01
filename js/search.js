@@ -1,14 +1,13 @@
 ---
 ---
 require([
-  '{{site.baseurl}}/js/jquery.js',
   '{{site.baseurl}}/js/mustache.js',
   '{{site.baseurl}}/js/lunr.js',
   'text!{{site.baseurl}}/content/result-list.mustache',
   'text!{{site.baseurl}}/content/result-dropdown.mustache',
   'text!{{site.baseurl}}/content/search-docs.json',
   'text!{{site.baseurl}}/content/search-index.json'
-], function (_, Mustache, lunr, questionList, quetionDropDown, doc_data, index_data) {
+], function (Mustache, lunr, questionList, quetionDropDown, doc_data, index_data) {
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;

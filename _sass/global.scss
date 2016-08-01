@@ -31,7 +31,7 @@ $simlab-secondary-green: #55BE47;
 $simlab-secondary-darkgreen: #2F6600;
 
 //fonts
-%opensans { font-family: 'Open Sans', sans-serif; }
+%opensans { font-family: 'Open Sans' !important; }
 
 //media queries 
 $phone-width: 320px;

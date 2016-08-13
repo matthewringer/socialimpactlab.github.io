@@ -3,19 +3,30 @@ layout: page
 title: Team
 permalink: /team/
 nosearch: true
-headerimage: "/images/team_header.jpg"
+headerimage: "/images/header/team_header.jpg"
+menus: [team]
+sections:
+    - { link: "team",
+        text: "Team",
+        description: "Team description" }
+    - { link: "board",
+        text: "Board",
+        description: "Board description" }
+    - { link: "careers",
+        text: "Careers",
+        description: "Careers description" }
 ---
-<h2>Our Team. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </h2>
+<h2>Our Team.{% include html/sectionlink link="team" %}</h2>
 
 <p>Intro to inviting collaboration. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Send us an email to join the collaboration. <a href="mailto:hello@simlab.org">hello@simlab.org</a></p>
-<div class="row" style="margin-top: 50px;" >
+<div class="row team-container">
 {% for page in site.pages%}
       {% if page.categories contains "staff" %}
 <div class="col-xs-6 col-md-4 team-card">
   <a href="{{site.baseurl}}/team/{{page.locator}}">
-      <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/{{page.locator}}.jpg" alt="">
+      <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="">
       <h4><b>{{page.title}}</b></h4>
       <p class="small about-role">{{page.role}}</p>
   </a>
@@ -23,15 +34,22 @@ headerimage: "/images/team_header.jpg"
  {% endif %}
 {% endfor %}
 </div>
-<div class="container">
-<div class="row careers">
-  <h2>Careers</h2>
+
+  <h2>Board of Directors{% include html/sectionlink link="board" %}</h2>
+
+  <p>This is text related to board of directors.</p>
+
+  <h2>Careers{% include html/sectionlink link="careers" %}</h2>
+
+  <p>Come work with us at SIMLab!  We offer a supportive work environment with awesome co-workers and many other perks.</p>
+
+  <p>We’ve currently got a small staff of 6, with 2 in Nairobi, 3 in DC, and 1 in Brooklyn. We offer flexible work arrangements, with the possibility of working remotely, flex hours, and ability to work from home if you’d like. We’ve got office space in the OpenGovHub in Washington, DC&mdash;a co-working space that fosters creativity and collaboration, offers an endless supply of coffee, and has office perks like a gym, bike storage, etc. In Nairobi, we're in the iHub building in Kilimani. </p>
+
+  <p>On top of competitive salaries, we offer employees health and dental insurance, support the purchase of your own preferred laptop, provide 20 days of paid vacation plus a generous amount of time off for the winter holidays, and foster professional development. We're looking for highly-motivated, passionate individuals who can grow and learn along with us.</p>
+
   {% for page in site.pages%}
     {% if page.categories contains "jobs" %}
     <h3><a class="post-link" style="background:none" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
     {% endif %}
   {% endfor %}
-
   <p>Don't see the job you want? Send us a CV and a letter telling us why we desperately need you to <a href="mailto:jobs@simlab.org">jobs@simlab.org</a></p>
-</div>
-</div>

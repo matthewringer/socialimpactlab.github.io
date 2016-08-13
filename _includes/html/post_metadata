@@ -4,13 +4,16 @@
         {% if page.update_date %}
         <li>Updated: {{ page.update_date | date: site.date_format }}</li>
         {% endif %}
+        {% if post.type %}
+        <li>{{ post.type }}</li>
+        {% endif %}
         {% assign tags = include.post.tags | size %}
         {% if include.post.author %}
         {% assign name = include.post.author | split: ' ' %}
         <li {% unless tags > 0 %} style="border-right:none;"  {% endunless %} ><a href="{{site.baseurl}}/team/{{name.first | downcase}}">{{ include.post.author }}</a></li>
         {% endif %}
         {% if tags > 0 %}
-        <li style="border-right:none;">{% include html/search_links links=include.post.tags %}</li>
+        <li class="last">{% include html/search_links links=include.post.tags %}</li>
         {% endif %}
     </ul>
 </div>

@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="{{site.baseurl}}/{{ "css/style.css" }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
-    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
     {% if site.show_social_icons or site.show_sharing_icons %}
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
@@ -57,16 +57,16 @@
     </script>
     {% endif %}
     <script src="//fast.eager.io/xk-GmRBDH4.js"></script>
-    
+
     <!-- todo browserify -->
     <!--<script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>-->
     <!--<script type="text/javascript" src="{{site.baseurl}}/js/bootstrap.min.js"></script>-->
     <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+
     <script type="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
     <script data-main="{{site.baseurl}}/js/search.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
-    
+
     <script type="text/javascript" src="{{site.baseurl}}/js/jspdf.min.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/js/html2canvas.js"></script>
 </head>

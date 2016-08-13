@@ -9,5 +9,5 @@
         {% endunless %}
         {% endfor %}
     </ul>
-    <p class="foot">Read <span class="extra-bold">Stories</span> <a href="{{site.baseurl}}/blog"  class="fa fa-chevron-circle-right "></a></p>
 </div>
+{% include /menus/read_stories %}

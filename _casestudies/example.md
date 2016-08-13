@@ -1,90 +1,25 @@
 ---
 layout: casestudy
-title: "Example Case Study"
-date: 2016-05-03 14:25:00
-author: Kelly Church
+title: "Land titling visualized: Rapidly prototyping dashboards for action"
+date: 2016-06-17 14:25:00
+author: Sara Ku
 categories: [casestudies]
-tags: [Training, Mobile, "Disaster Response"]
-menus: [downloads, section_links]
-teaseimage: "/images/dfidcase/Picture1.png"
-teaseimage-caption: "my caption"
-teaseimage-alttext: "desk"
-sections: 
-    - "section1"
-    - { link: "section2", 
-        text: "Link 2 title", 
-        description: "Link 3 description" }
-    - { link: "section3", 
-        text: "Link 3 title", 
-        description: "Link 3 description" }
+tags: ["Low-cost Technology", Dashboards, "Rapid Prototyping"]
+menus: [downloads]
 ---
 
-# This is an Example Case Study
+In rural and low-resource contexts, low-cost technology, like SMS, can facilitate faster, cheaper data collection and reporting about government processes. As a result, a new question arises: how can we use this new data to help people understand complex processes, and to drive them to action?
 
-![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
-_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
+Here at SIMLab, we recently explored this question with our <a href="http://simlab.org/blog/2015/07/23/paper-houses-digital-homes/" target="_blank">project</a> in Odisha, India. For the past two years, in collaboration with the state government and Landesa, we’ve worked to develop and implement an SMS-based process tracking system to support a land titling program for rural and tribal villagers. The system was designed to make it easier for local reporting data to be submitted by lower level officials and aggregated for use by their managers.
 
-## Section 1
+In order to make this data more useful and actionable, we recently built a dashboard for district-level officials–known as collectors–to use the data. To provide a snapshot of land titling progress, the dashboard focuses only on two metrics: number of households identified as landless and number of titles distributed to households. It displays this data in a simplified percent-to-goal format, color-coded and broken down by district and tahasil (administrative area within a district).
 
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
+As a result, rather than waiting to receive updates every month, collectors can use the dashboard to see real-time updates of progress. In addition, collectors can use the dashboard to trace reports to individual government officials, helping them to identify underperformers early on and take corrective action.
 
-## Section 2 {% include html/sectionlink link="section2" %}
+Dashboards like these are simple ways to connect dynamic SMS data with richer visualizations. Moreover, they’re easy and inexpensive to build. We built ours with Google Sheets, and connected it to FrontlineCloud via an API connection. Without having to install anything, collectors can access and print dashboard screens, as well as the underlying granular data.
 
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te 
+<img src="{{site.baseurl}}/images/post_images/dashboard_prototype.jpg" alt="dashboard prototype">
 
-## Section 3 {% include html/sectionlink link="section3" %}
+We hope that, by informing decisions and driving actions, the dashboard will make it easier for collectors to oversee progress and push the land titling process forward. We also plan to explore alternative ways of sharing this information with others to expand transparency and accountability.
 
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 4 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 5 {% include html/sectionlink link="section3" %}
-
-![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
-_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
-
-This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu. ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 6 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 7 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu. quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 8 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 9 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 10 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 11 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate.
-
-## Section 12 3 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 13 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 14 3 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
-
-## Section 15 3 {% include html/sectionlink link="section3" %}
-
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
+To learn more about the dashboard or to express interest in working with SIMLab in similar endeavors, drop us a line at <a href="mailto:hello@simlab.org">hello@simlab.org</a>!

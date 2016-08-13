@@ -5,12 +5,9 @@
 {% capture limit %} {{ include.posts.size  }} {% endcapture %}
 {% assign offset = 0 %}
 {% endif %}
-{% for post in include.posts limit:limit offset:offset %} 
+{% for post in include.posts limit:limit offset:offset %}
 <div class="row ">
   <div class="col-sm-12 post-header">
-    {% if post.type %}
-    <p>{{ post.type }}</p>
-    {% endif %}
     <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
     {% include html/post_metadata post=post %}
     <p class="post-summary">

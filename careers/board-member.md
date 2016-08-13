@@ -2,7 +2,11 @@
 layout: page
 title: Board Members and Treasurer
 categories: jobs
+menus: [team-external]
 ---
+
+## Board Members and Treasurer
+
 SIMLab's Board is composed of the CEO and four independent members. Of those four, two will reach the end of their two-year term in June 2016 and one has stepped down as she became CEO of another organization. We are excited to invite applications to join us as mentors, advisors, supporters and critical friends as we embark on the next stage of our journey.
 
 We're looking for people with the energy and enthusiasm to help us imagine how a small group of committed people can change the way the world thinks about tech-enabled social change. There are some special skills that would be particularly helpful - individuals with experience of getting complex messages out, advocating for policy change, community organizing, and structuring new product-based lines of business would all be welcome. One role we're particularly looking to fill is that of Treasurer, who will provide oversight and support to our operations team. They don't have to be an accountant, but they do need to be able to read our balance sheet and hold us to account.

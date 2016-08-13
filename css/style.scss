@@ -39,9 +39,8 @@ $simlab-secondary-green: #55BE47;
 $simlab-secondary-darkgreen: #2F6600;
 
 iframe {
-    height: 100%; 
-    width: 100%;
     border: none;
+    width: 100%;
 }
 
 img {
@@ -50,9 +49,10 @@ img {
     height: auto;
 }
 
-a { 
-    color: $simlab-primary-magenta; 
-    &:hover { 
+a {
+    color: $simlab-primary-magenta;
+    &:hover,
+    &:focus {
         text-decoration: none;
         color: $simlab-primary-black;
     }
@@ -63,14 +63,14 @@ a {
     text-decoration: none !important;
     color: $simlab-primary-grey;
     cursor: default;
-     &:hover { 
+     &:hover {
         text-decoration: none;
         color: $simlab-primary-grey;
     }
 }
 
 .caption {
-    font-style: italic;    
+    font-style: italic;
 }
 
 .lighter {
@@ -78,7 +78,7 @@ a {
 }
 
 .extra-bold {
-    font-weight: 800;
+    font-weight: 700;
     font-stretch: expanded;
 }
 
@@ -88,13 +88,14 @@ body {
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
     @extend %opensans;
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 700;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -102,7 +103,7 @@ h1 {
 h2 {
     @extend %opensans;
     font-size: 1.5em;
-    font-weight: 800;
+    font-weight: 700;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -180,11 +181,11 @@ p {
     }
     @include phone {
         top:240px;
-        
+
     }
     @include minimum {
         top: 220px;
-    }   
+    }
 }
 
 .content-wrapper {
@@ -198,11 +199,11 @@ p {
     }
     @include phone {
         top:250px;
-        
+
     }
     @include minimum {
         top: 260px;
-    }   
+    }
 }
 
 .headline {
@@ -258,7 +259,7 @@ p {
 
 .home-page {
     @include desktop {
-        background: $simlab-primary-black no-repeat 0 -150px;    
+        background: $simlab-primary-black no-repeat 0 -150px;
     }
     @include tablet {
         background: $simlab-primary-black no-repeat 0 -100px;
@@ -286,7 +287,7 @@ p {
     width:100%;
 }
 .header-wrapper{
-    padding:0; 
+    padding:0;
     background-color:#FFFFFF;
 }
 
@@ -296,7 +297,7 @@ p {
     opacity: .7;
     width:100%;
     @include desktop {
-        background-position: 0% 70%;    
+        background-position: 0% 70%;
     }
     @include tablet {
         background-position: 0% 80%;
@@ -307,7 +308,7 @@ p {
     @include minimum {
         //background-position: 10% 20%;
     }
-    
+
 }
 
 .angled-header{
@@ -318,8 +319,8 @@ p {
     padding-right: 0;
     padding-left: 0;
     position: relative;
-        
-    > div { 
+
+    > div {
         > h1 {
             padding-left: 15px;
             > span {
@@ -345,7 +346,7 @@ p {
     padding:0 5%;
     transform:skew(0deg,-2.5deg);
     -ms-transform: skew(0deg,-5deg);
-    -webkit-transform: skew(0deg,-2.5deg); 
+    -webkit-transform: skew(0deg,-2.5deg);
     -webkit-backface-visibility: hidden;
 }
 
@@ -357,7 +358,7 @@ p {
     }
     @include tablet {
         margin-top:-25px;
-    }   
+    }
     @include phone {
         margin-top:-25px;
     }
@@ -377,7 +378,7 @@ p {
 
 .logo {
     img {
-        width:200px; 
+        width:200px;
         padding-top:8px;
     }
 }
@@ -388,7 +389,7 @@ p {
     border: none;
 }
 
-.navbar-default .navbar-nav { 
+.navbar-default .navbar-nav {
     > li > a {
     color: #FFFFFF;
     font-size: .9em; //14px;
@@ -431,7 +432,7 @@ hr {
   border-style: solid none;
   border-width: 0;
   margin: 0;
-    &.bold {  
+    &.bold {
         border-color: $simlab-primary-black -moz-use-text-color $simlab-primary-black;
         border-top: 3px solid $simlab-primary-black;
     }
@@ -442,10 +443,10 @@ hr {
 }
 
 
-@mixin setPlaceHolderColor { 
+@mixin setPlaceHolderColor {
     ::-webkit-input-placeholder { @content }
     :-moz-placeholder  { @content }
-    ::-moz-placeholder { @content } 
+    ::-moz-placeholder { @content }
     :-ms-input-placeholder { @content }
 }
 
@@ -471,12 +472,12 @@ hr {
             z-index: 0;
             background-color: transparent;
             color: #FFFFFF;
-            font-weight: bold; 
+            font-weight: bold;
             font-size: initial;
         }
         @include setPlaceHolderColor {
                 color: #FFFFFF;
-            }  
+            }
     }
 }
 #search-box{
@@ -488,18 +489,18 @@ hr {
 
 .form-control {
     font-size: initial;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 .search-result {
-    > a { 
-        color: $simlab-primary-black; 
+    > a {
+        color: $simlab-primary-black;
         &:hover{
             color: $simlab-primary-magenta;
         }
     }
     padding: 5px;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
     white-space: nowrap;
     > i {
         color: $simlab-primary-magenta;
@@ -520,7 +521,7 @@ hr {
 }
 
 .larger-bolder {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -547,14 +548,14 @@ hr {
 }
 
 .menu {
-    h2 { 
+    h2 {
         padding-top: 10px;
     }
     @include desktop {
         margin: 10px;
         padding: 10px 0 10px 10px;
     }
-    // Heading 
+    // Heading
     > p {
         @include desktop {
             margin-top: 17px;
@@ -591,8 +592,8 @@ hr {
         margin: -35px 10px 10px 10px;
         padding: 0px 0 10px 10px;
     }
-    
-    h2 { 
+
+    h2 {
         padding-bottom: 0;
     }
     h4 {
@@ -600,7 +601,7 @@ hr {
     }
 }
 
-@mixin setFormFxAll { 
+@mixin setFormFxAll {
     &:focus, &:hover, &:active {
         @content
     }
@@ -643,7 +644,7 @@ hr {
         @include desktop {
             margin: 25px 20px 20px -5px;
         }
-        
+
         color: #FFFFFF;
         background-color: $simlab-secondary-darkblue;
         padding: 20px;
@@ -681,12 +682,12 @@ hr {
 }
 
 .round-button{
-    > a { 
+    > a {
         color: #FFFFFF;
         position: relative;
         top: -3px;
         left: 3px;
-    } 
+    }
     margin-right: 10px;
     border-radius: 20px;
     width: 40px;
@@ -694,11 +695,11 @@ hr {
     &:hover {
         background-color: $simlab-primary-black;
     }
-    
+
 }
 
 .rectangle-button{
-    color: #FFFFFF; 
+    color: #FFFFFF;
         border-radius: 5px;
         padding: 10px;
         width: 100%;
@@ -715,11 +716,15 @@ hr {
     }
 }
 
+.post-type {
+  margin: 0 0 10px;
+}
+
 .post-content{
     padding-right: 15px;
 }
 
-.post-image { 
+.post-image {
     margin-top: 10px;
     padding: 6px 15px 0 15px;
 }
@@ -738,15 +743,32 @@ hr {
 }
 
 .section-link{
-    padding-bottom: 10px;
+    line-height: 110%;
+    margin-bottom: 15px;
+    a {
+      margin-bottom: 5px;
+      display: block;
+    }
+    p {
+      line-height: 1.2;
+    }
+}
+
+.content {
+  .section-link {
+    margin-bottom: 20px;
+  }
 }
 
 .post-meta {
-    margin-top: -10px;
+    margin-top: -5px;
     margin-left: -5px;
     > li {
         padding: 3px 15px 7px 15px;
         font-size: .9em;
+        &.last {
+          border-right: none;
+        }
         @include tablet {
             float: left;
             border-right: solid 1px $simlab-primary-black;
@@ -758,20 +780,20 @@ hr {
             border-right: solid 1px $simlab-primary-black;
             line-height: 4px;
             height: 10px;
-        }    
+        }
     }
 }
 
 .feature {
     min-height: 250px;
     color:#FFFFFF;
-    
+
     a { color: #FFFFFF;
         &:hover{
             color: $simlab-primary-magenta;
         }
      }
-    .overlay { 
+    .overlay {
         padding-top:75px;
         background-color:rgba(0, 0, 0, 0.5);
         min-height: 250px;
@@ -788,13 +810,13 @@ hr {
 }
 
 .pagination-wrapper{
-    margin-top: 25px;    
+    margin-top: 25px;
 }
 
 .pagination {
     border-radius: 15px;
     height: 30px;
-    width: 30px;    
+    width: 30px;
     border: 2px solid $simlab-primary-grey;
 }
 
@@ -807,16 +829,17 @@ hr {
     margin: 0 0 0 10px;
     padding: 6px 0 0 8px;
 }
-
+.team-container {
+}
 .team-card {
     @include phone {
-        min-height:285px;
+        min-height:185px;
     }
     @include tablet {
-        min-height:480px;
+        min-height:370px;
     }
     @include desktop {
-        min-height:480px;
+        height:340px;
     }
 }
 
@@ -858,11 +881,11 @@ footer {
 .address {
     position: relative;
     top: -20px;
-    
+
     overflow: auto;
     clear: both;
 }
-.center { 
+.center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -888,4 +911,31 @@ footer {
     line-height: 1.5;
     @extend %opensans;
     -webkit-font-smoothing: antialiased;
+}
+
+.form-embed-wrapper {
+  border: 2px solid $simlab-primary-grey;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+
+#create-pdf {
+  display: block;
+  margin-top: -10px;
+}
+
+.next-prev-navigation {
+  span, i {
+    display: none;
+  }
+  a {
+    color: $simlab-primary-magenta;
+    display: block;
+    i {
+      display: inline-block;
+    }
+  }
+}
+.prev-item {
+  margin-left: -33px;
 }

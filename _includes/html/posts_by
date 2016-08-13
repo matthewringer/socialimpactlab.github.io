@@ -7,7 +7,7 @@
 		{%endif%}
 		{%if haspost == 'none'%}
 			{%assign haspost = 'first'%}
-			<h2>Posts by {{ name.first | split: ' ' | first }}</h2>
+			<h2><span class="lighter">Posts by</span> {{ name.first | split: ' ' | first }}</h2>
 		{%endif%}
 		<a class="post-link author-posts" href="{{site.baseurl}}{{post.url}}">{{post.title}}{% if post.subtitle %}: {{post.subtitle}}{%endif%}</a><br>
 	{%endif%}

@@ -1,5 +1,5 @@
 <div class="menu">
-    <h2 class="extra-bold"><span class="fa icon-download magenta"></span> Downloads </h2>
+    <h2 class="extra-bold"><span class="fa icon-download magenta"></span> Download </h2>
     {% if page.pdf %}
     <ul class="list-unstyled">
         <li id="download-pdf"><a class="extra-bold" href="{{site.baseurl}}{{page.pdf}}" download>Interactive PDF</a></li>
@@ -33,7 +33,7 @@
             success: function()
             {
                 ///var length = xhr.getResponseHeader('Content-Length');
-                var length = 100; 
+                var length = 100;
                 $(id).append("<span> (" + bytesToSize( xhr.getResponseHeader('Content-Length')) + ")</span>");
             }
         });
@@ -60,13 +60,13 @@
           <h4 class="modal-title">Modal Header</h4>
         </div>
         <div id="print-preview" class="modal-body">
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
 </div>-->

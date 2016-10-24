@@ -4,7 +4,7 @@
 {% assign headerimage = include.headerimage %}
 {% endif %}
 <header>
-    <div class=" header-wrapper" style="" >
+    <div class=" header-wrapper">
     <div class="header shadow"></div>
     <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{headerimage}}'); background-size: cover;"></div></div>
     <div class="header angled-header">
@@ -24,9 +24,9 @@
                     {% assign title = page.title %}
                 {% endif %}
                 <h2>{{title}}</h2>
-                <hr class="bold" /> 
+                <hr class="bold"/>
                 {% include html/search_box %}
-                <hr class="light" />
+                <hr class="light"/>
             </div>
             {% endif %}
         </div>

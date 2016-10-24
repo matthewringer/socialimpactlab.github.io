@@ -2,7 +2,7 @@
 <html>
 {% include html/head %}
 <body>
-  {% include html/header title=site.courses.title headerimage="/images/resources_header.jpg" %}
+  {% include html/header title=site.courses.title headerimage="/images/header/courses_header.jpg" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
@@ -10,20 +10,6 @@
           <article id="content">
           <p> {{ page.excerpt }} </p>
           <h2> {{ page.title }} </h2>
-          <!--<table class="table table-bordered" >
-            <tr>
-              <th>COURSE OPENS</th>
-              <th>DURATION</th>
-              <th>CURRICULUM</th>
-              <th>STUDENTS</th>
-            </tr>
-            <tr>
-              <td>{{ page.open_date | date: site.date_format }}</td>
-              <td>{{ page.duration }}</td>
-              <td>{{ page.modules | size }} modules </td>
-              <td>{{ page.students }}</td>
-            </tr>
-          </table>-->
           <ul class="list-unstyled">
             {% for item in page.modules %}
             <li class="section-link">
@@ -32,38 +18,37 @@
             {% else %}
             <a class="extra-bold" href="{{site.baseurl}}{{item}}">{{item}}</a>
             {% endif %}
-            <br/>
             <p class="small"> {{item.description}} </p>
             </li>
             {% endfor %}
           </ul>
-          {{ content }} 
+          {{ content }}
           </article>
           <br/>
         </div>
         <div class="col-md-4">
           <div class="menu">
-            <h2 class="extra-bold">Course Details</h2>
+            <h2><span class="lighter">Course</span> Details</h2>
             <ul class="list-unstyled" >
-                <li><p><span class="extra-bold">Opens:</span> {{ page.open_date | date: site.date_format }}</p></li>
-                <li><p><span class="extra-bold">Duration:</span> {{ page.duration }}</p></li>
-                <li><p><span class="extra-bold">Curriculum:</span> {{ page.modules | size }} modules </p></li>
-                <li><p><span class="extra-bold">Students:</span> {{ page.students }}</p></li>
+                <li><span class="extra-bold">Opens:</span> {{ page.open_date | date: site.date_format }}</li>
+                <li><span class="extra-bold">Duration:</span> {{ page.duration }}</li>
+                <li><span class="extra-bold">Curriculum:</span> {{ page.modules | size }} modules </li>
+                <li><span class="extra-bold">Students:</span> {{ page.students }}</li>
             </ul>
             <h2 class="extra-bold">Contact</h2>
             <ul class="list-unstyled">
               <li>
                 <div>
-                  <p class="extra-bold">
+                  <span class="extra-bold">
                     <a href="{{ site.baseurl }}/subscribe">Subscribe</a>
-                  </p>
+                  </span>
                 </div>
               </li>
               <li>
                 <div>
-                  <p class="extra-bold">
+                  <span class="extra-bold">
                     <a href="{{ site.baseurl }}/feedback">Feedback</a>
-                  </p>
+                  </span>
                 </div>
               </li>
             </ul>
@@ -71,7 +56,7 @@
         </div>
       </div>
       {% include html/share_buttons %}
-      {% include html/disqus_comments %} 
+      {% include html/disqus_comments %}
       {% include html/facebook_comments %} {% include html/related_posts %}
       <!--/row -->
     </div>

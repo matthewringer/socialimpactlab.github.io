@@ -1,9 +1,9 @@
 ---
 layout: home
-headerimage: "/images/home_header.jpg"
+headerimage: "/images/header/home_header.jpg"
 permalink: "/"
 title: "About"
-headline: 'We help make <span class="extra-bold">technology</span> <br/>work for <span class="extra-bold">everyone<span>'
+headline: 'We help make <span class="extra-bold">technology</span> <br/>work for <span class="extra-bold">everyone<span>.'
 nosearch: true
 ---
 SIMLab is a nonprofit with a mission to realize a world where technology helps build societies that are equitable and inclusive. We help find the technologies that will be inclusive, and accessible, for the people you want to talk to and the contexts you need to work in; from radio to social media, from SMS to Whatsapp, from the mobile web to community noticeboards. We’ll help you deliver services, share information, and communicate with communities, generating new data and new conversations along the way.

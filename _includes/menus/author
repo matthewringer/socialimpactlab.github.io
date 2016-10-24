@@ -10,7 +10,7 @@
 </div>
 <div class="menu">
     {% if page.email %}
-     <h2 class="extra-bold">Contact the author</h2>
+     <h2>Contact the Author</h2>
      <ul class="list-unstyled">
         <li>
             <div><p> <span class="extra-bold">Email</span>

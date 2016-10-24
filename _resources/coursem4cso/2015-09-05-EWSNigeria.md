@@ -4,6 +4,7 @@ title: "Early Warning System in Nigeria"
 author: Valerie Oliphant, SIMLab
 category: resources
 permalink: /resources/EWSNigeria/
+type: "Case Study"
 ---
 These resources discuss how Search for Common Ground used FrontlineSMS and CrowdMap in Jos, a city in Northern Nigeria, to develop an Early Warning System (EWS).
 

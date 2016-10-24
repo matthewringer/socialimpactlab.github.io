@@ -4,6 +4,7 @@ title: Advanced features in Frontline!
 author: Laura Walker McDonald, SIMLab
 category: resources
 permalink: /resources/FLactivities/
+type: "Case Study"
 ---
 Watch or Listen: this week's demo on advanced features in FrontlineCloud!
 

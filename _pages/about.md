@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about
-headerimage: "/images/about_header.jpg"
+headerimage: "/images/header/about_header.jpg"
 menus: [services]
 ---
 

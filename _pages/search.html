@@ -1,13 +1,20 @@
 ---
-layout: page
+layout: default
 title: Search
 id: search
 permalink: /search/
 nosearch: true
 ---
 <div class="container">
-    <div>
-        <ul class="list-unstyled" id="results-list-container">
-        </ul>
-    </div>
+  <div class="row">
+      <div class="col-sm-8 right-divider">
+          <div id="content" >
+            <ul class="list-unstyled" id="results-list-container"></ul>
+          </div>
+      </div>
+      <div class="col-sm-4">
+        {% include menus/tags %}
+      </div>
+  </div>
+  <!--/row -->
 </div>

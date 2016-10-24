@@ -4,7 +4,7 @@ title: "SIMLab's experience in Kenya: Implementing a mobile money management too
 author: Kelly Church, SIMLab
 permalink: /resources/lastmilemoney/
 pdf: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
-type: "Type"
+type: "Case Study"
 date: 2015-09-05
 ---
 ![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why is it so hard to try something new in ICT4D?
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/changemanagement/
 ---

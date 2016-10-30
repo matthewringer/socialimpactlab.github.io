@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% include html/head %}
+<body>
+    {% include html/header headerimage="/images/header/stories_header.png" %}
+    <div class="content-wrapper">
+        <div class="container" role="{{page.role}}">
+            <div class="row">
+                <div class="{ col-sm-12 col-md-8 col-md-offset-2">
+                    <div id="content" >
+                        {{content}}
+                    </div>
+                </div>
+            </div>
+            <!--/row -->
+        </div>
+        {% include html/footer %}
+    </div>
+</body>
+</html>

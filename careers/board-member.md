@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Board Members and Treasurer
-categories: jobs
+categories: [team, jobs]
 menus: [team-external]
+headerimage: "/images/header/team_header.png"
+
 ---
 
 ## Board Members and Treasurer
@@ -56,4 +58,4 @@ Ideal candidates will have the following qualifications:
 * Track record of building credibility in the funding community that has resulted in major gifts to a nonprofit.
 * Excellent written and oral communication skills coupled with natural affinity for public speaking.
 
-**Service on SIMLab’s board of directors is without remuneration, except for administrative support, travel, and accommodation costs in relation to board members’ duties. To apply, please email us your CV and tell us why you would be perfect for our Board, at jobs@simlab.org.**
+**Service on SIMLab’s board of directors is without remuneration, except for administrative support, travel, and accommodation costs in relation to board members’ duties. To apply, please email us your CV and tell us why you would be perfect for our Board, at <a href="mailto:jobs@simlab.org">jobs@simlab.org</a>.**

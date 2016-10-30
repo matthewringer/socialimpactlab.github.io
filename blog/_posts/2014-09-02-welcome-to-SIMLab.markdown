@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to SIMLab"
 date: 2014-09-02 14:25:00
-categories: [blog, stories, feature]
+categories: [stories, feature]
 author: Laura Walker McDonald
 teaseimage: /images/post_images/sacco.jpg
 excerpt: "Well, this is an exciting day. Welcome to the Social Impact Lab. For almost nine years, we’ve been the team behind FrontlineSMS, the world’s most-used text messaging platform. Our users have monitored elections, managed clinics, gathered research data, But as we’ve worked with organizations all over the world, in every sector of social change work, we’ve learned that getting the technology up and running is just ten percent of the problem - the real challenges are human, organisational, financial, and ethical."

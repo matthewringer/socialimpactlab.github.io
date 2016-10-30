@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FrontlineCloud with Aggregator
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/FLaggregator/
 ---

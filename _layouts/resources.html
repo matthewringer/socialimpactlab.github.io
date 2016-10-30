@@ -2,16 +2,16 @@
 <html>
 {% include html/head %}
 <body>
-    {% include html/header headerimage="/images/header/resources_header.jpg" %}
+    {% include html/header headerimage="/images/header/resources_header.png" %}
     <div class="content-wrapper">
         <div class="container" role="{{page.role}}">
             <div class="row">
-                <div class="col-sm-8 right-divider">
+                <div class="col-xs-12 col-sm-8 right-divider">
                     <article id="content">
                     {{content}}
                     </article>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-12 col-sm-4">
                     {% include /menus/categories %}
                 </div>
             </div>

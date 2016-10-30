@@ -3,34 +3,23 @@ layout: casestudy
 title: "Example Case Study"
 date: 2016-05-03 14:25:00
 author: Kelly Church
-categories: [casestudies]
+categories: [Case Studies]
 tags: [Training, Mobile, "Disaster Response"]
 menus: [downloads, section_links]
-teaseimage: "/images/dfidcase/Picture1.png"
 teaseimage-caption: "my caption"
 teaseimage-alttext: "desk"
-sections: 
-    - "section1"
-    - { link: "section2", 
-        text: "Link 2 title", 
-        description: "Link 3 description" }
-    - { link: "section3", 
-        text: "Link 3 title", 
-        description: "Link 3 description" }
 ---
 
-# This is an Example Case Study
+Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
 
 ![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
 _SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
-
-## Section 1
 
 Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
 
 ## Section 2 {% include html/sectionlink link="section2" %}
 
-Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te 
+Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te
 
 ## Section 3 {% include html/sectionlink link="section3" %}
 
@@ -41,9 +30,6 @@ Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent labora
 Lorem ipsum dolor sit amet, assum similique delicatissimi usu no. Fierent laboramus sit ut, cetero eloquentiam eos cu. Vim falli graeco an, usu at quot graeco, sit in accumsan probatus delicata. Debet vitae iracundia per cu, no utinam percipit lobortis usu. No gloriatur persequeris suscipiantur his, te nec modo admodum vulputate, ne pri accumsan placerat detraxit. An ius solum iudico aliquid, vim no consul platonem, amet omittantur vim eu.
 
 ## Section 5 {% include html/sectionlink link="section3" %}
-
-![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
-_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
 

@@ -1,18 +1,15 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 border-left" style="min-height:130px;">
+      <div class="col-xs-12 col-sm-4 col-md-4 border-left footer-col">
         <h2 class="small-logo"><a href="{{ site.baseurl }}/"> {% include svg/logo %}</a> <span class="lighter">SIM</span><b class="magenta">Lab</b></h2>
-        <div style="position:relative; top:-30px;">
+        <div class="social-buttons-wrapper">
           {% include html/social_buttons %}
         </div>
-        <div class="text-left address">
-          <p>1110 Vermont Ave NW
-Washington, DC</p>
-        </div>
+        <p class="photo-credit">Header photo credit: Jonathan Kalan</p>
       </div>
-      <div class="col-sm-4 border-left left-divider right-divider" style="min-height:130px;">
-        <div class="col-sm-offset-3 col-sm-6" >
+      <div class="col-xs-12 col-sm-4 col-md-4 border-left left-divider footer-divider footer-col">
+        <div class="col-sm-offset-3 col-sm-6">
           <h3>Site Map</h3>
           <ul class="list-unstyled">
           {% for item in site.data.global.nav_items %}
@@ -21,32 +18,38 @@ Washington, DC</p>
           </ul>
         </div>
       </div>
-      <div class="col-sm-4 border-right">
-        <div class="col-md-offset-1 col-sm-9" style="min-height:130px;">
+      <div class="col-xs-12 col-sm-4 col-md-4 border-right footer-col">
+        <div class="col-md-offset-1 col-sm-9">
           <h3>Subscribe</h3>
-          <!--<form  role="subscribe" autocomplete="off" > 
-            <div class="input-group no-border">
-                <input id="subscribe-box" name="q" type="text" class="form-control no-border subscribe-box" placeholder="Enter email address">
-                <span class="input-group-btn">
-                    <button type="submit" class="btn btn-default no-border subscribe-button">
-                        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                    </button>
-                </span>
-            </div>
-          </form>-->
-          <p>Subscribe to our mailing list. <a href="mailto:hello@simlab.org">hello@simlab.org</a></p>
+          <!-- Begin MailChimp Signup Form -->
+          <div class="subscribe-form">
+          <form action="//districtdesigngroup.us6.list-manage.com/subscribe/post?u=fd3eadde74d3298d672e427bd&amp;id=40d9c6343b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+          <div class="mc-field-group">
+          	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail">
+          </div>
+          	<div id="mce-responses" class="clear">
+          		<div class="response" id="mce-error-response" style="display:none"></div>
+          		<div class="response" id="mce-success-response" style="display:none"></div>
+          	</div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fd3eadde74d3298d672e427bd_40d9c6343b" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-button"></div>
+              </div>
+          </form>
+          </div>
+          <!--End signup embed -->
         </div>
       </div>
     </div>
   </div>
   <br/>
   <hr class="light" />
-  <div class="container" style="padding-top:10px;">
+  <div class="container copyright-footer">
     <div class="row">
       <div class="col-sm-6">
         <p>To work with us, send us an email at <a href="mailto:hello@simlab.org">hello@simlab.org</a></p>
       </div>
-      <div class="col-sm-6 col-sm-push-1">
+      <div class="col-sm-6 copyright">
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> All SIMLab-owned content is licensed CC-BY-NC-SA 4.0.</a>
       </div>
     </div>

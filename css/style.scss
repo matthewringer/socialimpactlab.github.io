@@ -6,7 +6,6 @@
 @import '../_sass/global';
 
 
-
 $twitter: #00aced;
 $facebook: #3b5998;
 $googleplus: #dd4b39;
@@ -32,6 +31,7 @@ $simlab-primary-magenta: #A7166A;
 $simlab-primary-black: #231f20;
 $simlab-primary-grey: #E9E9E9;
 $simlab-secondary-grey: #EEEEEE;
+$simlab-light-grey: #97999B;
 $simlab-secondary-darkblue: #1B579F;
 $simlab-secondary-slate: #004650;
 $simlab-secondary-lightblue: #00AECE;
@@ -83,15 +83,24 @@ a {
     font-weight: 700;
     font-stretch: expanded;
 }
-
+html,
 body {
     @extend %opensans;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
+
+    @include tablet {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    @include phone {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 h1 {
@@ -106,7 +115,7 @@ h2 {
     @extend %opensans;
     font-size: 1.5em;
     font-weight: 700;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -183,10 +192,12 @@ p {
     }
     @include phone {
         top:240px;
-
     }
     @include minimum {
         top: 220px;
+    }
+    .search-box {
+      margin-top: 40px;
     }
 }
 
@@ -222,7 +233,8 @@ p {
         padding-right: 25px;
         font-size: 1.6em;
         position: absolute;
-        top: 70px;
+        left: 0;
+        top: 40px;
     }
     @include minimum {
         font-size: 2em;
@@ -288,6 +300,9 @@ p {
     background-color: #000000;
     width:100%;
 }
+header {
+    overflow: hidden;
+}
 .header-wrapper{
     padding:0;
     background-color:#FFFFFF;
@@ -338,9 +353,13 @@ p {
     }
     @include tablet {
         margin:25px auto;
+        padding: 0;
+        width:100%;
     }
     @include phone {
         margin:25px auto;
+        padding: 0;
+        width:100%;
     }
     display:block;
     float:left;
@@ -357,12 +376,15 @@ p {
     @include desktop {
         margin-top:-250px;
         height: 230px;
+        width: 100%;
     }
     @include tablet {
         margin-top:-25px;
+        width: 100%;
     }
     @include phone {
         margin-top:-25px;
+        width: 100%;
     }
     border-top: 0.5px fffff solid;
     display:block;
@@ -382,6 +404,9 @@ p {
     img {
         width:200px;
         padding-top:8px;
+        @include phone {
+          width: 180px;
+        }
     }
 }
 
@@ -389,6 +414,12 @@ p {
     z-index: 1;
     background-color: transparent;
     border: none;
+    .navbar-toggle {
+      border-color: #FFFFFF;
+      .icon-bar {
+        background-color: #FFFFFF;
+      }
+    }
 }
 
 .navbar-default .navbar-nav {
@@ -396,9 +427,12 @@ p {
     color: #FFFFFF;
     font-size: .9em; //14px;
     font-weight: bold;
+    @include tablet {
+      padding: 10px 7px;
+    }
     &:hover{
-                text-decoration: underline;
-            }
+        text-decoration: underline;
+          }
     }
 }
 
@@ -417,10 +451,10 @@ p {
 
 .custom-navbar {
     .collapse.in {
-	    background-color: $simlab-primary-magenta;
+	    background-color: $simlab-primary-black;
     }
     .collapsing {
-	    background-color: $simlab-primary-magenta;
+      background-color: $simlab-primary-black;
     }
 }
 
@@ -482,6 +516,7 @@ hr {
             }
     }
 }
+
 #search-box{
     padding:30px;
 }
@@ -501,9 +536,19 @@ hr {
             color: $simlab-primary-magenta;
         }
     }
-    padding: 5px;
+    padding: 5px 5px 5px 78px;
     text-overflow: ellipsis;
     white-space: nowrap;
+    @include tablet {
+        display: block;
+        white-space: normal;
+        width: 85%;
+    }
+    @include phone {
+        display: block;
+        white-space: normal;
+        width: 85%;
+    }
     > i {
         color: $simlab-primary-magenta;
     }
@@ -528,13 +573,16 @@ hr {
 }
 
 .right-divider {
-    @include tablet {
-        border-right: 2px solid $simlab-primary-grey;
-        padding-right: 50px;
-    }
     @include desktop {
         border-right: 2px solid $simlab-primary-grey;
         padding-right: 50px;
+    }
+    @include tablet {
+        border-right: none;
+        padding-right: 0;
+    }
+    @include phone {
+      border-right: none;
     }
 }
 
@@ -549,13 +597,19 @@ hr {
     }
 }
 
+.homepage-content {
+  min-height: 350px;
+}
+
 .menu {
     h2 {
         padding-top: 10px;
     }
     @include desktop {
-        margin: 10px;
-        padding: 10px 0 10px 10px;
+        padding: 0 0 10px 10px;
+    }
+    @include tablet {
+        padding-top: 30px;
     }
     // Heading
     > p {
@@ -569,6 +623,7 @@ hr {
             padding-left: 15px;
             color: $simlab-primary-magenta;
             &:hover{
+                color: $simlab-primary-black;
                 text-decoration: none;
             }
         }
@@ -578,15 +633,20 @@ hr {
         margin-top: 7px;
     }
     .foot {
-        padding-top: 60px;
+        padding-top: 20px;
+    }
+    .fa {
+      &.fa-chevron-circle-right {
+        margin-top: 2px;
+      }
     }
 }
 
 .site-map-links {
-    color:#858585;
+    color: $simlab-light-grey;
     &:hover{
-                color: $simlab-primary-magenta;
-            }
+      color: $simlab-primary-magenta;
+    }
 }
 
 .team-sidebar{
@@ -597,9 +657,19 @@ hr {
 
     h2 {
         padding-bottom: 0;
+        @include tablet {
+          margin-top: 0;
+          padding-top: 0;
+        }
+        @include phone {
+          display: none;
+        }
     }
     h4 {
         padding-top: 0;
+        @include phone {
+          display: none;
+        }
     }
 }
 
@@ -674,7 +744,14 @@ hr {
         float: left;
     }
 }
-
+.social-buttons-wrapper {
+  position:relative;
+  top:-30px;
+  overflow: hidden;
+  @include phone {
+    margin-left: 15px;
+  }
+}
 .social-buttons{
     > li {
         float:left;
@@ -689,6 +766,10 @@ hr {
         position: relative;
         top: -3px;
         left: 3px;
+
+        &.fa-facebook {
+          margin-left:2px;
+        }
     }
     margin-right: 10px;
     border-radius: 20px;
@@ -710,11 +791,20 @@ hr {
 }
 
 .post-header {
-    padding-top: 30px;
+    border-bottom: 2px solid $simlab-primary-grey;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 30px 20px 30px 0;
+    width: 95%;
+    @include phone {
+      margin-right: 30px;
+      width: 85%;
+    }
+
     h2 {
         margin-top: 0;
-        padding-top: 0;
         padding-bottom: 10px;
+        padding-top: 0;
     }
 }
 
@@ -746,13 +836,13 @@ hr {
 
 .section-link{
   line-height: 110%;
-  margin-bottom: 15px;
     a {
-      margin-bottom: 5px;
       display: block;
+      margin-bottom: 20px;
     }
     p {
       line-height: 1.2;
+      margin-top: -5px;
     }
 }
 
@@ -762,37 +852,46 @@ hr {
     > li {
         font-size: .9em;
         margin-bottom: 7px;
-        padding: 3px 15px 7px 15px;
+        padding: 3px 15px 7px 20px;
+        &:first-child {
+          padding-left: 6px;
+        }
         &.last {
           border-right: none;
-        }
-        @include tablet {
-            float: left;
-            border-right: solid 1px $simlab-primary-black;
-            line-height: 4px;
-            height: 10px;
         }
         @include desktop {
             float: left;
             border-right: solid 1px $simlab-primary-black;
-            line-height: 4px;
             height: 10px;
+            line-height: 4px;
+        }
+        @include tablet {
+            float: left;
+            height: 10px;
+            line-height: 4px;
+            padding:0 0 0 5px;
+        }
+        @include phone {
+            display: block;
+            padding:0 0 0 5px;
         }
     }
 }
 
 .feature {
-    min-height: 250px;
     color:#FFFFFF;
+    margin-bottom: 25px;
+    min-height: 250px;
 
     a { color: #FFFFFF;
         &:hover{
-            color: $simlab-primary-magenta;
+            color: #FFFFFF;
+            text-decoration: underline;
         }
      }
     .overlay {
-        padding-top:75px;
-        background-color:rgba(0, 0, 0, 0.5);
+        padding: 75px 15px 15px 15px;
+        background-color:rgba(0, 0, 0, 0.25);
         min-height: 250px;
     }
 }
@@ -808,6 +907,30 @@ hr {
 
 .pagination-wrapper{
     margin-top: 25px;
+    @include phone {
+      font-size: 0.7em;
+      margin-top: 0;
+    }
+    i {
+      line-height: 92%;
+    }
+    a {
+      color: $simlab-primary-magenta;
+      &:hover {
+        color: $simlab-primary-black;
+        i {
+          background: $simlab-primary-black;
+          color: #FFFFFF;
+        }
+      }
+      i {
+        display: inline-block;
+        &:hover {
+          background: $simlab-primary-black;
+          color: #FFFFFF;
+        }
+      }
+    }
 }
 
 .pagination {
@@ -815,6 +938,11 @@ hr {
     height: 30px;
     width: 30px;
     border: 2px solid $simlab-primary-grey;
+
+    @include phone {
+      height: 25px;
+      width: 25px;
+    }
 }
 
 .left {
@@ -825,6 +953,37 @@ hr {
 .right {
     margin: 0 0 0 10px;
     padding: 6px 0 0 8px;
+}
+
+.next-prev-navigation {
+  span, i {
+    display: none;
+  }
+  a {
+    i {
+      display: inline-block;
+    }
+  }
+}
+.prev-item {
+  margin-left: -33px;
+  span {
+    color: #eeeeee;
+  }
+  @include phone {
+    margin-left: -19px;
+  }
+}
+
+.next-item {
+  @include tablet {
+    float: right;
+    margin-right: -20px;
+  }
+  @include phone {
+    float: right;
+    margin-right: -20px;
+  }
 }
 
 .team-card {
@@ -844,7 +1003,7 @@ hr {
         padding-bottom: 0;
     }
     h3{
-        adding: 0;
+        padding: 0;
         margin-top: -10px;
     }
 }
@@ -861,6 +1020,9 @@ hr {
 .small-logo{
     position:relative;
     top: -40px;
+    @include phone {
+      margin-left: 15px;
+    }
     > a > svg {
         position:relative;
         top: 24px;
@@ -872,6 +1034,46 @@ hr {
 footer {
     margin-top: 60px;
     background-color: #FFFFFF;
+    @include phone {
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+    h3 {
+      text-align:left !important;
+    }
+    .footer-divider {
+      border-right: 2px solid $simlab-primary-grey;
+      padding-right: 50px;
+    }
+}
+
+.footer-col {
+  min-height:130px;
+  @include phone {
+    border-top: 2px solid $simlab-primary-grey;
+    padding-bottom: 20px;
+  }
+}
+
+.subscribe-form {
+  .email {
+    border: 2px solid #e9e9e9;
+    margin-bottom: 12px;
+    outline: none;
+    padding: 3px 5px;
+  }
+  .submit-button {
+    background-color: #A7166A;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    &:hover {
+      background-color: #333333;
+    }
+  }
 }
 
 .address {
@@ -920,22 +1122,6 @@ footer {
   margin-top: -10px;
 }
 
-.next-prev-navigation {
-  span, i {
-    display: none;
-  }
-  a {
-    color: $simlab-primary-magenta;
-    display: block;
-    i {
-      display: inline-block;
-    }
-  }
-}
-.prev-item {
-  margin-left: -33px;
-}
-
 .highlight {
   padding: 15px 20px;
   &.magenta {
@@ -965,5 +1151,48 @@ footer {
       color: $simlab-primary-black;
       border-color: $simlab-primary-magenta;
     }
+  }
+}
+
+.photo-credit {
+  font-size:11px;
+  @include phone {
+    margin-left: 15px;
+  }
+}
+.copyright-footer {
+  padding-top: 20px;
+  .copyright {
+    text-align:right;
+  }
+}
+.menu-label {
+  display: none;
+  float: right;
+  font-size: 11px;
+  margin-right: 5px;
+  margin-top: 15px;
+  text-align: left;
+  @include phone {
+    display: inline-block;
+  }
+}
+.team-name {
+  margin-top: -40px;
+  padding-top: 0;
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.team-role {
+  margin-bottom: 20px;
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
   }
 }

@@ -1,11 +1,12 @@
 ---
 layout: resource
 title: "SIMLab's experience in Kenya: Implementing a mobile money management tool and training approach in the last mile"
-author: Kelly Church, SIMLab
+author: Kelly Church
 permalink: /resources/lastmilemoney/
 pdf: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
 type: "Case Study"
 date: 2015-09-05
+excerpt: This case study describes the midterm progress and learning from a two-year project, funded by the UK Government’s Department for International Development (DFID).
 ---
 ![desk]({{site.baseurl}}/images/dfidcase/Picture1.png)
 _SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_

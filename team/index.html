@@ -3,7 +3,7 @@ layout: page
 title: Team
 permalink: /team/
 nosearch: true
-headerimage: "/images/header/team_header.jpg"
+headerimage: "/images/header/team_header.png"
 menus: [team]
 sections:
     - { link: "team",
@@ -24,7 +24,7 @@ sections:
 <div class="row team-container">
 {% for page in site.pages%}
       {% if page.categories contains "staff" %}
-<div class="col-xs-6 col-md-4 team-card">
+<div class="col-xs-12 col-sm-12 col-md-4 team-card">
   <a href="{{site.baseurl}}/team/{{page.locator}}">
       <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="">
       <h4><b>{{page.title}}</b></h4>

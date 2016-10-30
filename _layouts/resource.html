@@ -2,20 +2,21 @@
 <html>
 {% include html/head %}
 <body>
-  {% include html/header title=site.resources.title headerimage="/images/header/resources_header.jpg" %}
+  {% include html/header title=site.resources.title headerimage="/images/header/resources_header.png" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
-        <div class="col-md-8 right-divider">
+        <div class="col-sm-12 col-md-8 right-divider">
           <article id="content">
           {% include html/post_header sidebar=true %}
           {{ content }}
           </article>
           <br/>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div>
             {% include menus/downloads %}
+            {% include /menus/categories %}
             {% include menus/section_links %}
           </div>
         </div>

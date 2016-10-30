@@ -1,26 +1,9 @@
 ---
-layout: page
+layout: services
 title: Services
 permalink: /services/
-headerimage: "/images/header/services_header.jpg"
+headerimage: "/images/header/services_header.png"
 menus: [services]
-sections:
-    - { link: "service1",
-        text: "Service 1",
-        description: "Service one description" }
-    - { link: "service2",
-        text: "Service 2",
-        description: "Service two description" }
-    - { link: "service3",
-        text: "Service 3",
-        description: "Service three description" }
-    - { link: "service4",
-        text: "Service 4",
-        description: "Service four description" }
-    - { link: "service5",
-        text: "Service 5",
-        description: "Service five description" }
-
 ---
 
 ## Whether you're a non-profit, government, or aid agency,

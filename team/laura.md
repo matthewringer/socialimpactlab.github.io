@@ -7,7 +7,7 @@ permalink: /team/laura/
 twitter: techladylaura
 pic: lwh.png
 image: laura_big.jpg
-categories: staff
+categories: [team, staff]
 
 email: tbd@simlab.org
 skype: tbd_simlab

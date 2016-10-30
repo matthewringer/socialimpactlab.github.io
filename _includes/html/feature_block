@@ -1,4 +1,4 @@
-<div class="col-xs-6 col-md-6" >
+<div class="col-xs-12 col-sm-12 col-md-6" >
     <div class="feature text-center" style="background-image: url('{{site.baseurl}}{{ include.post.teaseimage }}'); background-size: cover;">
         <div class="text-center overlay" style="">
         <h3><a href="{{ include.post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ include.post.title }}</a></h3>

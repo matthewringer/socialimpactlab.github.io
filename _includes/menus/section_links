@@ -1,5 +1,5 @@
-<div class="menu">
-    <h2 class="extra-bold"> <i class="fa fa-lg icon-section magenta"></i> <span class="lighter">Section</span>Section Quick Links</h2>
+<div class="menu quick-links">
+    <h2 class="extra-bold"> <i class="fa fa-lg icon-section magenta"></i> <span class="lighter">Section</span> Quick Links</h2>
     <ul class="list-unstyled">
         {% for item in page.sections %}
         <li class="section-link">
@@ -8,7 +8,6 @@
         {% else %}
         <a class="extra-bold" href="{{site.baseurl}}{{page.url}}#{{item}}">{{item}}</a>
         {% endif %}
-        <br/>
         <p class="small"> {{item.description}} </p>
         </li>
         {% endfor %}

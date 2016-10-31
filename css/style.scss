@@ -975,6 +975,9 @@ hr {
 .right {
     margin: 0 0 0 10px;
     padding: 6px 0 0 7px;
+    @include desktop {
+      padding: 6px 0 0 8px;
+    }
 }
 
 .next-prev-navigation {

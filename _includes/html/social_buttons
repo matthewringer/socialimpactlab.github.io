@@ -1,17 +1,27 @@
 <ul class="list-unstyled social-buttons">
-  <li class="bg-magenta round-button">
-    <a class="fa fa-rss " href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+  <li class="round-button">
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">
+      <span class="fa fa-rss"></span>
+    </a>
   </li>
-  <li class="bg-magenta round-button">
-    <a class="fa fa-twitter " href="https://twitter.com/{{ site.twitter_username }}"></a>
+  <li class="round-button">
+    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+    <span class="fa fa-twitter"></span>
+    </a>
   </li>
-  <li class="bg-magenta round-button" >
-      <a class="fa fa-envelope" style="left:1px;" href="mailto:{{ site.email }}"></a>
+  <li class="round-button" >
+      <a href="mailto:{{ site.email }}" target="_blank">
+      <span class="fa fa-envelope"></span>
+      </a>
   </li>
-  <li class="bg-magenta round-button" >
-      <a class="fa fa-facebook" href="https://www.facebook.com/{{ site.facebook_username }}/?fref=nf"></a>
-  </li> 
-  <li class="bg-magenta round-button" >
-      <a class="fa fa-linkedin"  href="https://www.linkedin.com/company/{{ site.linkedin_username }}?trk=company_logo"></a>
+  <li class="round-button" >
+      <a href="https://www.facebook.com/{{ site.facebook_username }}/?fref=nf" target="_blank">
+      <span class="fa fa-facebook"></span>
+      </a>
+  </li>
+  <li class="round-button" >
+      <a href="https://www.linkedin.com/company/{{ site.linkedin_username }}?trk=company_logo" target="_blank">
+      <span class="fa fa-linkedin"></span>
+      </a>
   </li>
 </ul>

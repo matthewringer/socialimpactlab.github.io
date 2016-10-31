@@ -107,7 +107,6 @@ h1 {
     @extend %opensans;
     font-size: 2em;
     font-weight: 700;
-    padding-top: 30px;
     padding-bottom: 10px;
 }
 
@@ -205,14 +204,13 @@ p {
     width: 100%;
     position: absolute;
     @include desktop {
-        top:330px;
+        top:360px;
     }
     @include tablet {
-        top:300px;
+        top:330px;
     }
     @include phone {
-        top:250px;
-
+        top:230px;
     }
     @include minimum {
         top: 260px;
@@ -350,6 +348,7 @@ header {
 #backshape .wrapper {
     @include desktop {
         margin:50px auto;
+        height: 200px;
     }
     @include tablet {
         margin:25px auto;
@@ -375,7 +374,7 @@ header {
     position: relative;
     @include desktop {
         margin-top:-250px;
-        height: 230px;
+        height: 250px;
         width: 100%;
     }
     @include tablet {
@@ -386,11 +385,11 @@ header {
         margin-top:-25px;
         width: 100%;
     }
-    border-top: 0.5px fffff solid;
+    border-top: 0.5px #FFFFFF solid;
     display:block;
     float:left;
     width:110%;
-    background:white;
+    background: #FFFFFF;
     transform:skew(0deg,2.5deg);
     -ms-transform: skew(0deg,2.5deg); /* IE 9 */
     -webkit-transform: skew(0deg,2.5deg); /* Safari and Chrome */
@@ -398,6 +397,17 @@ header {
     @include minimum {
       display: none;
     }
+}
+
+.backshape-extension {
+  background: #FFFFFF;
+  position: absolute;
+  height: 250px;
+  margin-top: -33px;
+  width: 100%;
+  @include tablet {
+    margin-top: 0;
+  }
 }
 
 .logo {
@@ -573,14 +583,9 @@ hr {
 }
 
 .right-divider {
-    @include desktop {
-        border-right: 2px solid $simlab-primary-grey;
-        padding-right: 50px;
-    }
-    @include tablet {
-        border-right: none;
-        padding-right: 0;
-    }
+    border-right: 2px solid $simlab-primary-grey;
+    padding-right: 50px;
+
     @include phone {
       border-right: none;
     }
@@ -737,11 +742,12 @@ hr {
 }
 
 .share-buttons{
-    a { color: white;
-        padding: 12px 10px 10px 13.5px;
-        height: 40px;
-        width: 40px;
+    a {
+        color: white;
         float: left;
+        height: 40px;
+        padding: 12px 10px 10px 13.5px;
+        width: 40px;
     }
 }
 .social-buttons-wrapper {
@@ -755,7 +761,6 @@ hr {
 .social-buttons{
     > li {
         float:left;
-        padding:10px;
         margin-bottom: 10px;
     }
 }
@@ -764,21 +769,34 @@ hr {
     > a {
         color: #FFFFFF;
         position: relative;
-        top: -3px;
-        left: 3px;
+        background: $simlab-primary-magenta;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
 
-        &.fa-facebook {
-          margin-left:2px;
+        .fa {
+          display: block;
+          left: 32%;
+          position: absolute;
+          top: 25%;
+          &.fa-facebook {
+            left: 37%;
+            top: 27%;
+          }
+          &.fa-envelope {
+            left: 29%;
+          }
+          &.fa-twitter {
+            top: 27%;
+          }
+          &.fa-rss {
+            left: 34%;
+            top: 28%;
+          }
         }
     }
     margin-right: 10px;
-    border-radius: 20px;
-    width: 40px;
-    height: 40px;
-    &:hover {
-        background-color: $simlab-primary-black;
-    }
-
 }
 
 .rectangle-button{
@@ -798,7 +816,7 @@ hr {
     width: 95%;
     @include phone {
       margin-right: 30px;
-      width: 85%;
+      width: 89%;
     }
 
     h2 {
@@ -853,6 +871,9 @@ hr {
         font-size: .9em;
         margin-bottom: 7px;
         padding: 3px 15px 7px 20px;
+        @include phone {
+          margin-bottom: 0;
+        }
         &:first-child {
           padding-left: 6px;
         }
@@ -860,16 +881,16 @@ hr {
           border-right: none;
         }
         @include desktop {
-            float: left;
             border-right: solid 1px $simlab-primary-black;
+            float: left;
             height: 10px;
             line-height: 4px;
         }
         @include tablet {
+            border-right: solid 1px $simlab-primary-black;
             float: left;
             height: 10px;
             line-height: 4px;
-            padding:0 0 0 5px;
         }
         @include phone {
             display: block;
@@ -909,13 +930,14 @@ hr {
     margin-top: 25px;
     @include phone {
       font-size: 0.7em;
+      margin-bottom: 30px;
       margin-top: 0;
-    }
-    i {
-      line-height: 92%;
     }
     a {
       color: $simlab-primary-magenta;
+      i {
+        line-height: 90%;
+      }
       &:hover {
         color: $simlab-primary-black;
         i {
@@ -947,12 +969,12 @@ hr {
 
 .left {
     margin: 0 10px 0 0;
-    padding: 6px 0 0 6px;
+    padding: 6px 0 0 5px;
 }
 
 .right {
     margin: 0 0 0 10px;
-    padding: 6px 0 0 8px;
+    padding: 6px 0 0 7px;
 }
 
 .next-prev-navigation {
@@ -978,11 +1000,11 @@ hr {
 .next-item {
   @include tablet {
     float: right;
-    margin-right: -20px;
+    margin-right: 36%;
   }
   @include phone {
     float: right;
-    margin-right: -20px;
+    margin-right: -45px;
   }
 }
 

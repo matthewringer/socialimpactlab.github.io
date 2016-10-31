@@ -48,8 +48,11 @@ sections:
   <p>On top of competitive salaries, we offer employees health and dental insurance, support the purchase of your own preferred laptop, provide 20 days of paid vacation plus a generous amount of time off for the winter holidays, and foster professional development. We're looking for highly-motivated, passionate individuals who can grow and learn along with us.</p>
 
   {% for page in site.pages%}
+  <ul>
     {% if page.categories contains "jobs" %}
-    <h3><a class="post-link" style="background:none" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+    <li><a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
     {% endif %}
+  </ul>
   {% endfor %}
+  <br/><br/>
   <p>Don't see the job you want? Send us a CV and a letter telling us why we desperately need you to <a href="mailto:jobs@simlab.org">jobs@simlab.org</a></p>

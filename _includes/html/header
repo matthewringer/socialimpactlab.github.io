@@ -31,11 +31,11 @@
             {% endif %}
         </div>
     </div>
-    <div class="container" id="backshape" >
+    <div class="container" id="backshape">
         <div class="wrapper">
         </div>
     </div>
-    <div class="container" id="backshape" style="margin-top: -22px;">
+    <div class="container backshape-extension">
         <div class="wrapper"></div>
     </div>
 </header>

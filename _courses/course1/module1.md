@@ -3,7 +3,7 @@ layout: module
 title: "Example Course"
 date: 2016-05-03 14:25:00
 author: Kelly Church
-permalink: /courses/course/module1
+permalink: /courses/course1/module1
 categories: [courses]
 tags: [Training, Course, "Disaster Response"]
 menus: [downloads, section_links]

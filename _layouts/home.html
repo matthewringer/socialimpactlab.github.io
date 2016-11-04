@@ -5,7 +5,6 @@
     {% include html/header %}
     <div class="home-wrapper">
         <div class="container search-box">
-            <h1 class="titleline"> We are <span class="extra-bold">SIMLab</span><span class="extra-bold magenta">.</span></h1>
             <hr class="bold" /> {% include html/search_box %}
             <hr class="light" />
         </div>
@@ -13,7 +12,7 @@
             {% include html/features post=post %}
             <br/>
             <div class="row">
-                <div class="col-sm-8 right-divider" style="min-height:350px;">
+                <div class="col-sm-8 right-divider homepage-content">
                     <h2 class="extra-bold">{{ page.title }}</h2>
                     {{content}}
                 </div>

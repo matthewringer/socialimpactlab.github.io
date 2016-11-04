@@ -1,18 +1,21 @@
 ---
-layout: page
-title: BayLegal (2015) Documentation - Legal Advice Line
+layout: fullwidth
+headerimage: "/images/header/services_header.png"
 ---
-### What is it?
+
+# BayLegal (2015) Documentation - Legal Advice Line
+
+## What is it?
 As part of a TIG project, we have developed an integration from BayLegal's case management system ("Prime") to FrontlineCloud. This integration enables BayLegal staff to send SMS-based appointment reminders and closing surveys.
 
 ## Appointment Reminders
 To send an SMS appointment reminder to a client, navigate to the "Intake page 2" tab on the Client form in Prime. There, you'll find a button on the bottom row: "SMS Reminder". Click it.
 
-![SMS](../images/baylegal_smsreminder1.jpg)
+![SMS]({{site.baseurl}}/images/baylegal/baylegal_smsreminder1.jpg)
 
 You'll then be taken to a second form; some of the fields are already populated.
 
-![SMS](../images/baylegal_smsreminder2.jpg)
+![SMS]({{site.baseurl}}/images/baylegal/baylegal_smsreminder2.jpg)
 
 You'll need to fill in the rest of the fields, including an optional extra note. Please note that if the client's mobile number is not "Safe", FrontlineCloud will not send any text messages to that number.
 
@@ -32,6 +35,7 @@ Within a minute or so of activating the appointment reminder (the messages are s
 
 >[Extra Reminder Note, if applicable]
 
+
 ### Reminder Loops
 One business day before the scheduled appointment, the client will receive another reminder, with the same content as above.
 
@@ -44,6 +48,6 @@ Your FrontlineCloud customization allows you to send surveys to clients. A surve
 ### Closing Survey
 To send a closing survey, navigate to the "Intake Page 3" tab on the Client form, and hit "Send Closing Survey". Make sure that you have a mobile number listed for your client, and that the number has been marked safe.
 
-![SMS](../images/baylegal_smssurvey1.jpg)
+![SMS]({{site.baseurl}}/images/baylegal/baylegal_smssurvey1.jpg)
 
 You'll see a pop-up box when the information has successfully been passed to FrontlineCloud.

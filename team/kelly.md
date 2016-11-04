@@ -3,16 +3,15 @@ title: Kelly Church
 locator: kelly
 role: Project Director
 pic: kmc.png
-categories: staff
+categories: [team, staff]
 permalink: /team/kelly/
 twitter: kellyMchurch
 image: kelly_big.jpg
 layout: team
-tags:
-- credit
 email: kellychurch@simlab.org
 skype: kchurch_simlab
 twitter: "@kelly_simlab"
+pagecategories: team
 ---
 ![kelly]({{site.baseurl}}/images/team/kelly_big.jpg)
 

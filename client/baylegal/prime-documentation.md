@@ -1,7 +1,9 @@
 ---
-layout: page
-title: BayLegal (2015) Documentation
+layout: fullwidth
+headerimage: "/images/header/services_header.png"
 ---
+# BayLegal (2015) Documentation
+
 ### Activating SMS messages
 SMS messages are activated automatically via Prime. The FrontlineSMS system provides alternate ways of automating messages, which can be configured via the FrontlineSMS documentation. This documentation will cover the systems developed for the 2015 TIG project.
 

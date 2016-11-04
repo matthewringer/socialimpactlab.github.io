@@ -1,21 +1,15 @@
 ---
-layout: post
+layout: casestudy
 title: "SIMLab's experience in Kenya: Implementing a mobile money management tool and training approach in the last mile"
 date: 2015-09-05 14:25:00
 author: Kelly Church
 permalink: /blog/lastmilemoney/
 pdfs: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
-categories: [resources, casestudies]
+category: resources
 tags: [Training, Mobile, "Disaster Response"]
 teaseimage: "/images/dfidcase/Picture1.png"
 teaseimage-caption: "_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_"
 teaseimage-alttext: "desk"
-
-sections: 
-    - "About SIMLab"
-    - { link: "Unbanked", 
-        text: "'Unbanked' in Kenya: providing financial services in the world's most mobile-first economy", 
-        description: " " }
 ---
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.

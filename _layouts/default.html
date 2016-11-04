@@ -2,17 +2,17 @@
 <html>
 {% include html/head %}
 <body>
-    {% include html/header headerimage="/images/header/stories_header.jpg" %}
+    {% include html/header headerimage="/images/header/stories_header.png" %}
     <div class="content-wrapper">
         <div class="container" role="{{page.role}}">
             <div class="row">
-                <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %} {% if page.menus %} right-divider {% endif %}">
+                <div class="{% if page.menus %}col-xs-12 col-sm-8 col-md-8 {% else %}{% endif %} {% if page.menus %}right-divider {% endif %}">
                     <div id="content" >
                         {{content}}
                     </div>
                 </div>
                 {% if page.menus %}
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-md-4">
                     {% for menu in page.menus %} {% include menus/{{menu}} %} {% endfor %}
                 </div>
                 {% endif %}

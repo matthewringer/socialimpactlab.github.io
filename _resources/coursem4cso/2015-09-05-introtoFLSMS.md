@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An animated introduction to FrontlineSMS
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/introtoFLSMS/
 ---

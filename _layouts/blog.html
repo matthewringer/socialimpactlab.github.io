@@ -2,12 +2,10 @@
 <html>
 {% include html/head %}
 <body>
-    {% include html/header headerimage="/images/header/stories_header.jpg" %}
+    {% include html/header headerimage="/images/header/stories_header.png" %}
     <div class="content-wrapper">
-        <div class="top-margin"></div>
         <div class="container" role="{{page.role}}">
             {% if paginator.page == 1 %}{% include html/features %}{% endif %}
-            <br/>
             <div class="row">
                 <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %} {% if page.menus %} right-divider {% endif %}">
                     <div id="content" >

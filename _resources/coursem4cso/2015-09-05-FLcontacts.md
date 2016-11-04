@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing contacts and groups in Frontline
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/FLcontacts/
 ---

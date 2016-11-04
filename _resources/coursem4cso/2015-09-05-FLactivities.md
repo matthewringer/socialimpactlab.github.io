@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced features in Frontline!
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/FLactivities/
 type: "Case Study"

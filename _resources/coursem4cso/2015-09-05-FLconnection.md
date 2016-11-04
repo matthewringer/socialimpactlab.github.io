@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to choose a connection in Frontline
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 category: resources
 permalink: /resources/FLconnection/
 ---

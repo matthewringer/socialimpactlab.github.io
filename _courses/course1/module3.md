@@ -1,6 +1,6 @@
 ---
 layout: module
-title: "Example Course"
+title: "Module 3"
 date: 2016-05-03 14:25:00
 author: Kelly Church
 permalink: /courses/course1/module3

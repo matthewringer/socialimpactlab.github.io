@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: casestudy
 title: "SIMLab's framework for monitoring and evaluating inclusive technologies in social change projects"
-author: Laura Walker McDonald, SIMLab
+author: Laura Walker McDonald
 permalink: /resources/mandeoftech/
 type: "Case Study"
+excerpt: The use of inclusive technologies in development and social change is maturing, and should move beyond pilots and prototypes to longer-term interventions, grounded in existing learning and best practice, with more rigorous evaluations that specifically review the contribution that inclusive technologies make to our work.
 
 ---
 ![desk]({{site.baseurl}}/images/post_images/m&e.jpg)

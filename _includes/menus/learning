@@ -1,3 +1,4 @@
+{% if site.data.global.learning %}
 <div class="menu">
     <h2 class="extra-bold">Learning</h2>
     <ul class="list-unstyled">
@@ -10,3 +11,4 @@
         {% endfor %}
     </ul>
 </div>
+{% endif %}

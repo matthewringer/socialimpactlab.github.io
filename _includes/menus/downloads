@@ -1,3 +1,4 @@
+{% if page.pdf or page.epub %}
 <div class="menu">
     <h2 class="extra-bold"><span class="fa icon-download magenta"></span> Download </h2>
     {% if page.pdf %}
@@ -28,7 +29,6 @@
             },
             success: function()
             {
-                ///var length = xhr.getResponseHeader('Content-Length');
                 var length = 100;
                 $(id).append("<span> (" + bytesToSize( xhr.getResponseHeader('Content-Length')) + ")</span>");
             }
@@ -44,4 +44,6 @@
 <script>
         checkdownload("#download-epub","{{page.epub}}");
 </script>
+{% endif %}
+
 {% endif %}

@@ -1,3 +1,4 @@
+{% if site.tags %}
 <div class="menu">
     <h2 ><span class="lighter">Blog</span> Tags</h2>
     <ul class="list-unstyled">
@@ -11,3 +12,4 @@
      {% endfor %}
      </ul>
 </div>
+{% endif %}

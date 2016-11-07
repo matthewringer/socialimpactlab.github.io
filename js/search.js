@@ -24,6 +24,7 @@ function getParameterByName(name, url) {
     this.field('body')
     this.field('tags')
     this.field('categories')
+    this.field('author')
     this.field('exerpt')
     this.ref('id') 
   });

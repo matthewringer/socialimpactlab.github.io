@@ -1,3 +1,4 @@
+{% if site.data.global.services %}
 <div class="menu">
     <h2 class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
     <ul class="list-unstyled">
@@ -13,3 +14,4 @@
         {% endfor %}
     </ul>
 </div>
+{% endif %}

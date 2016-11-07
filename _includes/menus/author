@@ -1,3 +1,10 @@
+{% assign post_count = 0 %}
+{% for post in site.posts  %}
+    {% if post.author == page.author and post.title != page.title %}
+        {% assign post_count = post_count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+{% if post_count > 1 %}
 <div class="menu">
     <h2 class="extra-bold">Posts by {{ page.author | split: ' ' | first }} </h2>
     <ul class="list-unstyled">
@@ -8,6 +15,7 @@
      {% endfor %}
      </ul>
 </div>
+{% endif %}
 <div class="menu">
     {% if page.email %}
      <h2>Contact the Author</h2>

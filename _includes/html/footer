@@ -54,5 +54,4 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="{{site.baseurl}}/js/pdfdownload.js"></script>
 </footer>

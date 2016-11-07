@@ -5,6 +5,7 @@ date: 2014-09-16 12:06:00
 categories: [blog, stories, feature]
 author: Laura Walker McDonald
 teaseimage: /images/post_images/sean-at-mombasa.jpg
+teaseimage-alttext: "Sean at Mombasa"
 tags: [development, OpenGov]
 ---
 At SIMLab, we’re intent on examining the challenges of setting up communications technology projects in international aid and development from a practitioner’s perspective. The first few projects have arisen from our work with clients and Frontline users, many of whom are asking similar questions. For example, we’ll be looking at how to isolate and effectively monitor the impact of the use of technology on an intervention and on an organization’s functioning&mdash;and we’ll have more to share on that in the coming weeks.

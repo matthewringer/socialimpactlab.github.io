@@ -26,7 +26,7 @@ sections:
       {% if page.categories contains "staff" %}
 <div class="col-xs-12 col-sm-12 col-md-4 team-card">
   <a href="{{site.baseurl}}/team/{{page.locator}}">
-      <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="">
+      <img class="img-rounded img-inline"  src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="{{page.locator}}">
       <h4><b>{{page.title}}</b></h4>
       <p class="small about-role">{{page.role}}</p>
   </a>

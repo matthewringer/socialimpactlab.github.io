@@ -14,7 +14,7 @@ headerimage: "/images/header/services_header.png"
 ![form]({{site.baseurl}}/images/lift/blankform.png)
 
 3. Start on the second line, "Member", and fill in the Member's phone number (**starting with +1**). If you find their name in the dropdown list, click it. Otherwise, finish typing the number and click "Add this phone number". You'll see a gray box if the number has been added successfully.  
-![form]({{site.baseurl}}/images/lift/images/phone.png)
+![form]({{site.baseurl}}/images/lift/phone.png)
 
 4. If you're adding a Member's number for the first time, fill in their full name. Otherwise, you can leave the name blank.
 

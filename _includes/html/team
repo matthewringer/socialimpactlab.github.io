@@ -2,7 +2,7 @@
   {% for page in site.pages%}
         {% if page.categories contains "staff" %}
   <a href="javascript:void(0)" class="grid-item">
-    <img src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="">
+    <img src="{{site.baseurl}}/images/team/{{page.locator}}.jpg" alt="{{page.locator}}">
     <h1>{{page.title}}</h1>
     <p>{{page.role}}</p>
   </a>

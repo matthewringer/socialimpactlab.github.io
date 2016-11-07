@@ -13,18 +13,12 @@ teaseimage-alttext: "desk"
 ---
 
 This case study describes the midterm progress and learning from a two-year project, funded by the UK Government's Department for International Development (DFID). The project introduced a new mobile money management software to forty 'last-mile' organizations, all of which faced significant infrastructure, access and capacity constraints making the transition to cashless processes cumbersome and unpredictable. This case study seeks to shed light on the challenges of extending mobile money to the last mile, through a human and organization-centric lens. Although the project operated only in Kenya, but with the learning is applicable globally.
-<!-- ADD_PAGE -->
-{% include html/section_link sections=page.sections id=0 %}
 
 Social Impact Lab (SIMLab) helps people and organizations to use inclusive technologies to build systems and services that are accessible, responsive, and resilient. Until December 2014, SIMLab was the home of the FrontlineSMS project, a suite of software that helps organizations build services with text messages. FrontlineSMS has now spun out as a separate, for-profit social enterprise, and SIMLab continues to focus on solving many of the challenges of implementing projects using inclusive technologies. They support implementation, the sharing of learning and synthesis of best practice, and advocate to decision-makers and donors for policy-level change.
 
 SIMLab defines inclusive technologies as those which embody values critical to truly scalable, locally-owned impact; accessibility, ease of use, interoperability, and sustainability. Mobile is a key example&mdash;SMS and voice telephony reach all of the world's 3.6 billion mobile subscribers&mdash;as is radio, a critical technology for broad reach at relatively low cost. We also embrace both ends of the spectrum of inclusive tech&mdash;the increasing availability and affordability of cheap web-enabled phones and mobile data make them more accessible for relatively disconnected communities, and more analogue communications technologies, such as public criers, noticeboards and human networks, like religious structures and community leadership, reach into even the most remote and disconnected communities.
 
 SIMLab's Last Mile Mobile Money Project helps small and medium-sized enterprises (SMEs) and under-resourced organizations explore available tools to realize the latent potential in mobile value transfer technologies for social change. SIMLab helped partners to break down barriers to innovation; both internally, through change management and business process consulting, and externally, through trainings on how to engage with and educate end-users to begin using accessible mobile money technologies. Through this project, SIMLab has been able to help organizations realize the uses and limitations of inclusive technologies and mobile money, while better understanding the types of organizational characteristics necessary in the implementation of digitization and cashless systems.
-
-<!-- ADD_PAGE -->
-
-{% include html/section_link sections=page.sections id=1 %}
 
 The 2014 annual report of the Africa Progress Panel (APP), a group headed by Kofi Annan, highlighted economic development as one of three major areas where progress was needed. For wealthier communities, financial inclusion is fairly easy&mdash;transferring, saving, and managing money are just an ATM or app away. For last-mile and low-income communities, these processes are not only far away, they're often impossibly complex and exclusionary. Poor physical infrastructure (roads, electricity), security risks, and lack of financial capital all prohibit those in last-mile communities from accessing global and regional markets, value chains, and financial services. These barriers preclude rural, poor, and other marginalized populations from accessing resources that could facilitate economic development&mdash;from starting their own businesses, accessing markets, insuring their crops, and planning for their future.
 
@@ -33,8 +27,6 @@ These populations, often referred to as 'unbanked' for their lack of access to f
 While approximately 2.5 billion people in developing countries worldwide are classified as 'unbanked,' more than 1 billion of them have access to a mobile phone, through which people in over 89 countries (60% of the developing world)[^1] can now access mobile money services.
 
 In 2007, Kenya's leading mobile network operator, Safaricom, created the world's most successful mobile money platform to date, Kenya's M-PESA. M-PESA currently has over 19 million users, and is globally lauded as a disruptive and pioneering innovation, which has changed the financial landscape, not only in Kenya, but all over the world, as similar services spring up elsewhere. In Tanzania, Uganda, Bangladesh, Pakistan, Afghanistan, the Philippines and South Africa, mobile money uptake is increasing, although no other market yet matches Kenya for mobile money adoption.[^2] Bill payment services by large businesses are increasingly common, and M-PESA users last year sent 11 billion Kenya Shillings per month through the service.[^3] For peer-to-peer (P2P) transactions such as urban to rural remittances, M-PESA has been transformative.
-
-<!-- ADD_PAGE -->
 
 ## The challenges
 
@@ -46,8 +38,6 @@ Even in Kenya, the mobile value transfer market is still new, and as such the ma
 
 In a two-year project beginning in January of 2014, the project has supported 40 rural organizations to implement two pieces of software designed and built by FrontlineSMS in Nairobi, Kenya as part of the FrontlineSMS suite of tools. This case study examines the progress and challenges experienced in the first year and a half of the project.
 
-<!-- ADD_PAGE -->
-
 ## The software prototypes: PaymentView and Payments
 
 The project began with an existing prototype. PaymentView, built in 2011-2012 with funding from an award won in the Vodafone Americas Wireless Challenge, and intended to fill the gap between Safaricom's M-PESA mobile money system, and the SMEs who could benefit from using mobile money at an enterprise level. At the idea's inception, M-PESA offered only the customer-facing USSD and SIM toolkit tools, and an online corporate interface, which was expensive to get set up for and difficult to use, and had relatively limited functionality. Early interviewees in financial services organizations and SMEs confirmed that they were using simple phones to manage transactions, often losing data and unable to easily do basic accounting.
@@ -56,8 +46,6 @@ The project began with an existing prototype. PaymentView, built in 2011-2012 wi
 _Screenshot of PaymentView interface_
 
 PaymentView was based on version 1 of FrontlineSMS, which was released in 2008 and superseded in 2012 by version 2. When building any new tool, it's important to have your intended user in mind and to know their capabilities and needs, as well as the infrastructure and context in which they're operating. This user persona can guide software design and development. 10 partners began testing PaymentView in the first year of the project, and the insights we gained were incorporated into the design and features of a new platform, Payments. The key user persona created for Payments was an administrator of one of our target organizations, using a low-end laptop or desktop computer, who does not have stable access to internet.
-
-<!-- ADD_PAGE -->
 
 The decision to begin the project with the older piece of software benefited the design of the eventual product, Payments&mdash;but at the cost of some frustration and eagerness to experiment for some of our pilot partners. Although functional, Paymentview proved unreliable, and as it was outdated, was not supported by the FrontlineSMS team. Bugs in PaymentView had resulted in a loss of financial data, delays in processing of transactions, and inability to determine whether payments had been sent, failed or were still being processed. As others have found, innovations must work fully and efficiently in order to maintain a consistent level of engagement with partner organizations.[^4] If there are any difficulties in the process, implementers quickly lose focus and refuse to use the less reliable parts of the software, as has been the experience with PaymentView. The state of the software caused some frustration in some of the partner organizations who were either trying to use non-functioning elements of the software or who exceeded its in- or outgoing payment limits.
 
@@ -69,7 +57,6 @@ The decision to begin the project with the older piece of software benefited the
 
 * The software can require a steep learning curve, especially for a user with low computer literacy. Due to the time it takes to 'master' the software, some users may lose motivation and simply quit. It is not clear how to resolve this challenge, but the high-touch demands of our project suggest that highly scalable approaches to rolling out mobile money in rural, low-infrastructure, low-resource organizations may need to factor in resource-intensive hands-on support, or very high usability.
 
-<!-- ADD_PAGE -->
 
 In early 2015, Payments replaced PaymentView and joined a robust and frequently-updated Frontline product set. The software, currently in private beta, has the same core features of PaymentView but benefits from the greater usability, capacity and backend logic of FrontlineSMS v2.
 
@@ -79,8 +66,6 @@ _Screenshot of Payments Interface_
 Payments builds on the FrontlineSMS software's improved browser-based navigation and adds dynamic financial management automation, allowing organizations to track and manage an entire lifecycle of payments. The logic built into the software allows users to clearly visualize payment histories at both a contact and aggregate level, making it an effective tool for payment reconciliation and monitoring. Payments gives organizations an in-depth look into a client's entire mobile financial history and also aggregates groups of clients by status of loans (active, default or completed). Additionally, Payments allows organizations to easily and safely send out payments to large groups of beneficiaries&mdash;which can drastically cut down on administration time and costs. Payments supports all Safaricom products, including M-PESA's PayBill and Lipa na M-PESA accounts.
 
 Ultimately, some partners wholeheartedly embraced all other elements of the project, but for various reasons did not elect to roll out Payments or PaymentView. At time of writing, partners are being assessed for the appropriate level and focus of support in the final six months of the project. Our follow-up case study in 2016 will include more detail on the evolution of this aspect of our support.
-
-<!-- ADD_PAGE -->
 
 ### The hardware
 
@@ -95,8 +80,6 @@ Payments, and the Frontline product set more broadly, are useful to partners bec
 There is a challenge inherent in working this way, however. These approaches require the user to utilize consumer hardware in ways unintended by the manufacturer, in markets where available phones can vary wildly. In Kenya, for example, a flood of unpredictable Chinese smartphones jostle with second-hand and new Android and iOS smartphones, modems and feature- and 'dumb phones'.
 
 Operating at the intersection of hardware, software and unpredictable externalities like mobile connectivity and viruses, the prototypes we were testing could sometimes fail, with many potential points of failure:
-
-<!-- ADD_PAGE -->
 
 * **Hardware**: Android phones (used to accept payments and send and receive SMS&mdash;only Samsung phones successfully sent out payments); Safaricom modems; USB cables and ports; computers and laptops of various makes, models and operating systems; Safaricom SIM cards of various types (personal without M-PESA, personal with M-PESA, Pay Bill, Lipa na M-PESA); and wifi routers.
 

@@ -3,7 +3,7 @@ layout: module
 title: "Module 2: Community, context assessment and planning your project"
 date: 2016-05-03 14:25:00
 author: Kelly Church
-permalink: /courses/course1/module2
+permalink: /courses/course1/module2/
 categories: [courses]
 tags: [Training, Course, "Disaster Response"]
 menus: [downloads, section_links]

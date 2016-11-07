@@ -3,7 +3,7 @@ layout: module
 title: "Module 3"
 date: 2016-05-03 14:25:00
 author: Kelly Church
-permalink: /courses/course1/module3
+permalink: /courses/course1/module3/
 categories: [courses]
 tags: [Training, Course, "Disaster Response"]
 menus: [downloads, section_links]

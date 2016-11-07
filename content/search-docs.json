@@ -7,8 +7,8 @@
         "title": "{% if page.title %} {{ page.title | strip_html | strip_newlines | strip  }}{% endif %}",
         "categories": "{% if page.categories %} {{page.categories | join: " "}}{% endif %}",
         "tags": "{% if page.tags %} {{page.tags | join: " "}}{% endif %}",
-        {% assign links = page.tags | concat:page.categories %}
-        "links": "{% if page.tags or page.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = page.tags %}
+        "links": "{% if page.tags or page.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if page.excerpt %} {{ page.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if page.url %} {{site.baseurl}}{{page.url}}{% endif %}",
         "author": "{% if page.author %} {% include html/author_link post=page %}{% endif %}",
@@ -27,8 +27,8 @@
   "posts": [{% for post in site.posts %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
-        {% assign links = post.tags | concat: post.categories %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = post.tags %}
+        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
         "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
@@ -36,8 +36,8 @@
   "casestudies": [{% for post in site.casestudies %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
-        {% assign links = post.tags | concat:post.categories %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = post.tags %}
+        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
         "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
@@ -45,8 +45,8 @@
   "courses": [{% for post in site.courses %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
-        {% assign links = post.tags | concat:post.categories %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = post.tags %}
+        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
         "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
@@ -54,8 +54,8 @@
   "documentation": [{% for post in site.documentation %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
-        {% assign links = post.tags | concat:post.categories %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = post.tags %}
+        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
         "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
@@ -63,8 +63,8 @@
 "resources": [{% for post in site.resources %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
-        {% assign links = post.tags | concat:post.categories %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links %}{% endif %}",
+        {% assign links = post.tags %}
+        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
         "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",

@@ -209,13 +209,7 @@ results_data = results_data.filter(function (q ){ return q.id !== "NaN";})
   }))
   
   var hoverDropDown = false;
-  
-//   $('#search-box').keydown(debounce(function(e){
-//       if(e.which == 40){
-//         $("#results-dropdown-container").focus();
-//       }
-//   }))
-  
+
   $('#search-box').mouseleave(debounce(function(){
       if(!hoverDropDown){
         $("#results-dropdown-container").hide();

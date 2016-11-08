@@ -1,12 +1,16 @@
-{% if include.limit and include.offset %}
-{% assign limit=include.limit %}
-{% assign offset=include.offset %}
-{% else %}
-{% capture limit %} {{ include.posts.size  }} {% endcapture %}
-{% assign offset = 0 %}
+{% if include.limit %}
+  {% assign limit=include.limit %}
+  {% assign page = 1 %}
+  {% assign page_counter = 0 %}
 {% endif %}
-{% for post in include.posts limit:limit offset:offset %}
-<div class="row ">
+{% for post in include.posts %}
+  {% if limit <= page_counter %}
+    {% assign page =  page | plus: 1 %}
+    {% assign page_counter = 1 %}
+  {% else %}
+    {% assign page_counter =  page_counter | plus: 1 %}
+  {% endif %}
+<div class="row {% if limit %} page page{{page}} {% endif %}" >
   <div class="col-sm-12 post-header">
     <h2><a href="{{ post.url | prepend: site.baseurl }}" class="post-link extra-bold">{{ post.title }}</a></h2>
     {% include html/post_metadata post=post %}

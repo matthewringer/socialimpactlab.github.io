@@ -11,4 +11,5 @@ permalink: "/guidesandframeworks/"
 {% assign next_page = "/documentation/page2" %}
 {% endif %}
 {% assign text = "Page" %}
-{% include html/posts_list_sidebar posts=array offset=0 %}
+{% include html/posts_list_sidebar posts=array limit=site.paginate %}
+{% include html/categories_pagination text="Page" limit=site.paginate count=array.size %}

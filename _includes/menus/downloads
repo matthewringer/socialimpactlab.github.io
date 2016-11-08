@@ -37,12 +37,12 @@
 </script>
 {% if page.pdf %}
 <script>
-        checkdownload("#download-pdf","{{page.pdf}}");
+        checkdownload("#download-pdf","{{site.baseurl}}{{page.pdf}}");
 </script>
 {% endif %}
 {% if page.epub %}
 <script>
-        checkdownload("#download-epub","{{page.epub}}");
+        checkdownload("#download-epub","{{site.baseurl}}{{page.epub}}");
 </script>
 {% endif %}
 

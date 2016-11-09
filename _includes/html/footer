@@ -6,7 +6,7 @@
         <div class="social-buttons-wrapper">
           {% include html/social_buttons %}
         </div>
-        <p class="photo-credit">Header photo credit: Jonathan Kalan</p>
+        <p class="photo-credit">Header photo credit: {{site.data.global.photocredit}}</p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 border-left left-divider footer-divider footer-col">
         <div class="col-sm-offset-3 col-sm-6">

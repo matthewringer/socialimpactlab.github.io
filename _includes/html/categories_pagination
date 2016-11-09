@@ -5,7 +5,9 @@ var init = () => {
   var current_page = 1;
   var limit = {{include.limit}};
   var count = {{include.count}};
-  var pages = Math.round(1 + count / limit);
+  var pages = Math.ceil(count / limit);
+  //var pages = Math.round( 1 + count / limit);
+  
   var next = function(){
     if(current_page < pages) {
       current_page = current_page + 1;

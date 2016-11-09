@@ -1,15 +1,19 @@
 <div class="menu">
-    <h2 class="extra-bold">Team <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
+    <h2 class="extra-bold">Team <a href="{{site.baseurl}}/team" class="fa fa-chevron-circle-right "></a></h2>
     <ul class="list-unstyled">
-        {% for item in page.sections %}
-        <li class="section-link">
-        {% if item.link and item.text %}
-        <a class="extra-bold" href="{{site.baseurl}}{{page.url}}#{{item.link}}">{{item.text}}</a>
-        {% else %}
-        <a class="extra-bold" href="{{site.baseurl}}{{page.url}}#{{item}}">{{item}}</a>
-        {% endif %}
-        <p> {{item.description}} </p>
+        <li>
+        <p>
+          <a class="extra-bold" href="{{site.baseurl}}/board">Board</a>
+          <br/>
+          <span>Learn about our board</span>
+        </p>
         </li>
-        {% endfor %}
+        <li>
+        <p>
+          <a class="extra-bold" href="{{site.baseurl}}/careers">Careers</a>
+          <br/>
+          <span>Come work with us</span>
+        </p>
+        </li>
     </ul>
 </div>

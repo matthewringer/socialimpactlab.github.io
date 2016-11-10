@@ -10,6 +10,8 @@ excerpt: The use of inclusive technologies in development and social change is m
 ![desk]({{site.baseurl}}/images/post_images/m&e.jpg)
 *SIMLab staff workshop indicators to evaluate*
 
+_[Quicklink to the editable Framework document!](https://docs.google.com/document/d/18O6DiOix24JBWZSOEgn9o64exW8DcGeWtHj2ZDhB7TI/edit#)_
+
 The use of inclusive technologies in development and social change is maturing, and should move beyond pilots and prototypes to longer-term interventions, grounded in existing learning and best practice, with more rigorous evaluations that specifically review the contribution that inclusive technologies make to our work. To date, robust evidence of the contribution that inclusive technologies make has emanated more from research than from project-level M&E.
 
 Pressure is growing to bring this evidence to bear, and to move beyond continually re-committing the same mistakes. We have seen a new effort to consolidate best practice, establish measures of impact for programming that include the contributions of newer kinds of technology components, and focus energy on new boundaries of scale and effectiveness. This can be seen in the [Principles for Digital Development](http://digitalprinciples.org/), as well as sector-specific efforts like [DFID’s Conflict, Crime and Violence Results Initiative](https://www.gov.uk/government/publications/conflict-crime-and-violence-results-initiative-good-practice-guides-on-security-and-justice-issues), which offers a series of papers and guides on good practice in security and justice issues (see Bibliography for more information on these resources).

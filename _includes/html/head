@@ -10,6 +10,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
     <link rel="stylesheet" href="{{site.baseurl}}/{{ "css/style.css" }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
+    <link rel="stylesheet" href="{{ "/css/hint.min.css" | prepend: site.baseurl }}" type="text/css">
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
@@ -56,7 +57,7 @@
     ga('send', 'pageview');
     </script>
     {% endif %}
-    <script src="//fast.eager.io/xk-GmRBDH4.js"></script>
+    <script src="{{ "/js/findandreplace.js" | prepend: site.baseurl }}"></script>
 
     <!-- todo browserify -->
     <!--<script type="text/javascript" src="{{site.baseurl}}/js/jquery.js"></script>-->

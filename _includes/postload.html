@@ -1,0 +1,25 @@
+<script>
+
+window.onload= function(){
+dictionary = {
+  'APIs': "An API, or 'Application Programming Interface' is a way for software tools to communicate with each other."
+}
+
+Object.keys(dictionary).map(function(word){
+  addHint(word, dictionary[word])
+})
+
+function addHint(word, definition){
+  var n = document.createElement('span')
+  n.className = "hint hint--top hint--rounded hint--medium"
+  n.setAttribute("data-hint", definition)
+  r = new RegExp('\\b'+word+'\\b', 'i')
+  console.log(r)
+  findAndReplaceDOMText(document.getElementById('post-content'), {
+    find: r,
+    wrap: n
+  });
+}
+};
+
+</script>

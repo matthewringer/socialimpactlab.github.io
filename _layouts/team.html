@@ -6,6 +6,9 @@
     <div class="content-wrapper" style="margin-top:50px;">
         <div class="container" role="{{page.role}}">
             <div class="row">
+                <div class="col-sm-4 visible-xs-inline">
+                    {% include /menus/team_member %}
+                </div>
                 <div class="col-sm-8 right-divider">
                         <article id="content">
                         <h2 class="team-name">{{page.title}}</h2>
@@ -13,7 +16,7 @@
                         {{content}}
                         </article>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 hidden-xs">
                     {% include /menus/team_member %}
                 </div>
             </div>

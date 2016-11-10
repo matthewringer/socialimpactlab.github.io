@@ -1,0 +1,26 @@
+<div class="menu">
+    <h2><span class="lighter">Course</span> Details</h2>
+    <ul class="list-unstyled" >
+        <li><span class="extra-bold">Opens:</span> {{ page.open_date | date: site.date_format }}</li>
+        <li><span class="extra-bold">Duration:</span> {{ page.duration }}</li>
+        <li><span class="extra-bold">Curriculum:</span> {{ page.modules | size }} modules </li>
+        <li><span class="extra-bold">Students:</span> {{ page.students }}</li>
+    </ul>
+    <h2 class="extra-bold">Contact</h2>
+    <ul class="list-unstyled">
+        <li>
+        <div>
+            <span class="extra-bold">
+            <a href="{{ site.baseurl }}/subscribe">Subscribe</a>
+            </span>
+        </div>
+        </li>
+        <li>
+        <div>
+            <span class="extra-bold">
+            <a href="{{ site.baseurl }}/feedback">Feedback</a>
+            </span>
+        </div>
+        </li>
+    </ul>
+</div>

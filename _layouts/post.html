@@ -6,6 +6,13 @@
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
+        <div class="col-md-4 visible-xs-inline">
+          <div>
+            {% include menus/downloads %}
+            {% include menus/tags %}
+            {% include menus/author %}
+          </div>
+        </div>
         <div class="col-md-8 right-divider">
           <article id="content">
           {% include html/post_header sidebar=true %}
@@ -13,7 +20,7 @@
           </article>
           <br/>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-xs">
           <div>
             {% include menus/downloads %}
             {% include menus/tags %}

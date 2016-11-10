@@ -7,13 +7,18 @@
         <div class="container" role="{{page.role}}">
             {% if paginator.page == 1 %}{% include html/features %}{% endif %}
             <div class="row">
+                {% if page.menus %}
+                <div class="col-sm-4 visible-xs-inline">
+                    {% for menu in page.menus %} {% include menus/{{menu}} %} {% endfor %}
+                </div>
+                {% endif %}
                 <div class="{% if page.menus %} col-sm-8 {% else %} col-md-12 {% endif %} {% if page.menus %} right-divider {% endif %}">
                     <div id="content" >
                         {{content}}
                     </div>
                 </div>
                 {% if page.menus %}
-                <div class="col-sm-4">
+                <div class="col-sm-4 hidden-xs">
                     {% for menu in page.menus %} {% include menus/{{menu}} %} {% endfor %}
                 </div>
                 {% endif %}

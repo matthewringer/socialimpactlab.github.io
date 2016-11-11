@@ -200,3 +200,6 @@ One of Indicose's main challenges is that as a community-based organization seek
 [^2]: Mobile money in developing countries. (2014, September 20). Retrieved August 12, 2015. [Link (HTML)](http://www.economist.com/news/economic-and-financial-indicators/21618842-mobile-money-developing-countries)
 [^3]: Kenyans move $12.7 billion on mobile phones in 6 months&mdash;Asoko Insight. (2014, August 11). Retrieved September 3, 2015. [Link (HTML)](http://asokoinsight.com/news/kenyans-move-12-7-billion-mobile-phones-6-months/)
 [^4]: Isabirye, N., Floweday, S., Nanavati, A., & Von Solms, R. (2015). Building Technology Trust in a Rural Agricultural e-Marketplace: A user-requirements perspective. _The Electronic Journal of Information Systems in Developing Countries_, 70, 1-20. Retrieved August 21, 2015. [Link (HTML)](http://www.ejisdc.org/ojs2/index.php/ejisdc/article/view/1472)
+
+
+{% include html/backtotop %}

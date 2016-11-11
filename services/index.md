@@ -3,7 +3,6 @@ layout: services
 title: Services
 permalink: /services/
 headerimage: "/images/header/services_header.png"
-menus: [services]
 ---
 
 ## Whether you're a non-profit, government, or aid agency,

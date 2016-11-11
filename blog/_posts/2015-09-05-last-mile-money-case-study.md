@@ -8,7 +8,7 @@ pdfs: "/files/SIMLab Case Study - Mobile money in the last mile.pdf"
 category: resources
 tags: ["Training", "Mobile", "Disaster Response"]
 teaseimage: "/images/dfidcase/Picture1.png"
-teaseimage-caption: "_SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye_"
+teaseimage-caption: "SIMLab Project Manager Wilson Bandi works with Sadili to think through their business processes. Photo Credit: Dani Dye"
 teaseimage-alttext: "desk"
 ---
 

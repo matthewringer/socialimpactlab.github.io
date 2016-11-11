@@ -1,6 +1,6 @@
 {% if site.data.global.services %}
 <div class="menu">
-    <h2 class="extra-bold">Services <a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a></h2>
+    <h2 class="extra-bold">Services {% unless include.hidelink  %}<a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right ">{% endunless %}</a></h2>
     <ul class="list-unstyled">
     {% for item in site.data.global.services %}
     <li>{% if site.data.global.showicons %}

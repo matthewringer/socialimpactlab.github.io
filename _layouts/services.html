@@ -18,7 +18,7 @@
                 </div>
                 {% if page.menus %}
                 <div class="col-xs-12 col-sm-4 hidden-xs">
-                    {% for menu in page.menus %} {% include menus/{{menu}} %} {% endfor %}
+                    {% include menus/services hidelink=true %}
                 </div>
                 {% endif %}
             </div>

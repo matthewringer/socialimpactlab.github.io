@@ -2,7 +2,7 @@
 {% include html/post_metadata post=page %}
 {% if page.teaseimage %}
 <p>
-    <img src="{{site.baseurl}}{{page.teaseimage}}" alt="{{page.teaseimage-alttext}}" class="img-rounded img-inline">
+    <img src="{{site.baseurl}}{{page.teaseimage}}" alt="{{page.teaseimage-alttext}}" class="img-rounded img-inline teaser-image">
 </p>
 {% if page.teaseimage-caption %}
 <p class="caption">{{ page.teaseimage-caption }}</p>

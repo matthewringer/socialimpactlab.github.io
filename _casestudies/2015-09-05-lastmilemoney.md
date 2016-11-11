@@ -202,4 +202,4 @@ One of Indicose's main challenges is that as a community-based organization seek
 [^4]: Isabirye, N., Floweday, S., Nanavati, A., & Von Solms, R. (2015). Building Technology Trust in a Rural Agricultural e-Marketplace: A user-requirements perspective. _The Electronic Journal of Information Systems in Developing Countries_, 70, 1-20. Retrieved August 21, 2015. [Link (HTML)](http://www.ejisdc.org/ojs2/index.php/ejisdc/article/view/1472)
 
 
-{% include html/backtotop %}
+{% include html/backtotop.html %}

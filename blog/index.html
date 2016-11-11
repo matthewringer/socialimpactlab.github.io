@@ -3,7 +3,7 @@ layout: blog
 title: Stories
 nosearch: true
 headerimage: "/images/header/stories_header.png"
-menus: [tags]
+menus: [tags.html]
 ---
 {% if paginator.page == 1 %}
 
@@ -16,6 +16,6 @@ menus: [tags]
 
 {% endif %}
 
-{% include html/posts_list_sidebar posts=paginator.posts %}
+{% include html/posts_list_sidebar.html posts=paginator.posts %}
 
-{% include html/blog_pagination %}
+{% include html/blog_pagination.html %}

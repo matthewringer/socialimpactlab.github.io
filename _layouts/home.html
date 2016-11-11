@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-{% include html/head %}
+{% include html/head.html %}
 <body>
-    {% include html/header %}
+    {% include html/header.html %}
     <div class="home-wrapper">
         <div class="container search-box">
-            <hr class="bold" /> {% include html/search_box %}
+            <hr class="bold" /> {% include html/search_box.html %}
             <hr class="light" />
         </div>
         <div class="container">
-            {% include html/features post=post %}
+            {% include html/features.html post=post %}
             <br/>
             <div class="row">
                 <div class="col-sm-8 right-divider homepage-content">
@@ -17,11 +17,11 @@
                     {{content}}
                 </div>
                 <div class="col-sm-4">
-                    {% include menus/services %}
+                    {% include menus/services.html %}
                 </div>
             </div>
         </div>
-        {% include html/footer %}
+        {% include html/footer.html %}
     </div>
     <!-- content-wrapper -->
 </body>

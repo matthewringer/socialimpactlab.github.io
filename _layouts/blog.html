@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-{% include html/head %}
+{% include html/head.html %}
 <body>
-    {% include html/header headerimage="/images/header/stories_header.png" %}
+    {% include html/header.html headerimage="/images/header/stories_header.png" %}
     <div class="content-wrapper">
         <div class="container" role="{{page.role}}">
-            {% if paginator.page == 1 %}{% include html/features %}{% endif %}
+            {% if paginator.page == 1 %}{% include html/features.html %}{% endif %}
             <div class="row">
                 {% if page.menus %}
                 <div class="col-sm-4 visible-xs-inline">
@@ -25,7 +25,7 @@
             </div>
             <!--/row -->
         </div>
-        {% include html/footer %}
+        {% include html/footer.html %}
     </div>
 </body>
 </html>

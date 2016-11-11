@@ -8,10 +8,10 @@
         "categories": "{% if page.categories %} {{page.categories | join: " "}}{% endif %}",
         "tags": "{% if page.tags %} {{page.tags | join: " "}}{% endif %}",
         {% assign links = page.tags %}
-        "links": "{% if page.tags or page.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if page.tags or page.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if page.excerpt %} {{ page.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if page.url %} {{site.baseurl}}{{page.url}}{% endif %}",
-        "author": "{% if page.author %} {% include html/author_link post=page %}{% endif %}",
+        "author": "{% if page.author %} {% include html/author_link.html post=page %}{% endif %}",
         "date": "{% if page.date %} {{ page.date | date: site.date_format }}{% endif %}"
     }{% else %} {
         "id": "NaN",
@@ -28,46 +28,46 @@
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
         {% assign links = post.tags %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if post.tags or post.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
-        "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
+        "author": "{% if post.author %} {% include html/author_link.html post=post %}{% endif %}",
         "date": "{% if post.date %} {{ post.date | date: site.date_format }}{% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
   "casestudies": [{% for post in site.casestudies %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
         {% assign links = post.tags %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if post.tags or post.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
-        "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
+        "author": "{% if post.author %} {% include html/author_link.html post=post %}{% endif %}",
         "date": "{% if post.date %} {{ post.date | date: site.date_format }}{% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
   "courses": [{% for post in site.courses %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
         {% assign links = post.tags %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if post.tags or post.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
-        "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
+        "author": "{% if post.author %} {% include html/author_link.html post=post %}{% endif %}",
         "date": "{% if post.date %} {{ post.date | date: site.date_format }}{% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
   "documentation": [{% for post in site.documentation %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
         {% assign links = post.tags %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if post.tags or post.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
-        "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
+        "author": "{% if post.author %} {% include html/author_link.html post=post %}{% endif %}",
         "date": "{% if post.date %} {{ post.date | date: site.date_format }}{% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
 "resources": [{% for post in site.resources %}
     { "id": "{% increment doc_id %}",
         "title": "{% if post.title %} {{ post.title | strip_html | strip_newlines | strip }}{% endif %}",
         {% assign links = post.tags %}
-        "links": "{% if post.tags or post.categories %} {% include html/search_links links=links prefix="tags:" %}{% endif %}",
+        "links": "{% if post.tags or post.categories %} {% include html/search_links.html links=links prefix="tags:" %}{% endif %}",
         "excerpt": "{% if post.excerpt %} {{post.excerpt | strip_html | strip_newlines | strip }}{% endif %}",
         "url": "{% if post.url %} {{site.baseurl}}{{post.url}}{% endif %}",
-        "author": "{% if post.author %} {% include html/author_link post=post %}{% endif %}",
+        "author": "{% if post.author %} {% include html/author_link.html post=post %}{% endif %}",
         "date": "{% if post.date %} {{ post.date | date: site.date_format }}{% endif %}" }{% unless forloop.last %},{% endunless %}{% endfor %}],
 "counts": 
     {

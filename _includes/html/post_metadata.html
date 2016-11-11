@@ -25,7 +25,7 @@
             {% endif %}
         {% endif %}
         {% if tags > 0 %}
-            <li class="last">{% include html/search_links links=include.post.tags prefix='tags:' %}</li>
+            <li class="last">{% include html/search_links.html links=include.post.tags prefix='tags:' %}</li>
         {% endif %}
     </ul>
 </div>

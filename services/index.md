@@ -50,27 +50,27 @@ Forget hiring an overworked, underpaid tech coordinator. Tap into SIMLab's years
 
 Want even more benefits? Join a subject matter cluster, or create your own by subscribing with peer organizations. We'll work with your group of organizations to develop and share best practices, get discounts on contractors and services, and build innovative new projects that set new standards in your field.
 
-{% include html/sectionlink link="service1" %}
+{% include html/sectionlink.html link="service1" %}
 
 ## Service One
 Service one text goes here
 
-{% include html/sectionlink link="service2" %}
+{% include html/sectionlink.html link="service2" %}
 
 ## Service Two
 Service two text goes here
 
-{% include html/sectionlink link="service3" %}
+{% include html/sectionlink.html link="service3" %}
 
 ## Service Three
 Service three text goes here
 
-{% include html/sectionlink link="service4" %}
+{% include html/sectionlink.html link="service4" %}
 
 ## Service Four
 Service four text goes here
 
-{% include html/sectionlink link="service5" %}
+{% include html/sectionlink.html link="service5" %}
 
 ## Service Five
 Service five text goes here

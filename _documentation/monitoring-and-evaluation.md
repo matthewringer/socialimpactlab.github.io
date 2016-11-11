@@ -5,7 +5,7 @@ date: 2016-05-03 14:25:00
 author: Laura Walker McDonald
 categories: [documentation]
 tags: [Training, Course, "Disaster Response"]
-menus: [downloads, section_links, read_stories]
+menus: [downloads.html, section_links.html, read_stories.html]
 
 sections:
     - { link: "section1",
@@ -25,7 +25,7 @@ sections:
         description: "Styling of common text elements" }
 ---
 
-##  {% include html/sectionlink link="section1" %}How SIMLab understands monitoring and evaluation
+##  {% include html/sectionlink.html link="section1" %}How SIMLab understands monitoring and evaluation
 
 A monitoring and evaluation (M&E) process is put in place for 3 main purposes:
 
@@ -51,7 +51,7 @@ A third concept, *review*, is that of an assessment of the performance of an int
 For us, *learning* is also a critical element, in which we ensure that the insights we have gained from our M&E are shared within our SIMLab team, and wherever possible, with others, in easily-digestible formats. Learnings should also inform best-practice guidance like this Framework, and contribute to our understanding of what it is to do good inclusive technology work.
 
 
-## {% include html/sectionlink link="section2" %}About this Framework
+## {% include html/sectionlink.html link="section2" %}About this Framework
 
 This M&E Framework aims to guide SIMLab staff in measuring our work and determining, to the degree possible, the contribution of inclusive technology to the outcomes and impact of our implementation projects.
 
@@ -75,7 +75,7 @@ Additionally, we do not delve into the range of ways that technology can support
 
 At present, this Framework focuses on M&E at the project level, and does not seek to support evaluation of the overall impact of technology on a field or a broad geographic area.
 
-## {% include html/sectionlink link="section3" %} About SIMLab
+## {% include html/sectionlink.html link="section3" %} About SIMLab
 
 Social Impact Lab (SIMLab) helps to build accessible, responsive and resilient systems using inclusive technologies, helping people and organizations solve both the technological and human obstacles along the way. SIMLab believes that equitable participation of marginalized and ‘last-mile’ populations in public, economic, and social life contributes to a more just world. We believe that increasing systemic adoption and use of inclusive technologies leads to greater access to services for all populations, accountability and responsiveness of institutions, and resilience of societies.
 
@@ -104,7 +104,7 @@ Encourage ecosystems of collaboration and openness; and as far as possible use e
 {:.highlight .magenta}
 Encourage ecosystems of collaboration and openness; and as far as possible use existing tools, platforms and resources rather than creating our own
 
-## {% include html/sectionlink link="section4" %}How SIMLab works
+## {% include html/sectionlink.html link="section4" %}How SIMLab works
 
 SIMLab projects follow a range of modalities, loosely broken down below, with guidance on what might be required in each case. This is advisory only - this is always a judgement call and should be signed off by the Head of Programs/CEO. Where no one category perfectly fits a particular situation, be guided by those which are closest to true.
 
@@ -135,7 +135,7 @@ Even when an external party does not require an evaluation, SIMLab should captur
 - The Project Steering Group feels that our implementation has experienced challenges which should be formally documented
 - There is no planned evaluation, or the evaluation is not likely to capture learning relevant to SIMLab.
 
-## {% include html/sectionlink link="section5" %}Why create a Framework for M&E of Inclusive Technologies in social change projects?
+## {% include html/sectionlink.html link="section5" %}Why create a Framework for M&E of Inclusive Technologies in social change projects?
 
 The use of inclusive technologies in development and social change is maturing, and should move beyond pilots and prototypes to longer-term interventions, grounded in existing learning and best practice, with more rigorous evaluations that specifically review the contribution that inclusive technologies make to our work. To date, robust evidence of the contribution that inclusive technologies make has emanated more from research than from project-level M&E.
 
@@ -163,7 +163,7 @@ Accordingly, few resources are allocated to conducting rigorous M&E on the role 
 
 In SIMLab’s experience, this leads to a shortage of concrete evidence of the impact of technology in development and aid programs, and in particular comparative data on different platforms, approaches and strategies. As the field matures, it is appropriate to try to build this evidence base where we can.
 
-## {% include html/sectionlink link="section6" %} SIMLab’s Evaluation Criteria
+## {% include html/sectionlink.html link="section6" %} SIMLab’s Evaluation Criteria
 
 In this section we outline SIMLab’s criteria for evaluating inclusive technology. They should be read as supplemental to the OECD-DAC criteria, rather than replacing them.
 
@@ -265,7 +265,7 @@ The following questions can serve as a guide for evaluating the Effectiveness cr
 
 
 
-## {% include html/sectionlink link="section10" %}Text styling elements
+## {% include html/sectionlink.html link="section10" %}Text styling elements
 
 ##### Headings
 

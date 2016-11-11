@@ -3,7 +3,7 @@ layout: default
 title: Courses
 headerimage: "/images/header/resources_header.png"
 nosearch: true
-menus: [categories]
+menus: [categories.html]
 permalink: "/courses/"
 ---
 {% assign array = "" | split: "|" %}
@@ -13,5 +13,5 @@ permalink: "/courses/"
     {% endif %}
 {% endfor %}
 
-{% include html/posts_list_sidebar posts=array limit=site.paginate %}
-{% include html/categories_pagination text="Page" limit=site.paginate count=array.size %}
+{% include html/posts_list_sidebar.html posts=array limit=site.paginate %}
+{% include html/categories_pagination.html text="Page" limit=site.paginate count=array.size %}

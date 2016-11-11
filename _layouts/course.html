@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-{% include html/head %}
+{% include html/head.html %}
 <body>
-  {% include html/header title=site.courses.title headerimage="/images/header/courses_header.png" %}
+  {% include html/header.html title=site.courses.title headerimage="/images/header/courses_header.png" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="col-md-4 visible-xs-inline">
-          {% include menus/course %}
+          {% include menus/course.html %}
       </div>
       <div class="row">
         <div class="col-md-8 right-divider">
@@ -30,15 +30,15 @@
           <br/>
         </div>
         <div class="col-md-4 hidden-xs">
-          {% include menus/course %}
+          {% include menus/course.html %}
         </div>
       </div>
-      {% include html/share_buttons %}
-      {% include html/disqus_comments %}
-      {% include html/facebook_comments %} {% include html/related_posts %}
+      {% include html/share_buttons.html %}
+      {% include html/disqus_comments.html %}
+      {% include html/facebook_comments.html %} {% include html/related_posts.html %}
       <!--/row -->
     </div>
-    {% include html/footer %}
+    {% include html/footer.html %}
   </div>
 </body>
 </html>

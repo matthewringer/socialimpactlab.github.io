@@ -1,5 +1,5 @@
 <h1>{{ page.title }}</h1>
-{% include html/post_metadata post=page %}
+{% include html/post_metadata.html post=page %}
 {% if page.teaseimage %}
 <p>
     <img src="{{site.baseurl}}{{page.teaseimage}}" alt="{{page.teaseimage-alttext}}" class="img-rounded img-inline teaser-image">
@@ -8,6 +8,6 @@
 <p class="caption">{{ page.teaseimage-caption }}</p>
 {% endif %}
 {% endif %}
-<p> <br/> {% include html/minutes %} minute read
+<p> <br/> {% include html/minutes.html %} minute read
         {% if page.pdf %} <a href="{{page.pdf}}">(PDF)</a> {% endif %}
 </p>

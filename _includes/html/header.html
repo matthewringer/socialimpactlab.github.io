@@ -9,7 +9,7 @@
     <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{headerimage}}'); background-size: cover;"></div></div>
     <div class="header angled-header">
         <div class="container" >
-            {% include html/navigation %}
+            {% include html/navigation.html %}
             {% if page.headline %}
             <h1 class="extra-bold headline"> {{page.headline}} </h1>
             {% else %}
@@ -25,7 +25,7 @@
                 {% endif %}
                 <h2>{{title}}</h2>
                 <hr class="bold"/>
-                {% include html/search_box %}
+                {% include html/search_box.html %}
                 <hr class="light"/>
             </div>
             {% endif %}

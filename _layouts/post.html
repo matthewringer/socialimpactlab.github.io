@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-{% include html/head %}
+{% include html/head.html %}
 <body>
-  {% include html/header headerimage="/images/header/stories_header.png" title="Stories" %}
+  {% include html/header.html headerimage="/images/header/stories_header.png" title="Stories" %}
   <div class="content-wrapper">
     <div class="container" role="{{page.role}}">
       <div class="row">
         <div class="col-md-4 visible-xs-inline">
           <div>
-            {% include menus/downloads %}
-            {% include menus/tags %}
-            {% include menus/author %}
+            {% include menus/downloads.html %}
+            {% include menus/tags.html %}
+            {% include menus/author.html %}
           </div>
         </div>
         <div class="col-md-8 right-divider">
           <article id="content">
-          {% include html/post_header sidebar=true %}
+          {% include html/post_header.html sidebar=true %}
           {{ content }}
           </article>
           <br/>
         </div>
         <div class="col-md-4 hidden-xs">
           <div>
-            {% include menus/downloads %}
-            {% include menus/tags %}
-            {% include menus/author %}
+            {% include menus/downloads.html %}
+            {% include menus/tags.html %}
+            {% include menus/author.html %}
           </div>
         </div>
       </div>
-      {% include html/share_buttons %}
-      {% include html/disqus_comments %}
-      {% include html/facebook_comments %}
-      {% include html/related_posts %}
+      {% include html/share_buttons.html %}
+      {% include html/disqus_comments.html %}
+      {% include html/facebook_comments.html %}
+      {% include html/related_posts.html %}
       <!--/row -->
     </div>
-    {% include html/footer %}
+    {% include html/footer.html %}
   </div>
 </body>
 </html>

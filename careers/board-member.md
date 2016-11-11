@@ -2,7 +2,7 @@
 layout: page
 title: Board Members
 categories: [team, jobs]
-menus: [team]
+menus: [team.html]
 headerimage: "/images/header/team_header.png"
 
 ---

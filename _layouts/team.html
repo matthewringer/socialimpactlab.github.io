@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-{% include html/head %}
+{% include html/head.html %}
 <body>
-    {% include html/header headerimage="/images/header/team_header.png" %}
+    {% include html/header.html headerimage="/images/header/team_header.png" %}
     <div class="content-wrapper" style="margin-top:50px;">
         <div class="container" role="{{page.role}}">
             <div class="row">
                 <div class="col-sm-4 visible-xs-inline">
-                    {% include /menus/team_member %}
+                    {% include /menus/team_member.html %}
                 </div>
                 <div class="col-sm-8 right-divider">
                         <article id="content">
@@ -17,12 +17,12 @@
                         </article>
                 </div>
                 <div class="col-sm-4 hidden-xs">
-                    {% include /menus/team_member %}
+                    {% include /menus/team_member.html %}
                 </div>
             </div>
             <!--/row -->
         </div>
-        {% include html/footer %}
+        {% include html/footer.html %}
     </div>
 </body>
 </html>

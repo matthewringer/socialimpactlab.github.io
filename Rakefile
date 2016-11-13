@@ -1,5 +1,3 @@
-require scss_lint
-
 drafts_dir = '_drafts'
 posts_dir  = '_posts'
 epub_dir = './content/epub'

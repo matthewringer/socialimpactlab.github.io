@@ -1,7 +1,7 @@
 {% if site.data.global.services %}
 <div class="col-sm-10 col-md-12 sidebar-menu">
 <div class="menu">
-    <h2 class="extra-bold">Services {% unless include.hidelink  %}<a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right ">{% endunless %}</a></h2>
+    <h2 class="extra-bold">Services {% unless include.hidelink  %}<a href="{{site.baseurl}}/services" class="fa fa-chevron-circle-right "></a>{% endunless %}</h2>
     <ul class="list-unstyled">
     {% for item in site.data.global.services %}
     <li>{% if site.data.global.showicons %}

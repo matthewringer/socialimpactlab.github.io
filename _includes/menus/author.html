@@ -4,8 +4,8 @@
         {% assign post_count = post_count | plus: 1 %}
     {% endif %}
 {% endfor %}
-{% if post_count > 1 %}
 <div class="col-sm-10 col-md-12 sidebar-menu padded-menu">
+{% if post_count > 1 %}
 <div class="menu">
     <h2 class="extra-bold">Posts by {{ page.author | split: ' ' | first }} </h2>
     <ul class="list-unstyled">
@@ -17,15 +17,15 @@
      </ul>
 </div>
 {% endif %}
+{% if page.email %}
 <div class="menu">
-    {% if page.email %}
-     <h2>Contact the Author</h2>
-     <ul class="list-unstyled">
+    <h2>Contact the Author</h2>
+        <ul class="list-unstyled">
         <li>
             <div><p> <span class="extra-bold">Email</span>
             <a href="mailto:{{page.email}}"> {{page.email}}</a></p></div>
         </li>
     </ul>
-    {% endif %}
 </div>
+{% endif %}
 </div>

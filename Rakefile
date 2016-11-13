@@ -1,5 +1,4 @@
-require 'pandoc-ruby'
-require 'pdfkit'
+require scss_lint
 
 drafts_dir = '_drafts'
 posts_dir  = '_posts'
@@ -73,4 +72,14 @@ desc 'list tasks'
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+desc 'lint css'
+task :lint_scss do
+  sh 'sed -i.bak 1s:.*://---: ./css/style.scss'
+  sh 'sed -i.bak 2s:.*://---: ./css/style.scss'
+  system 'scss-lint -c scss_lint.yml ./css/style.scss'
+  sh 'sed -i.bak 1s:.*:---: ./css/style.scss'
+  sh 'sed -i.bak 2s:.*:---: ./css/style.scss'
+  sh 'rm ./css/style.scss.bak'
 end

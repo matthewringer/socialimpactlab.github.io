@@ -1,0 +1,51 @@
+{% if page.headerimage %}
+{% assign headerimage = page.headerimage %}
+{% else %}
+{% assign headerimage = include.headerimage %}
+{% endif %}
+<header id="top">
+    <div class=" header-wrapper">
+    <div class="header shadow"></div>
+    <div class="header header-background {% if page.layout == 'home' %} home-page {% else %} default-page {% endif %}" style="background-image: url('{{site.baseurl}}{{headerimage}}'); background-size: cover;"></div></div>
+    <div class="header angled-header">
+        <div class="container" >
+            {% include html/navigation.html %}
+            {% if page.headline %}
+            <h1 class="extra-bold headline"> {{page.headline}} </h1>
+            {% else %}
+            <div class="container search-header">
+                {% if include.title %}
+                    {% assign title = include.title %}
+                {% elsif page.category %}
+                    {% assign title = page.category | capitalize %}
+                {% elsif page.categories %}
+                    {% assign title = page.categories | first | capitalize %}
+                {% else %}
+                    {% assign title = page.title %}
+                {% endif %}
+                <h2>{{title}}</h2>
+                <hr class="bold search-topbar"/>
+                {% include html/search_box.html %}
+                <hr class="light"/>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="container backshape">
+        <div class="wrapper">
+        </div>
+    </div>
+    <div class="container backshape-extension">
+        <div class="wrapper"></div>
+    </div>
+</header>
+{% if site.facebook_comments %}
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={{ site.facebook_appid }}";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+{% endif %}

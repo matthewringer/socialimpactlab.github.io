@@ -1,0 +1,14 @@
+@mixin set-placeholder-color {
+  ::-webkit-input-placeholder { @content }
+  :-moz-placeholder  { @content }
+  ::-moz-placeholder { @content }
+  :-ms-input-placeholder { @content }
+}
+
+@mixin moz-border-none {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+}

@@ -1,0 +1,12 @@
+linters:
+  SelectorDepth:
+      enabled: true
+      max_depth: 4
+
+  NestingDepth:
+      enabled: true
+      max_depth: 4
+      ignore_parent_selectors: false
+
+  VendorPrefix:
+    enabled: false

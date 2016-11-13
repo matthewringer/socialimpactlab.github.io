@@ -5,6 +5,7 @@
     {% endif %}
 {% endfor %}
 {% if post_count > 1 %}
+<div class="col-sm-10 col-md-12 sidebar-menu padded-menu">
 <div class="menu">
     <h2 class="extra-bold">Posts by {{ page.author | split: ' ' | first }} </h2>
     <ul class="list-unstyled">
@@ -26,4 +27,5 @@
         </li>
     </ul>
     {% endif %}
+</div>
 </div>

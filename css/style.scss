@@ -100,6 +100,7 @@ body {
     @include phone {
         width: 100%;
         overflow-x: hidden;
+
     }
 }
 
@@ -190,7 +191,7 @@ p {
         top:300px;
     }
     @include phone {
-        top:240px;
+        top:180px;
     }
     @include minimum {
         top: 220px;
@@ -229,10 +230,10 @@ p {
     }
     @include phone {
         padding-right: 25px;
-        font-size: 1.6em;
+        font-size: 1.3em;
         position: absolute;
         left: 0;
-        top: 40px;
+        top: 65px;
     }
     @include minimum {
         font-size: 2em;
@@ -261,7 +262,7 @@ p {
         height:300px;
     }
     @include phone {
-        height:250px;
+        height: 210px;
     }
     @include minimum {
         height: 260px;
@@ -300,6 +301,9 @@ p {
 }
 header {
     overflow: hidden;
+    @include phone {
+      //height: 400px;
+    }
 }
 .header-wrapper{
     padding:0;
@@ -378,12 +382,14 @@ header {
         width: 100%;
     }
     @include tablet {
-        margin-top:-25px;
+        height: 500px;
+        margin-top:-20px;
         width: 100%;
     }
     @include phone {
-        margin-top:-25px;
+        top: -10px;
         width: 100%;
+        height: 500px;
     }
     border-top: 0.5px #FFFFFF solid;
     display:block;
@@ -405,8 +411,12 @@ header {
   height: 250px;
   margin-top: -59px;
   width: 100%;
+
   @include tablet {
-    margin-top: 0;
+    top: 450px;
+  }
+  @include phone {
+    top: 450px;
   }
 }
 
@@ -503,7 +513,18 @@ hr {
 .search-header{
     position: absolute;
     top: 70px;
-    h2 { padding: 0; }
+    @include phone {
+      margin-left: -10px;
+      top: 55px;
+    }
+    h2 { padding: 0;
+      @include phone {
+        font-size: 1.1em;
+      }
+    }
+    form {
+      position: relative;
+    }
     > hr.bold{
         border-color: $simlab-primary-grey -moz-use-text-color $simlab-primary-grey;
         border-top: 3px solid $simlab-primary-grey;
@@ -588,6 +609,8 @@ hr {
 
     @include phone {
       border-right: none;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 }
 
@@ -620,9 +643,8 @@ hr {
     > p {
         @include desktop {
             margin-top: 17px;
+            padding-left: 4px;
         }
-        padding-left: 4px;
-        //font-size: 0.9em;
         margin-bottom: 20px;
         > a {
             padding-left: 15px;
@@ -647,6 +669,18 @@ hr {
     }
 }
 
+.sidebar-menu {
+  clear: both;
+  @include phone {
+    margin: -15px auto 25px 0;
+  }
+  &.padded-menu {
+    @include phone {
+      margin-left: 10px;
+    }
+  }
+}
+
 .site-map-links {
     color: $simlab-light-grey;
     &:hover{
@@ -658,6 +692,10 @@ hr {
     @include desktop {
         margin: -35px 10px 10px 10px;
         padding: 0px 0 10px 10px;
+    }
+    @include phone {
+        margin: -65px 10px 10px 20px;
+        padding: 0px 0 10px 0;
     }
 
     h2 {
@@ -704,6 +742,9 @@ hr {
     overflow-x: hidden;
     text-overflow: ellipsis;
     width: 100% !important;
+    @include phone {
+      overflow-y: scroll;
+    }
     > ul > li > a {
         text-overflow: ellipsis;
     }
@@ -816,6 +857,7 @@ hr {
     width: 95%;
     @include phone {
       margin-right: 30px;
+      margin-left: 10px;
       width: 89%;
     }
 
@@ -887,12 +929,12 @@ hr {
             line-height: 4px;
         }
         @include tablet {
-            border-right: solid 1px $simlab-primary-black;
-            float: left;
-            height: 10px;
-            line-height: 4px;
+            display: block;
+            margin-bottom: 2px;
+            padding:0 0 0 5px;
         }
         @include phone {
+            display: block;
             display: block;
             padding:0 0 0 5px;
         }
@@ -1189,6 +1231,9 @@ footer {
   padding-top: 20px;
   .copyright {
     text-align:right;
+    @include phone {
+      text-align: left;
+    }
   }
 }
 .menu-label {
@@ -1230,5 +1275,11 @@ footer {
   padding: 20px 0;
   .fa {
     margin-right: 10px;
+  }
+}
+
+.visible-xs-inline {
+  @include tablet {
+    display: none;
   }
 }
